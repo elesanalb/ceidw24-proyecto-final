@@ -11,7 +11,7 @@ let headerStructure = `
     </ul>
 `
 
-header.innerHTML(headerStructure);
+header.innerHTML = headerStructure;
 /*let nav = document.createElement("nav");
 
 nav.innerHTML = headerStructure;
