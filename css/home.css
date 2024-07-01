@@ -6,11 +6,5 @@
 }
 
 .home .header-img{
-    width: 100vw;
-    height: 20vh;
     background-image: url(../img/flor1.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    outline: 20px solid white;
 }

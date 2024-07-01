@@ -9,6 +9,15 @@ header{
     width: 100vw;
 }
 
+header .header-img{
+    width: 100vw;
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    outline: 20px solid white;
+}
+
 header .menu {
     padding: 20px 30px;
     width: 170px;
