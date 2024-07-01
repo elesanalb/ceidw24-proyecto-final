@@ -1,6 +1,7 @@
 let header = document.querySelector(".header");
 
 let headerStructure = `
+    <div class=""></div>
     <ul class="menu">
         <li><a href="index.html" class="">home</a></li>
         <li><a href="projects.html" class="">projects</a></li>
@@ -9,8 +10,10 @@ let headerStructure = `
         <li><a href="" class="">contact</a></li>
     </ul>
 `
-let nav = document.createElement("nav");
+
+header.innerHTML(headerStructure);
+/*let nav = document.createElement("nav");
 
 nav.innerHTML = headerStructure;
 
-header.appendChild(nav);
+header.appendChild(nav);*/
