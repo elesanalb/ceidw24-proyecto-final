@@ -1,0 +1,42 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    width: 100vw;
+}
+
+header nav {
+    padding: 20px 30px;
+}
+
+header nav .menu li a{text-decoration: none;}
+
+header nav .menu{
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header nav .menu li{
+    width: 150px;
+    list-style: none;
+    margin: 10px 0;
+    padding: 5px 10px;
+    background-color: #FFF2BB;
+    text-align: end;
+    transition: 0.3s;
+}
+
+header nav .menu li a{
+    color: black;
+    text-transform: uppercase;
+}
+
+.menu li:hover{
+    width: 170px;
+}
