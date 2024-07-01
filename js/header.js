@@ -1,7 +1,7 @@
 let header = document.querySelector(".header");
 
 let headerStructure = `
-    <div class=""></div>
+    <div class="header-img"></div>
     <ul class="menu">
         <li><a href="index.html" class="">home</a></li>
         <li><a href="projects.html" class="">projects</a></li>
