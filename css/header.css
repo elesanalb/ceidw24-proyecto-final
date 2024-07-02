@@ -10,9 +10,29 @@
     src:url("../fonts/Doppelganger.otf") format("opentype");
 }
 
+/*COLORES
+color principal amarillo - #F9B800 
+amarillo palido - #FFF2BB
+color complementario morado - #7345A0
+morado palido - #E6CAFC
+
+colores tema
+azul marino - #464468
+negro - #3D3D3D
+marrón granate - #4F2C2C
+
+colores de contraste
+rosa - #EF3581
+verde cottage - #527523
+verde palido - #ADC983
+turquesa - #42E5BE
+*/
+
 header{
-    width: 100vw;
+    width: 100%;
     position: relative;
+    z-index: 2;
+    padding: 0;
 }
 
 header .header-frame-1{
@@ -20,13 +40,13 @@ header .header-frame-1{
     z-index: -1;
     top:0;
     left: 50px;
-    height: 100vh;
+    height:200vh;
     border-left: 20px solid #F9B800;
 }
 
 header .header-img{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 20vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,16 +56,12 @@ header .header-img{
 header .header-img h1 {
     position: absolute;
     font-family: "Doppelganger", "Inspiration", serif;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 15em;
     z-index: 1;
     color: #FFF2BB;
     font-weight: 300;
-    right: 30px;
-}
-
-header .header-img h1 span{
-    font-family: "Inspiration", serif;
+    right: 100px;
 }
 
 header .header-img .header-frame-2{

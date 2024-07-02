@@ -1,11 +1,9 @@
-/* *{
+*{
     margin: 0; 
     padding: 0; 
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
-} */
-
-/* dafjd */
+}
 
 .home .header-img{
     background-image: url(../img/flor1.png);
@@ -13,6 +11,26 @@
 
 .home ul .select-home{
     width: 170px;
-    background-color: #F9B800;
+    background-color: #EF3581;
     box-shadow: 1px 5px 10px  rgba(170, 170, 170, 0.25);
+}
+
+body nav {
+    position: absolute;
+    width: 92vw;
+    height: 100vh;
+    background-color: #efefef;
+    top:0;
+    right: 0;
+    z-index: 1;
+    padding: 0;
+}
+
+body nav nav{
+    position: relative;
+    border: 1px dashed white;
+    width: calc(80%);
+    height: 200vh;
+    margin: 50px auto;
+    margin-top: 250px;
 }

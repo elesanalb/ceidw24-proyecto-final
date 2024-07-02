@@ -5,7 +5,7 @@ const headerStructure = `
     <div class="header-frame-1"></div> 
     <div class="header-img">
         <div class="header-frame-2"></div>
-        <h1>home <span>home</span></h1>
+        <h1>home</h1>
     </div>
     <ul class="menu">
         <li class="select-home"><a href="index.html">home</a></li>
