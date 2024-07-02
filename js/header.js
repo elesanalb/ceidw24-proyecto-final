@@ -1,9 +1,14 @@
-let header = document.querySelector(".header");
+//crear un header común para todas las páginas con un js
+const header = document.querySelector(".header");
 
-let headerStructure = `
-    <div class="header-img"></div>
+const headerStructure = `
+    <div class="header-frame-1"></div> 
+    <div class="header-img">
+        <div class="header-frame-2"></div>
+        <h1>home <span>home</span></h1>
+    </div>
     <ul class="menu">
-        <li><a href="index.html" class="">home</a></li>
+        <li class="select-home"><a href="index.html">home</a></li>
         <li><a href="projects.html" class="">projects</a></li>
         <li><a href="" class="">gallery</a></li>
         <li><a href="" class="">about</a></li>
@@ -12,8 +17,12 @@ let headerStructure = `
 `
 
 header.innerHTML = headerStructure;
-/*let nav = document.createElement("nav");
 
-nav.innerHTML = headerStructure;
 
-header.appendChild(nav);*/
+/*IDEA
+
+al selecionar una de las opciones del menu, esa opción queda marcada con un estilo distinto para indicar en qué página se encuentra en el momento
+
+crear una clase "select" en cada opcion del menu al hacer click encima de ella (sin guardarse el cambio al elegir otra distinta)
+*/
+
