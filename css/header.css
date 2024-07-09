@@ -1,107 +1,149 @@
-*{
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-}
-
-@font-face{
-    font-family: "Doppelganger";
-    src:url("../fonts/Doppelganger.otf") format("opentype");
-}
-
-/*COLORES
-color principal amarillo - #F9B800 
-amarillo palido - #FFF2BB
-color complementario morado - #7345A0
-morado palido - #E6CAFC
-
-colores tema
-azul marino - #464468
-negro - #3D3D3D
-marrón granate - #4F2C2C
-
-colores de contraste
-rosa - #EF3581
-verde cottage - #527523
-verde palido - #ADC983
-turquesa - #42E5BE
-*/
+/* HEADER */
 
 header{
     width: 100%;
-    position: relative;
-    z-index: 2;
     padding: 0;
-}
-
-header .header-frame-1{
-    position: absolute;
-    z-index: -1;
-    top:0;
-    left: 50px;
-    height:200vh;
-    border-left: 20px solid #F9B800;
-}
-
-header .header-img{
-    position: relative;
-    width: 100%;
-    height: 20vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-header .header-img h1 {
-    position: absolute;
-    font-family: "Doppelganger", "Inspiration", serif;
-    text-transform: uppercase;
-    font-size: 15em;
-    z-index: 1;
-    color: #FFF2BB;
-    font-weight: 300;
-    right: 100px;
+header.home{
+    background-image: url(../img/header-home.png);
 }
 
-header .header-img .header-frame-2{
-    position: absolute;
-    top:50px;
-    left: 50px;
-    height: calc(100% - 50px);
-    width: calc(100% - 50px);
-    border-left: 20px solid white;
-    border-top: 20px solid white;
-    z-index: 0;
+header.projects{
+    background-image: url(../img/header-projects.png);
 }
 
+/* -------------------------------------------------------------------- */
 
-header .menu {
-    padding: 20px 30px;
-    width: 170px;
+
+/* HEADER TITLE */
+
+header .header-title{
+    position: absolute;
+    top: 0;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 1;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
 }
 
-header .menu li{
-    width: 150px;
-    list-style: none;
-    margin: 10px 0;
-    padding: 5px 10px;
-    background-color: #FFF2BB;
-    text-align: end;
+header .header-title div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+
+/* ------------------ logo */
+
+header .header-title .logo{
+    opacity: 75%;
     transition: 0.3s;
 }
 
-header .menu li a{
-    text-decoration: none;
-    color: black;
+header .header-title .logo:hover{
+    opacity: 100%;
+}
+
+
+/* ------------------- h2 */
+
+header .header-title h2{
+    color: white;
+    font-weight: 300;
+    line-height: 1px;
+    opacity: 85%;
+}
+
+
+/* ---------------------- page */
+
+header .header-title h1 {
+    font-family: "Doppelganger", "Inspiration", serif;
+    text-transform:capitalize;
+    color: #FFF2BB;
+    font-weight: 300;
+}
+
+header.home .header-title h1{
     text-transform: uppercase;
 }
 
-header .menu li:hover{
-    width: 170px;
-    background-color: #fff8da;
+/* -------------------------------------------------------------- */
+
+
+/* MEDIA QUERY */
+
+/* ----------------------- Laptop */
+
+@media screen and (min-width: 1024px){
+
+    /* HEADER */
+
+    header{
+        height: 18vh;
+    }
+
+    /* --------------------------------- */
+
+    
+    /* HEADER TITLE */
+
+    header .header-title div{
+        margin-left: 70px;
+    }
+
+
+    /* ----------------- h2 */
+
+    header .header-title h2{
+        font-size: 3em;
+    }
+
+
+    /* ------------------ page */
+
+    header .header-title h1{
+        margin-right: 100px;    
+        font-size: 10.5em;
+    }
+}
+
+
+/* -------------------------------- Monitor */
+
+@media screen and (min-width: 1580px){
+
+    /* HEADER */
+
+    header{
+        height: 20vh;
+    }
+
+    /* ---------------------------------- */
+
+
+    /* HEADER TITLE */
+
+    header .header-title div{
+        margin-left: 80px;
+    }
+
+
+    /* ----------------- h2 */
+
+    header .header-title h2{
+        font-size: 3.7em;
+    }
+
+
+    /* ----------------- page */
+
+    header .header-title h1{
+        margin-right: 150px;    
+        font-size: 15em;
+    }
 }

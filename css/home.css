@@ -5,32 +5,587 @@
     font-family: "Montserrat", sans-serif;
 }
 
-.home .header-img{
-    background-image: url(../img/flor1.png);
+body{
+    display: flex;
+    flex-direction: column;
 }
 
-.home ul .select-home{
-    width: 170px;
-    background-color: #EF3581;
-    box-shadow: 1px 5px 10px  rgba(170, 170, 170, 0.25);
-}
+/* ------------------------------------------------------------ */
 
-body nav {
-    position: absolute;
-    width: 92vw;
-    height: 100vh;
-    background-color: #efefef;
-    top:0;
-    right: 0;
-    z-index: 1;
-    padding: 0;
-}
 
-body nav nav{
+/* SLIDER */
+
+/* .home.full-bg{
+    
+    background-color: #fff8da;
+    
+    
+} */
+
+.content.home{
+    width: 100vw;
+    left: 0;
     position: relative;
-    border: 1px dashed white;
-    width: calc(80%);
-    height: 200vh;
-    margin: 50px auto;
-    margin-top: 250px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.content.home .side-bg{
+    width: 60%;
+    background-color:#FFF2BB;
+}
+
+.content.home h1{
+    position: absolute;
+    color:white;
+}
+
+.slider{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider .slides{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.slider .slide{
+    position: relative;
+    flex-shrink: 0;
+    animation-name: slider;
+    -webkit-animation-name: slider;
+    animation-duration: 20s;
+    -webkit-animation-duration: 20s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    scroll-behavior: smooth;
+}
+
+.slider .slide .slide-caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.25) 40%);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    text-decoration: none;
+}
+
+.slider i:hover{
+    color: #F9B800 ;
+}
+
+.slider .slides:hover .slide{
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+}
+
+.slider .slider-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.slider .slider-control .bullet{
+    border-radius: 50%;
+    background-color: #3D3D3D;
+    width: 10px;
+    height: 10px;
+}
+
+.slider .slider-control .bullet:hover{
+    background-color: #3d3d3d3b;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+/* SLIDER ANIMATION */
+
+@keyframes slider {
+	0% {
+        transform: translateX(0);
+    }
+	10% {
+        transform: translateX(0);
+    }
+
+	15% {
+        transform: translateX(-100%);
+    }
+	30% {
+        transform: translateX(-100%);
+    }
+
+	35% {
+        transform: translateX(-200%);
+    }
+	50% {
+        transform: translateX(-200%);
+    }
+
+	55% {
+        transform: translateX(-300%);
+    }
+	70% {
+        transform: translateX(-300%);
+    }
+
+	75% {
+        transform: translateX(-400%);
+    }
+	90% {
+        transform: translateX(-400%);
+    }
+
+	95% {
+        transform: translateX(-500%);
+    }
+	100% {
+        transform: translateX(-500%);
+    }
+}
+
+
+/* ----------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------- */
+
+
+
+/* ABOUT */
+
+section.content.about{
+    position: relative;
+}
+
+.content.about section{
+    background-color: #F9B800;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.content.about section div.outline{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 2px solid white;
+    outline-offset: -10px;
+}
+
+.content.about section .section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* ---------------------------------------------------- */
+
+/* TITLE */
+
+.content.about h1{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-transform: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #FFF2BB;
+    /* opacity: 75%; */
+}
+.content.about h1 span{
+    font-family: "Doppelganger", "Inspiration", serif;
+    text-transform: uppercase;
+    display: block;
+    align-self: flex-end;
+}
+
+/* ---------------------------------------------------------- */
+
+
+/* SECTION */
+
+.content.about img{
+    outline: 2px solid white;
+    flex-shrink:0;
+}
+
+.content.about section .ab-descript{
+    flex-direction: column;
+}
+
+.content.about h4 span{
+    font-family: "Doppelganger","Inspiration", serif;
+    color: #FFF2BB;
+    display: block;
+}
+
+.content.about p span{
+    font-weight: 600;
+    color: #fff8da;
+}
+
+/* ---------------------------------------- */
+
+
+/* gradiente */
+
+.content.about div.rad-grad{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(circle, rgba(230,202,252,1) 30%, #f9b70000 70%);
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -------------------------------------------------- */
+
+
+/* bullet frame */
+
+.about .deco-frame-bullet-box{
+    top: 0;
+    right: 0;
+    background-color: #F9B800;
+}
+
+.about .deco-frame-bullet{
+    width: 100%;
+    height: 100%;
+}
+
+.about .deco-frame-bullet-top{
+    width: 100%;
+    height: fit-content;
+    top: 0;
+    right: 0;
+}
+
+.about .deco-frame-bullet-right{
+    height: 100%;
+    width: fit-content;
+    top: 0;
+    right: 0
+}
+
+.about .deco-frame-bullet-bullet, .about .deco-frame-bullet-corner{
+    background-color: white;
+}
+
+
+
+/* ----------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+
+
+
+
+/* CONTACT */
+
+.content.contact{
+    left: 0;
+    top: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+.content.contact .full-bg{
+    background-image: url(../img/contact-bg-img.png);
+    width: 100vw;
+    height: inherit;
+}
+
+.content.contact h1{
+    color:#4F2C2C;
+}
+
+.content.contact .full-bg section{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(20px);
+    outline: 2px solid white;
+    outline-offset: 4px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.content.contact .line{
+    border-top-color: white;
+    width: 50%;
+    align-self: center;
+}
+
+.content.contact div.phone-numbers{
+    align-items: flex-end;
+}
+
+.content.contact label.label-flex{
+    align-items: center;
+}
+
+/* --------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+
+/* MEDIA QUERY */
+
+/* ----------------------- laptop */
+@media screen and (min-width: 1024px){
+
+    /* SLIDER */
+
+    .content.home.full-bg{
+        padding: 80px 0;
+        margin: 0;
+    }
+
+    .content.home h1{
+        top: 35px;
+        left: 250px;
+    }
+
+    .content.home .slider{
+        width: 1095px;
+        height: fit-content;
+        display: flex;
+    }
+
+    .content.home .slider img{
+        width: 1095px;
+    }
+
+    .content.home .slider .slide-caption{
+        padding: 80px;
+    }
+
+    .content.home .slider .slider-control{
+        margin: 10px auto;
+    }
+
+    /* --------------------------------------- */
+
+
+    /* ABOUT */
+
+    section .content.about{
+        padding: 100px 0;
+    }
+    
+    .content.about h1{
+        padding: 65px 10px;
+    }
+
+    .content.about section{
+        padding: 80px;
+    }
+
+    .content.about img{
+        width: 250px;
+        padding: 4px;
+        margin: 10px 15px;
+    }
+
+    .content.about div .ab-descript{
+        margin-top: 5px;
+        padding: 0 50px;
+    }
+
+    
+    .content.about h4 span{
+        font-size: 1.6em;
+    }
+
+    /* --------------------------- gradient */
+
+    .content.about div.rad-grad{
+        background-size: 500px 500px;
+        background-position: -45px 45px;
+    }
+
+    /* ----------------------------- bullet frame */
+
+    .about .deco-frame-bullet-box{
+        width: 120px;
+        height: 120px;
+        padding: 5px 5px 15px 15px;
+    }
+
+
+    /* ---------------------------------------------------------------------- */
+    /* ---------------------------------------------------------------------------- */
+
+
+    /* CONTACT */
+
+    .content.contact .full-bg{
+        padding: 100px 300px;
+    }
+
+    .content.contact .full-bg section{
+        padding: 40px 70px;
+        width: 70%;
+    }
+
+    .content.contact form{
+        margin-top: 35px;
+        padding: 0 30px;
+    }
+    
+    form input[name="name"]{
+        width: 200px;
+    }
+
+    form input[list="country-codes"]{
+        width: 40px;
+        height: 20px;
+    }
+
+    form div.phone-numbers label:first-child{
+        font-size: 1.5em;
+    }
+}
+
+
+/* -------------------------------------- monitor */
+
+@media screen and (min-width: 1580px){
+
+    /* SLIDER */
+
+    .content.home.full-bg{
+        padding: 100px 0;
+        margin: 0;
+    }
+
+    .content.home h1{
+        top: 40px;
+        left: 300px;
+    }
+    
+    .content.home .slider{
+        width: 1300px;
+        height: fit-content;
+        display: flex;
+        /* margin:0; */
+    }
+
+    .content.home .slider img{
+        width: 1300px;
+    }
+
+    .content.home .slider .slide-caption{
+        padding: 80px;
+    }
+
+    .content.home .slider .slider-control{
+        margin: 10px auto;
+    }
+
+    /* ------------------------------------------------------------------ */
+    /* --------------------------------------------------------------------- */
+
+
+    /* ABOUT */
+
+    section .content.about{
+        padding: 150px 0;
+    }
+    
+    .content.about h1{
+        padding: 100px 10px;
+    }
+
+    .content.about section{
+        padding: 100px;
+    }
+
+    .content.about img{
+        width: 300px;
+        padding: 4px;
+        margin: 0 20px;
+    }
+
+    .content.about div .ab-descript{
+        margin-top: 20px;
+        padding: 0 70px;
+    }
+
+    .content.about h4 span{
+        font-size: 2em;
+    }
+
+    /* --------------------------- gradient */
+
+    .content.about div.rad-grad{
+        background-size: 600px 600px;
+        background-position: -60px 60px;
+    }
+
+    /* ----------------------------- bullet frame */
+
+    .about .deco-frame-bullet-box{
+        width: 180px;
+        height: 180px;
+        padding: 5px 5px 20px 20px;
+    }
+
+
+    /* ---------------------------------------------------------------------- */
+    /* ---------------------------------------------------------------------------- */
+
+
+    /* CONTACT */
+
+    .content.contact .full-bg{
+        padding: 100px 400px ;
+    }
+
+    .content.contact .full-bg section{
+        padding: 50px;
+        width: 70%;
+    }
+
+    .content.contact form{
+        margin-top: 40px;
+        padding: 0 80px;
+    }
+    
+    form input[name="name"]{
+        width: 200px;
+    }
+
+    form input[list="country-codes"]{
+        width: 40px;
+        height: 20px;
+    }
+
+    form div.phone-numbers label:first-child{
+        font-size: 2em;
+    }
 }

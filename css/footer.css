@@ -1,0 +1,176 @@
+footer{
+    position: relative;
+    width: 100vw;
+    justify-self: flex-end;
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+/* BACKGROUND */
+
+footer .footer-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+footer.home .footer-bg{
+    background-image: url(../img/footer-home.png);
+}
+footer.projects .footer-bg{
+    background-image: url(../img/footer-projects.png);
+}
+
+/* ------------------------------------------------------------------- */
+
+
+/* GENERAL */
+
+footer i{
+    color: white;
+}
+
+
+/* ------------- sections */
+
+footer .footer-menu{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .sum-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+footer .sum-menu div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+footer .social-media div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* ------------------- text */
+
+footer a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+footer h4{
+    font-weight: 400;
+}
+
+footer h4:not(h4.name){
+    text-decoration: underline;
+}
+
+footer h4:not(.name){
+    text-transform: capitalize;
+}
+
+footer .sum-menu div:first-child h4{
+    text-transform: uppercase;
+}
+
+footer .logo{
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------------------ */
+
+
+/* HOVER */
+
+footer a:hover{
+    color: #FFF2BB
+}
+
+footer i:hover{
+    color: #EF3581;
+}
+
+/* ------------------------------------------------------------------- */
+
+
+/* MEDIA QUERY */
+
+/* --------------------------- laptop */
+
+@media screen and (min-width: 1024px){
+
+    footer{
+        padding: 80px 350px 60px 300px;
+    }
+
+    footer .sum-menu div{
+        margin: 0 50px;
+    }
+
+    footer .social-media{
+        padding: 10px 15px;
+    }
+
+    footer .social-media div{
+        margin: 20px 0;
+    }
+
+    footer div a{
+        /* padding: 5px 0; */
+    }
+
+    footer h4{
+        font-size: 1.2em;
+    }
+}
+
+
+/* --------------------------- monitor */
+
+@media screen and (min-width: 1580px){
+
+    footer{
+        padding: 60px 350px 90px 300px;
+    }
+
+    footer .sum-menu div{
+        margin: 0 50px;
+    }
+
+    footer .social-media{
+        padding: 10px 15px;
+    }
+
+    footer .social-media div{
+        margin: 20px 0;
+    }
+
+    footer div a{
+        padding: 5px 0;
+    }
+
+    footer h4{
+        font-size: 1.2em;
+        padding: 5px 0;
+    }
+}

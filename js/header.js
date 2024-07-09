@@ -1,28 +1,89 @@
 //crear un header común para todas las páginas con un js
-const header = document.querySelector(".header");
+const header = document.querySelector("header");
+const menu = document.querySelector(".menu");
+const footer = document.querySelector("footer");
+let menuSelect = ["home", "projects", "gallery", "about", "contact"];
+let headerTitle = "";
+
+
+for(let i = 0; i < menuSelect.length; i++){
+    if(header.classList.contains(menuSelect[i])){
+        headerTitle = menuSelect[i];
+    }
+}
+
+
 
 const headerStructure = `
-    <div class="header-frame-1"></div> 
-    <div class="header-img">
-        <div class="header-frame-2"></div>
-        <h1>home</h1>
+    <div class="frame-1"></div>
+    <div class="header-title">
+        <div>
+            <a href="index.html"><img class="logo" src="img/logo-bg-white.svg" alt="logo"></a>
+            <h2>lena qiao</h2>
+        </div>
+        <h1>${headerTitle}</h1>
     </div>
-    <ul class="menu">
-        <li class="select-home"><a href="index.html">home</a></li>
-        <li><a href="projects.html" class="">projects</a></li>
-        <li><a href="" class="">gallery</a></li>
-        <li><a href="" class="">about</a></li>
-        <li><a href="" class="">contact</a></li>
-    </ul>
+`
+
+const menuStructure = `
+    <li class="${header.classList.contains("home") ? "select" : ""}"><a href="index.html">home</a></li>
+    <li class="${header.classList.contains("about") ? "select" : ""}"><a href="index.html#about">about</a></li>
+    <li class="${header.classList.contains("contact") ? "select" : ""}"><a href="index.html#contact">contact</a></li>
+    <li class="${header.classList.contains("projects") ? "select" : ""} dropdown"><a href="projects.html">projects</a>
+        <div class="dropdown-menu">
+            <a href="design.html">design & UX/UI</a>
+            <a href="web.html">web</a>
+            <a href="art.html">art</a>
+            <a href="other.html">other</a>
+            
+        </div>
+    </li>
+    <li class="${header.classList.contains("gallery") ? "select" : ""} "><a href="gallery.html">gallery</a>
+    </li>
+`
+
+const footerStructure = `
+    <div class="footer-menu">
+        <div class="sum-menu">
+            <div>
+                <a href=""><h4>home</h4></a>
+                <a href="#about"><h4>about</h4></a>
+                <a href=""><h4>contact</h4></a>
+            </div>
+            <div>
+                <a href=""><h4>projects</h4></a>
+                <a href="">art</a>
+                <a href="">design & UX/UI</a>
+                <a href="">web</a>
+                <a href="">other</a>
+            </div>
+            <div>
+                <a href=""><h4>gallery</h4></a>
+                <a href="">the yellow collection</a>
+                <a href="">the flower collection</a>
+                <a href="">my art gallery</a>
+                <a href="">fashion design</a>
+                <a href="">my sketchbook</a>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <a href="index.html"><img class="logo" src="img/logo-white.svg" alt="logo">
+            <h4 class="name">lena qiao</h4>
+            <div>
+                <a href=""><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
+                <a href=""><i class="fa-solid fa-envelope fa-xl"></i></a>
+            </div>
+        </div>    
+    </div>
+
+    <div class="frame-4"></div>
+    <div class="footer-bg"></div>
+
 `
 
 header.innerHTML = headerStructure;
-
-
-/*IDEA
-
-al selecionar una de las opciones del menu, esa opción queda marcada con un estilo distinto para indicar en qué página se encuentra en el momento
-
-crear una clase "select" en cada opcion del menu al hacer click encima de ella (sin guardarse el cambio al elegir otra distinta)
-*/
+menu.innerHTML = menuStructure;
+footer.innerHTML = footerStructure;
 

@@ -1,0 +1,115 @@
+/* COLORS */
+
+.art h1{
+    color: #F9B800;
+}
+.design h1, .design h2{
+    color: #72001e;
+}
+.web-design h1{
+    color: #42E5BE;
+}
+.other-projects h1{
+    color: #7345A0;
+}
+.other-projects h2{
+    color: #464468;
+}
+
+.design.full-bg{
+    background-color: #ADC983;
+}
+
+/* ----------------------------------------------------------- */
+
+
+/* SECTIONS */
+
+.art .grid-preview{
+    grid-template-columns: repeat(3, auto);
+}
+
+.design .grid-preview, .web-design .grid-preview{
+    grid-template-columns: repeat(2, auto);
+}
+
+.ux-ui .display-flex{
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.ux-ui img{
+    height: 350px;
+}
+
+/* ART -------------------------- */
+
+.art .body-section{
+    background-color: #F9B800;
+    text-align: end;
+}
+
+.art .body-section div{
+    padding: 50px;
+}
+.art .body-section a{
+    color: #EF3581;
+}
+
+
+/* DESIGN ------------------------- */
+
+section.design{
+    position: relative;
+    height: fit-content;
+}
+
+.design .grid-preview div a{
+    border: 3px solid white;
+    margin: 0 10px;
+}
+
+
+
+/* -------------------------------------------------------------- */
+
+
+/* MEDIA QUERY */
+
+/* ----------------------------- laptop */
+
+@media screen and (min-width: 1024px){
+
+    /* SECTIONS */
+
+    .web-design embed{
+        width: 600px;
+        height: 350px;
+    }
+
+    .other-projects h1{
+        font-size: 8em;
+    }
+    .other-projects h2{
+        font-size: 2.6em;
+    }
+}
+
+/* ----------------------------- Monitor */
+
+@media screen and (min-width: 1580px){
+
+    /* SECTIONS */
+
+    .web-design embed{
+        width: 650px;
+        height: 400px;
+    }
+
+    .other-projects h1{
+        font-size: 9em;
+    }
+    .other-projects h2{
+        font-size: 3em;
+    }
+}

@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------------------------------------------------- */
+/* ------------------------------------------------------------------ */
+
+
+
+/* FONTS */
+
+@font-face{
+    font-family: "Doppelganger";
+    src:url("../fonts/Doppelganger.otf") format("opentype");
+}
+
+/* TEXT */
+
+.content h1{
+    font-family: "Doppelganger", "Inspiration", serif;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.content h2{
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h4{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+
+/* ------------------------- laptop */
+
+@media screen and (min-width: 1024px){
+    .content h1{
+        font-size: 8em;
+    }
+
+    .content h2{
+        font-size: 3em;
+        margin: 10px 0;
+    }
+
+    h4{
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    p{
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+}
+
+
+/* -------------------------- monitor */
+
+@media screen and (min-width: 1580px){
+    .content h1{
+        font-size: 11em;
+    }
+
+    .content h2{
+        font-size: 4em;
+        margin: 10px 0;
+    }
+
+    h4{
+        font-size: 2.3em;
+        margin-bottom: 20px;
+    }
+
+    p{
+        margin-bottom: 20px;
+        font-size: 1em;
+        text-align: justify;
+    }
+}
+
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------- */
+
+
+
+
+/* LOGO */ 
+
+@media screen and (min-width: 1024px){
+    .logo{
+        height: 70px;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (min-width: 1580px){
+    .logo{
+        height: 90px;
+        margin:0 20px ;
+    }
+}
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+
+
+
+/* GLOBAL STYLES */
+
+.side-bg{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+}
+
+.full-bg{
+    height: fit-content;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-bg{
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box-shadow{
+    box-shadow: 0 5px 10px  rgba(70, 70, 70, 0.5);
+}
+
+form input{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+form div.input-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+}
+
+form label.label-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* -------------------------- laptop */
+
+@media screen and (min-width: 1024px){
+    .side-bg{
+        width: 90vw;
+    }
+
+    form div{
+        margin: 10px 0;
+    }
+
+    form input{
+        margin: 10px 0;
+    }
+}
+
+
+/* ----------------------- Monitor */
+
+@media screen and (min-width: 1580px){
+    .side-bg{
+        width:93vw;
+    }
+
+    form div{
+        margin: 10px 0;
+    }
+
+    form input{
+        margin: 10px 0;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+
+
+/* FRAMES */
+
+.frame-1{
+    position: relative;
+    border-top-style: solid;
+    border-top-color: white;
+}
+
+.frame-1, .frame-2, .frame-3, .frame-4{
+    border-left-style: solid;
+}
+
+.frame-1, .frame-4{
+    border-left-color: white;
+}
+
+.frame-2{
+    border-left-color: #F9B800;
+}
+
+.frame-2, .frame-3, .frame-4{
+    top: 0;
+}
+
+.frame-2{
+    position: fixed;
+    height:100vh;
+}
+
+.frame-3{
+    position: absolute;
+    height: 100%;
+}
+
+.frame-4{
+    position: absolute;
+    background-color: #F9B800;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+/* ------------------ colores */
+
+.design .frame-3{
+    border-left-color: #72001e;
+}
+
+.contact .frame-3{
+    border-left-color: #72001e;
+}
+
+
+/* ------------------- laptop */
+
+@media screen and (min-width: 1024px){
+
+    .frame-1{
+        top:30px;
+        border-top-width: 18px;
+    }
+
+    .frame-1, .frame-2, .frame-3, .frame-4{
+        left: 40px;
+        border-left-width: 18px;
+    }
+
+    .frame-1, .frame-4{
+        width: 100%;
+        height: calc(100% - 30px);
+    }
+
+    .frame-2, .frame-3{
+        border-left-width: 18px;
+    }
+
+    .frame-4{
+        border-bottom-width: 18px;
+    }
+}
+
+
+/* ------------------------- monitor */
+
+@media screen and (min-width: 1580px){
+
+    .frame-1{
+        top:50px;
+        border-top-width: 20px;
+    }
+
+    .frame-1, .frame-2, .frame-3, .frame-4{
+        left: 50px;
+        border-left-width: 20px;
+    }
+
+    .frame-1, .frame-4{
+        width: 100%;
+        height: calc(100% - 50px);
+    }
+
+    .frame-2, .frame-3{
+        border-left-width: 20px;
+    }
+
+    .frame-4{
+        border-bottom-width: 20px;
+    }
+}
+
+
+/* --------------------------------------------------------- */
+
+/* DECO FRAMES */
+
+/* deco frame bullet */
+
+.deco-frame-bullet-box{
+    position: absolute;
+}
+
+.deco-frame-bullet{
+    position: relative;
+}
+
+.deco-frame-bullet .deco-frame-bullet-top{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.deco-frame-bullet .deco-frame-bullet-right{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.deco-frame-bullet .deco-frame-bullet-bullet, .deco-frame-bullet .deco-frame-bullet-corner{
+    border-radius: 50%;
+}
+
+.deco-frame-bullet .deco-frame-bullet-bullet{
+    width: 5px;
+    height: 5px;
+}
+
+.deco-frame-bullet .deco-frame-bullet-corner{
+    width: 10px;
+    height: 10px;
+}
+
+/* -------------------------------------------------- */
+
+
+/* line */
+
+.line{
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+
+
+/* CONTENT SECTIONS */
+
+.content-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    position: relative;
+    display: inline-block;
+}
+
+
+/* ----------------------- laptop */
+
+@media screen and (min-width: 1024px){
+    .content{
+        margin: 80px 0;
+        left: 18vw;
+        width: 65vw;
+    }
+}
+
+/* ----------------------- Monitor */
+
+@media screen and (min-width: 1580px){
+    .content{
+        margin: 100px 0;
+        left: 20vw;
+        width: 65vw;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+
+
+
+/* TEMPLATES */
+
+/* PREVIEW GRID TEMPLATE */
+
+.grid-preview{
+    display: grid;
+}
+
+.grid-preview div{
+    position: relative;
+}
+
+.grid-preview div a{
+    text-decoration: none;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.grid-preview div a p{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    color: white;
+    opacity: 0;
+    text-wrap:wrap;
+
+}
+
+
+/* ------------------- hover */
+
+.grid-preview div a:hover{
+    background-color: black;
+}
+
+.grid-preview div a:hover img{
+    opacity: 50%;
+}
+
+.grid-preview div a:hover p{
+    opacity: 100%;
+}
+
+/* --------------------------------------------------------------- */
+
+
+/* FLEX */
+
+.display-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+/* ----------------------- laptop */
+
+@media screen and (min-width: 1024px){
+
+    /* PREVIEW GRID TEMPLATE */
+
+    .grid-preview img{
+        height: 350px;
+    }
+
+    .grid-preview  div a p{
+        top: 100px;
+    }
+}
+
+/* ----------------------- Monitor */
+
+@media screen and (min-width: 1580px){
+
+    /* PREVIEW GRID TEMPLATE */
+
+    .grid-preview img, .ux-ui img{
+        height: 400px;
+    }
+
+    .grid-preview  div a p{
+        top: 150px;
+    }
+}

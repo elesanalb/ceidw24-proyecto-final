@@ -1,0 +1,34 @@
+*{margin: 0; padding: 0;}
+
+/* z-index */
+.side-bg{z-index:-2;}
+
+
+.frame-4{z-index: -1;}
+
+
+.frame-1{z-index: 0;}
+.content.about .rad-grad{z-index: 0;}
+.content.contact .full-bg section {z-index: 0;}
+
+
+header .header-title{z-index: 1;}
+.content.about img{z-index: 1;}
+.content.about div.outline{z-index: 1}
+
+.content{z-index: 2;}
+.content.home h1{z-index: 2;}
+.content.about h1, .content.about h1 span{z-index: 2;}
+.content.about .ab-descript{z-index: 2;}
+.content.about .deco-frame-bullet-box{z-index: 2;}
+
+.frame-2{z-index:3;}
+
+header{z-index:4;}
+.frame-3{z-index: 5;}
+footer{z-index: 4;}
+
+footer .footer-bg{z-index: -2;}
+
+
+.menu{z-index: 5;}
