@@ -44,6 +44,10 @@ h4{
     font-weight: 400;
 }
 
+h5{
+    font-weight: 400;
+}
+
 
 /* ------------------------- laptop */
 
@@ -60,6 +64,10 @@ h4{
     h4{
         font-size: 2em;
         margin-bottom: 20px;
+    }
+
+    h5{
+        font-size: 1.1em;
     }
 
     p{
@@ -86,9 +94,15 @@ h4{
         margin-bottom: 20px;
     }
 
+    h5{
+        font-size: 1.3em;
+        margin: 25px 0 5px;
+    }
+
+
     p{
         margin-bottom: 20px;
-        font-size: 1em;
+        font-size: 1.1em;
         text-align: justify;
     }
 }
@@ -147,14 +161,81 @@ h4{
     box-shadow: 0 5px 10px  rgba(70, 70, 70, 0.5);
 }
 
-form input{
+/* ----------------------------------------------------------- */
+
+
+
+
+/* FORMS */
+
+form p{
+    margin: 0;
+}
+
+input{
     -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
     appearance: none;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+}
+
+input:focus-visible{
+    outline-width: 2px;
+    outline-style: solid;
+}
+
+label{
+    width: fit-content;
+}
+
+input[type="text"], input[type="email"]{
+    padding: 5px;
+}
+
+input[type="radio"]{
+    -webkit-appearance: radio;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input[type="submit"], input[type="reset"]{
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+input[type="submit"]:hover{
+    text-decoration: underline;
+}
+
+input[type="reset"]{
+    text-decoration: underline;
+    background: none;
+}
+
+::placeholder{
+    color: #3D3D3D;
 }
 
 form div.input-flex{
     display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+form div.input-flex.text-input{
     justify-content: space-between;
+    align-items: flex-end;
+}
+form div.input-flex.choice-input{
+    justify-content: flex-start;
+    align-items: center;
+}
+form div.input-flex.button-input{
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -168,6 +249,74 @@ form label.label-flex{
     flex-direction: row;
 }
 
+form i{
+    cursor: pointer;
+}
+
+
+/* -------------------------------------------------- */
+
+
+/* COLORS */
+
+/* ---------------------- contact */
+
+form.contact i{
+    color: #72001e;
+}
+form.contact label:hover i{
+    color: #4F2C2C;
+}
+
+.contact input[type="text"], input[type="email"]{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.contact input:focus-visible{
+    outline-color: #EF3581;
+}
+
+form.contact div.phone-numbers{
+    display: flex;
+    align-items: flex-end;
+}
+
+form.contact label.country-codes{
+    align-self: flex-end;
+}
+
+form.contact label.country-codes input{
+    margin: 0;
+}
+
+form.contact div.phone-numbers input[name="number"]{
+    margin: 0;
+}
+
+.contact input[type="submit"]{
+    background-color: #72001e;
+    color: white;
+}
+
+.contact input[type="reset"]{
+    color: #72001e;
+}
+
+.contact input[type="submit"]:hover{
+    background-color:#EF3581;
+}
+
+.contact input[type="reset"]:hover{
+    color: #4F2C2C;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+
+/* MEDIA QUERY */
 
 /* -------------------------- laptop */
 
@@ -176,12 +325,42 @@ form label.label-flex{
         width: 90vw;
     }
 
-    form div{
-        margin: 10px 0;
+    /* ---------------------------------------------------------------- */
+
+    
+    /* FORM */
+
+    form{
+        font-size: 1em;
+    }
+    
+    input{
+        margin: 5px 0;
     }
 
-    form input{
-        margin: 10px 0;
+    input[type="submit"], input[type="reset"]{
+        margin: 10px;
+    }
+
+    /* ------------------------------------------ */
+
+    /* contact */
+
+    form.contact input[name="name"]{
+        width: 200px;
+    }    
+
+    form.contact div.phone-numbers label:first-child{
+        font-size: 1.5em;
+    }
+
+    form.contact label.country-codes{
+        margin: 0 5px;
+    }
+ 
+    form.contact input[list="country-codes"]{
+        width: 50px;
+        height: 25px;
     }
 }
 
@@ -193,14 +372,62 @@ form label.label-flex{
         width:93vw;
     }
 
-    form div{
-        margin: 10px 0;
+    /* ----------------------------------------------------------- */
+
+
+    /* FORM */
+
+    input{
+        margin: 5px 0;
     }
 
-    form input{
-        margin: 10px 0;
+    form, form label, input[type="submit"], input[type="reset"]{
+        font-size: 1.2em;
+    }
+
+    ::placeholder{
+        font-size: 1em;
+    }
+
+    input[type="submit"], input[type="reset"]{
+        margin: 10px;
+    }
+
+    /* -------------------------------------- */
+
+    /* contact */
+
+    form.contact input[name="name"]{
+        width: 220px;
+    }
+
+    form.contact div.phone-numbers label:first-child{
+        font-size: 2em;
+    }
+
+    form.contact label.country-codes{
+        margin: 0;
+    }
+
+    form.contact label.country-codes input{
+        margin: 0;
+    }
+
+    form.contact input[list="country-codes"]{
+        width: 50px;
+        height: 25px;
+    }
+
+    .contact input[type="reset"]{
+        margin: 0;
+    }
+
+    .contact label.reset{
+        margin: 10px;
     }
 }
+
+
 
 /* ------------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
@@ -376,6 +603,91 @@ form label.label-flex{
 }
 
 
+/* ----------------------------------------------------- */
+
+
+/* separacion */
+
+.deco-container{
+    position: relative;
+    width: 100vw;
+    top: 0;
+}
+
+.deco-frame-img{
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.deco-img-1 .deco-frame-img{
+    background-image: url(../img/deco-1.png);
+}
+
+.deco-img-2 .deco-frame-img{
+    background-image: url(../img/deco-2.png);
+    bottom: 0;
+    right: 0;
+}
+
+/* ---------------------------- laptop */
+
+@media screen and (min-width: 1024px){
+
+    /* ---------------------- deco 1 */
+
+    .deco-container.deco-img-1{
+        margin: 80px 40px 0;
+        padding: 18px 0;
+    }
+    .deco-img-1 .deco-frame-img {
+        width: calc(1049px * 0.3);
+        height: calc(453px * 0.3);
+    }
+
+
+    /* -------------------------- deco 2 */
+
+    .deco-container.deco-img-2{
+        margin: 0;
+    }
+    .deco-img-2 .deco-frame-img{
+        margin-right: 170px;
+        width: calc(568px * 0.2);
+        height: calc(1231px * 0.2);
+    }
+}
+
+
+/* ----------------------- Monitor */
+
+@media screen and (min-width: 1580px){
+
+    /* ---------------------- deco 1 */
+
+    .deco-container.deco-img-1{
+        margin: 100px 50px 0;
+        padding: 20px 0;
+    }
+    .deco-img-1 .deco-frame-img{
+        width: calc(1049px * 0.4);
+        height: calc(453px * 0.4);
+    }
+
+
+    /* --------------------------- deco 2 */
+    .deco-container.deco-img-2{
+        margin: 0;
+    }
+    .deco-img-2 .deco-frame-img{
+        margin-right: 175px;
+        width: calc(568px * 0.25);
+        height: calc(1231px * 0.25);
+    }
+
+}
+
 /* -------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------- */
 
@@ -403,6 +715,7 @@ form label.label-flex{
         width: 65vw;
     }
 }
+
 
 /* ----------------------- Monitor */
 
@@ -504,4 +817,34 @@ form label.label-flex{
     .grid-preview  div a p{
         top: 150px;
     }
+}
+
+
+/* ---------------------------------------------------------------------- */
+/* -------------------------------------------------------------------- */
+
+
+/* ARROW */
+
+div.to-start{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    outline: 2px solid #4F2C2C;
+}
+
+div.to-start i.fa-arrow-up{
+    /* position: fixed;
+    top: 0;
+    left: 100px; */
+    color: #4F2C2C;
+}
+
+
+div.to-start:hover i.fa-arrow-up{
+    color: #EF3581;
+    outline-color: #EF3581;
 }

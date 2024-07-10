@@ -95,6 +95,8 @@
             </section>
 
 
+            <div class="deco-container deco-img-1"><div class="deco-frame-img"></div></div>
+
 
             <secction class="content about" id="about">
                 <h1>Meet the <span>artist</span></h1>
@@ -102,7 +104,7 @@
                 <section>
                     <div class="outline"></div>
                     <div class="section">
-                        <img src="img/about-img.png" alt="portrait">
+                        <div class="portrait"></div>
                         <div class="ab-descript">
                             <h4>elena sánchez aka <span>lena qiao</span></h4>
                             <p>Born in 2002 during the one child policy in China, I was adopted by my now parents, who brought me to their homeland, Spain.</p>
@@ -139,7 +141,7 @@
                 
             </secction>
             
-
+            <div class="deco-container deco-img-2"><div class="deco-frame-img"></div></div>
             
             <section class="content contact" id="contact">
 
@@ -149,41 +151,50 @@
 
                         <div class="line"></div>
 
-                        <form action="">
-                            <div class="input-flex">
+                        <form class="contact">
+                            <div class="input-flex text-input">
                                 <label>Name<input type="text" name="name" placeholder="Write your name"></label>
-                                <div class="input-flex phone-numbers">
-                                    <label class="label-flex">+
-                                        <input type="text" list="country-codes">
-                                        <datalist name="country-code" id="country-codes">
-                                            <option value="34">ES</option>
-                                            <option value="33">FR</option>
-                                            <option value="40">PT</option>
-                                            <option value="49">DE</option>
-                                            <option value="39">IT</option>
-                                            <option value="44">EN</option>
-                                            <option value="1">US</option>
-                                        </datalist>
-                                    </label>
-                                <label>Phone number<input type="text" name="number" placeholder="Write your number"></label>
+                                <div>
+                                    <p>Phone number</p>
+                                    <div class="phone-numbers">
+                                        <label class="label-flex country-codes">+
+                                            <input type="text" list="country-codes">
+                                            <datalist name="country-code" id="country-codes">
+                                                <option value="34">ES</option>
+                                                <option value="33">FR</option>
+                                                <option value="40">PT</option>
+                                                <option value="49">DE</option>
+                                                <option value="39">IT</option>
+                                                <option value="44">EN</option>
+                                                <option value="1">US</option>
+                                            </datalist>
+                                        </label>
+                                        <label><input type="text" name="number" placeholder="Write your number"></label>
+                                    </div>
                                 </div>
+                                
                             </div>
-                            <label>Your email<input type="email" name="email" placeholder="Write your email"></label>
                             
-                            <h5>Leave your message here!</h5>
-                            <p>Subject</p>
-                            <div>
-                                <label><input type="radio" name="radio">Work</label>
-                                <label><input type="radio" name="radio">Services</label>
-                            </div>
-                            <label><input type="text" name="message" placeholder="Write your message here..."></label>
+                            <div><label>Your email<input type="email" name="email" placeholder="Write your email"></label></div>
                             
                             <div>
-                                <label><input type="reset" name="reset" value="Reset"></label>
+                                <h5>Leave your message here!</h5>
+                                <p>Subject</p>
+                                <div class="input-flex choice-input">
+                                    <label class="label-flex"><input type="radio" name="radio" value="1">Work</label>
+                                    <label class="label-flex"><input type="radio" name="radio" value="2">Services</label>
+                                </div>
+                                <label><input type="text" name="message" placeholder="Write your message here..."></label>
+                            </div>
+
+                            <div class="input-flex button-input">
+                                <label class="label-flex reset"><input type="reset" name="reset"><i class="fa-solid fa-rotate-right fa-lg"></i></label>
                                 <label><input type="submit" name="submit" value="Submit"></label>
                             </div>
                         </form>
                     </section>
+
+                    
                 </section>
 
                 <div class="frame-3"></div>
@@ -193,6 +204,8 @@
 
         </section>
     </nav>
+
+    <i></i>
     
     <footer class="home"></footer>
 </body>

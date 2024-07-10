@@ -12,8 +12,6 @@ for(let i = 0; i < menuSelect.length; i++){
     }
 }
 
-
-
 const headerStructure = `
     <div class="frame-1"></div>
     <div class="header-title">
@@ -46,12 +44,12 @@ const footerStructure = `
     <div class="footer-menu">
         <div class="sum-menu">
             <div>
-                <a href=""><h4>home</h4></a>
-                <a href="#about"><h4>about</h4></a>
-                <a href=""><h4>contact</h4></a>
+                <a href="index.html"><h4>home</h4></a>
+                <a href="index.html#about"><h4>about</h4></a>
+                <a href="index.html#contact"><h4>contact</h4></a>
             </div>
             <div>
-                <a href=""><h4>projects</h4></a>
+                <a href="projects.html"><h4>projects</h4></a>
                 <a href="">art</a>
                 <a href="">design & UX/UI</a>
                 <a href="">web</a>

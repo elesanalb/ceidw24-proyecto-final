@@ -15,13 +15,6 @@ body{
 
 /* SLIDER */
 
-/* .home.full-bg{
-    
-    background-color: #fff8da;
-    
-    
-} */
-
 .content.home{
     width: 100vw;
     left: 0;
@@ -166,8 +159,9 @@ body{
 
 /* ABOUT */
 
-section.content.about{
+.content.about{
     position: relative;
+    margin: 0;
 }
 
 .content.about section{
@@ -224,9 +218,14 @@ section.content.about{
 
 /* SECTION */
 
-.content.about img{
+.content.about .portrait{
     outline: 2px solid white;
+    outline-offset: 4px;
     flex-shrink:0;
+    background-image: url(../img/about-portrait.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .content.about section .ab-descript{
@@ -331,12 +330,17 @@ section.content.about{
     border: 2px solid white;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .content.contact .line{
     border-top-color: white;
     width: 50%;
     align-self: center;
+}
+
+.content.contact form{
+    width: 70%;
 }
 
 .content.contact div.phone-numbers{
@@ -393,7 +397,8 @@ section.content.about{
 
     /* ABOUT */
 
-    section .content.about{
+
+    .content.about{
         padding: 100px 0;
     }
     
@@ -405,8 +410,9 @@ section.content.about{
         padding: 80px;
     }
 
-    .content.about img{
+    .content.about .portrait{
         width: 250px;
+        height: 313px;
         padding: 4px;
         margin: 10px 15px;
     }
@@ -452,22 +458,12 @@ section.content.about{
         width: 70%;
     }
 
+    .content.contact h1{
+        font-size: 8em;
+    }
+
     .content.contact form{
         margin-top: 35px;
-        padding: 0 30px;
-    }
-    
-    form input[name="name"]{
-        width: 200px;
-    }
-
-    form input[list="country-codes"]{
-        width: 40px;
-        height: 20px;
-    }
-
-    form div.phone-numbers label:first-child{
-        font-size: 1.5em;
     }
 }
 
@@ -513,20 +509,21 @@ section.content.about{
 
     /* ABOUT */
 
-    section .content.about{
-        padding: 150px 0;
+    .content.about{
+        padding: 150px 0 100px;
     }
     
     .content.about h1{
-        padding: 100px 10px;
+        padding: 100px 10px 50px;
     }
 
     .content.about section{
         padding: 100px;
     }
 
-    .content.about img{
+    .content.about .portrait{
         width: 300px;
+        height: 375px;
         padding: 4px;
         margin: 0 20px;
     }
@@ -567,25 +564,15 @@ section.content.about{
     }
 
     .content.contact .full-bg section{
-        padding: 50px;
+        padding: 50px ;
         width: 70%;
+    }
+
+    .content.contact h1{
+        font-size: 9em;
     }
 
     .content.contact form{
         margin-top: 40px;
-        padding: 0 80px;
-    }
-    
-    form input[name="name"]{
-        width: 200px;
-    }
-
-    form input[list="country-codes"]{
-        width: 40px;
-        height: 20px;
-    }
-
-    form div.phone-numbers label:first-child{
-        font-size: 2em;
     }
 }
