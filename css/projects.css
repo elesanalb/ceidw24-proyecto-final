@@ -121,6 +121,12 @@ section.web-design{
     padding-right: 150px;
 }
 
+.web-design a.see-more{
+    color: #3D3D3D;
+}
+.web-design a.see-more:hover{
+    color: #42E5BE;
+}
 
 .web-design section{
     display: flex;
