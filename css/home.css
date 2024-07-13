@@ -287,9 +287,6 @@ body{
     right: 0
 }
 
-.about .deco-frame-bullet-bullet, .about .deco-frame-bullet-corner{
-    background-color: white;
-}
 
 
 
@@ -542,9 +539,22 @@ body{
     .about .deco-frame-bullet-box{
         width: 180px;
         height: 180px;
-        padding: 5px 5px 20px 20px;
+        padding: 0px 0px 20px 20px;
     }
 
+    .about .deco-frame-bullet .deco-frame-bullet-corner{
+        margin: 20px 20px 0 0;
+    }
+
+    .about .deco-frame-bullet-top{
+        margin-top: -10px;
+        margin-right: -10px;
+    }
+
+    .about .deco-frame-bullet-right{
+        margin-right: -10px;
+        margin-top: -10px;
+    }
 
     /* ---------------------------------------------------------------------- */
     /* ---------------------------------------------------------------------------- */

@@ -31,8 +31,8 @@ const menuStructure = `
         <div class="dropdown-menu">
             <a href="projects.html#design">design</a>
             <a href="projects.html#web">UX/UI & web</a>
-            <a href="art.html">art</a>
-            <a href="other.html">other</a>
+            <a href="projects.html#art">art</a>
+            <a href="projects.html#other-projects">other</a>
             
         </div>
     </li>

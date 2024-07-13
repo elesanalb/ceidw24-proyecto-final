@@ -832,7 +832,8 @@ form.contact textarea{
 }
 
 .deco-frame-bullet .deco-frame-bullet-bullet, .deco-frame-bullet .deco-frame-bullet-corner{
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    background-image: url(../img/deco-frame-bullet-star.svg);
 }
 
 .deco-frame-bullet .deco-frame-bullet-bullet{
@@ -921,6 +922,17 @@ form.contact textarea{
     background-image: url(../img/deco-6.png);
 }
 
+.deco-img-7{
+    background-image: url(../img/deco-7.png);
+}
+
+.deco-img-8{
+    background-image: url(../img/deco-8.png);
+}
+
+.deco-img-9{
+    background-image: url(../img/deco-9.png);
+}
 
 
 /* -------------------------------------------------------------------- */
@@ -960,6 +972,16 @@ form.contact textarea{
 /* ----------------------- Monitor */
 
 @media screen and (min-width: 1580px){
+
+    .deco-frame-bullet .deco-frame-bullet-bullet{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .deco-frame-bullet .deco-frame-bullet-corner{
+        width: 20px;
+        height: 20px;
+    }
 
     /* ---------------------- deco 1 */
 
@@ -1020,6 +1042,23 @@ form.contact textarea{
         height: calc(253px * 1);
     }
 
+
+    /* ------------------------------------ deco 6 */
+
+    .deco-img-7{
+        width: calc(138px * 0.7);
+        height: calc(318px * 0.7);
+    }
+
+    .deco-img-8{
+        width: calc(140px * 0.7);
+        height: calc(326px * 0.7);
+    }
+
+    .deco-img-9{
+        width: calc(183px * 0.7);
+        height: calc(307px * 0.7);
+    }
 }
 
 

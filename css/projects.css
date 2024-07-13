@@ -46,44 +46,52 @@ section.design{
     flex-grow: 1;
 }
 
-.design section.content .poster{
+.poster{
     width: fit-content;
     position: relative;
     text-decoration: none;
     cursor: pointer;
 }
 
-.design .poster .poster-hover{
+.poster .poster-hover{
     position: absolute;
     width: 100%;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.design .poster .poster-hover p{
+.design .poster .poster-hover{
+    bottom: 0;
+}
+
+.poster .poster-hover p{
     color: #3D3D3D;
     font-weight: 600;
     text-transform: uppercase;
     text-align: center;
 }
 
-.design .poster .poster-hover p span{
+.poster .poster-hover p span{
     display: block;
 }
 
-.design .poster img{
-    height: 100vh;
+.poster img{
     flex-grow: 1;
     opacity: 0%;
     transition: 0.3s;
 }
-.design .poster:hover img{
+
+.design .poster img{
+    height: 100vh;
+}
+
+.poster:hover img{
     opacity: 100%;
 }
-.design .poster:hover .poster-hover{
+
+.poster:hover .poster-hover{
     display: none;
 }
 
@@ -212,10 +220,47 @@ section.web-design{
 
 
 
-/* ART -------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+/* ART */
+
+.content.art{
+    padding-top: 150px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content.art h1{
+    align-self: flex-end;
+}
+
+.art .poster .poster-hover{
+    top: 200px;
+}
+
+.art .poster:hover{
+    transition-delay: 1s;
+}
+
+.art img{
+    width: 100%;
+}
 
 .art .body-section{
+    width: 100%;
     background-color: #F9B800;
+    text-align: end;
+}
+
+.art .body-section p{
     text-align: end;
 }
 
@@ -224,7 +269,13 @@ section.web-design{
     color: #EF3581;
 }
 
+.art .see-more{
+    color: #EF3581;
+}
 
+.art .see-more:hover{
+    color: #FFF2BB;
+}
 
 
 
@@ -237,31 +288,68 @@ section.web-design{
 
 /* -------------------------- motion */
 
+.content.other-projects{
+    padding-top: 100px;
+}
+
+.other-projects section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.other-projects .modeling-3d{
+    width: 70%;
+}
+
+.other-projects .modeling-3d div{
+    width: 100%;
+    height: max-content;
+}
+
+.other-projects img{
+    width: 100%;
+}
+
+.other-projects .modeling-3d img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.other-projects .motion{
+    width: 25%;
+}
+
+.other-projects .motion h2{
+    width: 300px;
+}
+
 .other-projects .motion-graphs{
     display: flex;
     justify-content: space-between;
 }
 
-.other-projects .motion-graphs .motion-gifs{
-    width: 30%;
-}
-
-.other-projects .motion-graphs .motion-p5js{
-    width: 60%;
-}
-
-.other-projects .motion-graphs .motion-p5js iframe, .other-projects .motion-graphs .motion-gifs img{
-    width: 100%;
-}
-
-.other-projects .motion-graphs .motion-p5js iframe{
+.other-projects .line{
+    top: 200px;
+    right: -100px;
+    position: absolute;
+    width: 700px;
+    border-right: 2px solid #7345A0;
+    border-top-color: #7345A0;
     height: 100%;
 }
+
+
 
 /* ------------------------------- 3d */
 
 
-/* -------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+
+
+
+
 
 
 /* MEDIA QUERY */
@@ -288,14 +376,6 @@ section.web-design{
         font-size: 2.1em;
     }
 
-    .content.other-projects section{
-        margin: 30px 0 70px;
-    }
-
-    .content.other-projects .modeling-3d img:first-child{
-        width: 90%;
-    }
-}
 
 /* ----------------------------- Monitor */
 
@@ -303,7 +383,7 @@ section.web-design{
 
     /* SECTIONS */
 
-    /* ----------------------------- DESIGN */
+    /* DESIGN */
 
     section.design{
         margin-bottom: 100px;
@@ -322,25 +402,45 @@ section.web-design{
         height: 90%;
     }
     
-    .design .poster-hover p{
+    .poster-hover p{
         font-size: 2.5em;
         margin: 50px 0;
     }
 
-    
+
+
 
     /* ------------------------------------------------------ */
 
 
+
+    /* WEB */
 
     .web-design embed{
         width: 650px;
         height: 400px;
     }
 
+
+
+    /* -------------------------------------------------------------------------- */
+
+
+
+    /* ART */
+
     .art .body-section div{
         padding: 50px;
     }
+
+
+
+    /* ------------------------------------------------------------------- */
+
+
+
+    /* OTHER PROJECTS */
+
 
     .other-projects h1{
         font-size: 8em;
@@ -349,11 +449,23 @@ section.web-design{
         font-size: 2.5em;
     }
 
-    .content.other-projects section{
-        margin: 30px 0 90px;
-    }
 
-    .content.other-projects .modeling-3d img:first-child{
-        width: 90%;
+
+
+
+
+
+    /* ---------------------------------------------------------------- */
+
+
+
+
+
+
+
+    /* ART */
+
+    .art .poster-hover{
+        
     }
 }
