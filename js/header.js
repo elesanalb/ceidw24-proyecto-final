@@ -27,7 +27,7 @@ const menuStructure = `
     <li class="${header.classList.contains("home") ? "select" : ""}"><a href="index.html#">home</a></li>
     <li class="${header.classList.contains("about") ? "select" : ""}"><a href="index.html#about">about</a></li>
     <li class="${header.classList.contains("contact") ? "select" : ""}"><a href="index.html#contact">contact</a></li>
-    <li class="${header.classList.contains("projects") ? "select" : ""} dropdown"><a href="projects.html">projects</a>
+    <li class="${header.classList.contains("projects") ? "select" : ""} dropdown"><a href="projects.html#">projects</a>
         <div class="dropdown-menu">
             <a href="projects.html#design">design</a>
             <a href="projects.html#web">UX/UI & web</a>
@@ -44,16 +44,16 @@ const footerStructure = `
     <div class="footer-menu">
         <div class="sum-menu">
             <div>
-                <a href="index.html"><h4>home</h4></a>
+                <a href="index.html#"><h4>home</h4></a>
                 <a href="index.html#about"><h4>about</h4></a>
                 <a href="index.html#contact"><h4>contact</h4></a>
             </div>
             <div>
-                <a href="projects.html"><h4>projects</h4></a>
-                <a href="">art</a>
-                <a href="">design & UX/UI</a>
-                <a href="">web</a>
-                <a href="">other</a>
+                <a href="projects.html#"><h4>projects</h4></a>
+                <a href="projects.html#design">design</a>
+                <a href="projects.html#web">web & UX/UI</a>
+                <a href="projects.html#art">art</a>
+                <a href="projects.html#other-projects">other</a>
             </div>
             <div>
                 <a href=""><h4>gallery</h4></a>
