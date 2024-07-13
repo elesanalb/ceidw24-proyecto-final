@@ -55,15 +55,12 @@ header .header-title h2{
     color: white;
     font-weight: 300;
     line-height: 1px;
-    opacity: 85%;
 }
 
 
 /* ---------------------- page */
 
 header .header-title h1 {
-    font-family: "Doppelganger", "Inspiration", serif;
-    text-transform:capitalize;
     color: #FFF2BB;
     font-weight: 300;
 }
@@ -96,20 +93,6 @@ header.home .header-title h1{
         margin-left: 70px;
     }
 
-
-    /* ----------------- h2 */
-
-    header .header-title h2{
-        font-size: 3em;
-    }
-
-
-    /* ------------------ page */
-
-    header .header-title h1{
-        margin-right: 100px;    
-        font-size: 10.5em;
-    }
 }
 
 
@@ -130,20 +113,5 @@ header.home .header-title h1{
 
     header .header-title div{
         margin-left: 80px;
-    }
-
-
-    /* ----------------- h2 */
-
-    header .header-title h2{
-        font-size: 3.7em;
-    }
-
-
-    /* ----------------- page */
-
-    header .header-title h1{
-        margin-right: 150px;    
-        font-size: 15em;
     }
 }

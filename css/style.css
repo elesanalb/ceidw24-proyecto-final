@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "Montserrat", sans-serif;
     overflow-x: hidden;
@@ -13,8 +17,16 @@ body{
     flex-direction: column;
 }
 
-/* ---------------------------------------------------------------- */
-/* ------------------------------------------------------------------ */
+
+
+
+
+/* --------------------------------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------- */
+
+
+
 
 
 
@@ -27,10 +39,15 @@ body{
 
 /* TEXT */
 
-.content h1{
+h1{
     font-family: "Doppelganger", "Inspiration", serif;
     font-weight: 300;
     text-transform: capitalize;
+}
+
+.header-title h2{
+    font-family: "Doppelganger", "Inspiration", serif;
+    font-weight: 300;
 }
 
 .content h2{
@@ -45,54 +62,90 @@ h4{
 }
 
 h5{
-    font-weight: 400;
+    font-weight: 500;
 }
 
+
+/* ------------------------------------------------------------------------------ */
+
+/* MEDIA QUERY */
 
 /* ------------------------- laptop */
 
 @media screen and (min-width: 1024px){
-    .content h1{
-        font-size: 8em;
+    header .header-title h1{
+        margin-right: 100px;    
+        font-size: 10.5em;
     }
+    .content h1{ font-size: 8em; }
+    .content.contact h1{ font-size: 8em; }
 
+
+    header .header-title h2{ font-size: 3em; }
     .content h2{
         font-size: 3em;
         margin: 10px 0;
     }
 
+
     h4{
         font-size: 2em;
         margin-bottom: 20px;
     }
+    footer h4{font-size: 1.2em;}
+
+
 
     h5{
         font-size: 1.1em;
     }
 
+    
     p{
         margin-bottom: 20px;
         font-size: 1em;
     }
+
+    
 }
 
 
 /* -------------------------- monitor */
 
 @media screen and (min-width: 1580px){
+    
+    header .header-title h1{
+        margin-right: 150px;    
+        font-size: 15em;
+    }
     .content h1{
         font-size: 11em;
+        margin-bottom: 35px;
     }
+    .content.contact h1{ font-size: 9em; }
+    
 
+    header .header-title h2{ font-size: 5em; }
     .content h2{
-        font-size: 4em;
+        font-size: 3em;
         margin: 10px 0;
     }
+    
 
+    h3{
+        font-size: 1.5em;
+        margin: 15px 0;
+    }
+    
     h4{
         font-size: 2.3em;
         margin-bottom: 20px;
     }
+    footer h4{
+        font-size: 1.2em;
+        padding: 5px 0;
+    }
+
 
     h5{
         font-size: 1.3em;
@@ -107,29 +160,18 @@ h5{
     }
 }
 
-/* --------------------------------------------------------------------------- */
-/* --------------------------------------------------------------------------------- */
 
 
 
 
-/* LOGO */ 
 
-@media screen and (min-width: 1024px){
-    .logo{
-        height: 70px;
-        margin: 0 20px;
-    }
-}
 
-@media screen and (min-width: 1580px){
-    .logo{
-        height: 90px;
-        margin:0 20px ;
-    }
-}
-/* --------------------------------------------------------------- */
-/* --------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+/* --------------------------------------------------------------------------------------- */
+
+
+
 
 
 
@@ -161,7 +203,121 @@ h5{
     box-shadow: 0 5px 10px  rgba(70, 70, 70, 0.5);
 }
 
-/* ----------------------------------------------------------- */
+
+
+/* CONTENT SECTIONS */
+
+.content-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    position: relative;
+    display: inline-block;
+}
+
+
+
+/* BUTTONS */
+
+a.see-more{
+    text-decoration: none;
+}
+
+a.see-more i{
+    margin: 0 5px;
+}
+
+.design a.see-more{
+    color: #3D3D3D;
+}
+
+.design a.see-more:hover{
+    color: #EF3581;   
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+
+
+
+/* MEDIA QUERY */
+
+/* -------------------------- laptop */
+
+@media screen and (min-width: 1024px){
+
+    .side-bg{
+        width: 90vw;
+    }
+
+
+    /* ----------------------------- content */
+
+    .content{
+        margin: 80px 0;
+        left: 18vw;
+        width: 65vw;
+    }
+
+    
+    /* ----------------------------- logo */ 
+
+    .logo{
+        height: 70px;
+        margin: 0 20px;
+    }
+}
+
+
+/* ----------------------- Monitor */
+
+@media screen and (min-width: 1580px){
+
+    .side-bg{
+        width:93vw;
+    }
+
+
+    /* ----------------------------------- content */
+    
+    .content{
+        margin: 100px 0;
+        left: 20vw;
+        width: 65vw;
+    }
+
+
+    /* ---------------------------------------- logo */
+
+    .logo{
+        height: 90px;
+        margin:0 20px ;
+    }
+
+
+    /* ------------------------------------------ buttons */
+
+    a.see-more{
+        font-size: 1.2em;
+    }
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------- */
+
+
+
 
 
 
@@ -199,6 +355,7 @@ input[type="radio"]{
     display: flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 }
 
 input[type="submit"], input[type="reset"]{
@@ -254,12 +411,13 @@ form i{
 }
 
 
-/* -------------------------------------------------- */
+
+/* -------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
 
 
-/* COLORS */
 
-/* ---------------------- contact */
+/* CONTACT */
 
 form.contact i{
     color: #72001e;
@@ -277,7 +435,7 @@ form.contact label:hover i{
     outline-color: #EF3581;
 }
 
-form.contact div.phone-numbers{
+form.contact div.phone-numbers div{
     display: flex;
     align-items: flex-end;
 }
@@ -286,12 +444,18 @@ form.contact label.country-codes{
     align-self: flex-end;
 }
 
-form.contact label.country-codes input{
-    margin: 0;
+form.contact label.message{
+    color: #3D3D3D;
 }
 
-form.contact div.phone-numbers input[name="number"]{
-    margin: 0;
+form.contact textarea{
+    resize: none;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
 }
 
 .contact input[type="submit"]{
@@ -312,7 +476,7 @@ form.contact div.phone-numbers input[name="number"]{
 }
 
 
-/* ---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
 
 
 
@@ -321,46 +485,83 @@ form.contact div.phone-numbers input[name="number"]{
 /* -------------------------- laptop */
 
 @media screen and (min-width: 1024px){
-    .side-bg{
-        width: 90vw;
-    }
 
-    /* ---------------------------------------------------------------- */
-
-    
     /* FORM */
 
-    form{
+    form p, form label, form{
         font-size: 1em;
     }
-    
-    input{
-        margin: 5px 0;
+
+    form div.form-section{
+        margin: 15px 0;
     }
 
     input[type="submit"], input[type="reset"]{
-        margin: 10px;
+        font-size: 1em;
+        margin: 8px;
     }
 
-    /* ------------------------------------------ */
+    div.choice-input label{
+        font-size: 0.95em;
+        margin: 5px 15px;
+    }
 
-    /* contact */
+    ::placeholder{
+        font-size: 1em;
+    }
+
+
+/* ----------------------------------------------------- */
+
+
+
+    /* CONTAC */
 
     form.contact input[name="name"]{
-        width: 200px;
-    }    
+        width: 175px;
+    }
 
-    form.contact div.phone-numbers label:first-child{
-        font-size: 1.5em;
+    form.contact input[name="number"]{
+        width: 150px;
     }
 
     form.contact label.country-codes{
-        margin: 0 5px;
+        font-size: 1.5em;
+        margin: 10px 5px -2px;
     }
- 
+
+    form.contact div.phone-numbers p{
+        margin-left: 10px;
+    }
+    
     form.contact input[list="country-codes"]{
         width: 50px;
         height: 25px;
+    }
+
+    form.contact div.phone-numbers label.country-codes input[type="text"]{
+        margin: 0;
+    }
+
+    form.contact input[name="email"], form.contact textarea{
+        width: 430px;
+    }
+
+    form.contact textarea{
+        resize: none;    
+    }
+
+    form.contact label.message{
+        font-size: 0.5em;
+        margin: 5px 0;
+    }
+    
+    .contact input[type="reset"]{
+        margin: 0;
+    }
+
+    .contact label.reset{
+        margin: 10px;
     }
 }
 
@@ -368,12 +569,6 @@ form.contact div.phone-numbers input[name="number"]{
 /* ----------------------- Monitor */
 
 @media screen and (min-width: 1580px){
-    .side-bg{
-        width:93vw;
-    }
-
-    /* ----------------------------------------------------------- */
-
 
     /* FORM */
 
@@ -381,43 +576,71 @@ form.contact div.phone-numbers input[name="number"]{
         margin: 5px 0;
     }
 
-    form, form label, input[type="submit"], input[type="reset"]{
-        font-size: 1.2em;
+    form p, form label, form{
+        font-size: 1.12em;
     }
 
-    ::placeholder{
-        font-size: 1em;
+    form div.form-section{
+        margin: 15px 0;
     }
 
     input[type="submit"], input[type="reset"]{
+        font-size: 0.8em;
         margin: 10px;
     }
 
-    /* -------------------------------------- */
+    div.choice-input label{
+        font-size: 1em;
+        margin: 5px 15px;
+    }
 
-    /* contact */
+    ::placeholder{
+        font-size: 1.1em;
+    }
+
+
+    /* --------------------------------------------------------------------------- */
+
+
+
+    /* CONTACT */
 
     form.contact input[name="name"]{
         width: 220px;
     }
 
-    form.contact div.phone-numbers label:first-child{
-        font-size: 2em;
-    }
 
     form.contact label.country-codes{
-        margin: 0;
+        font-size: 2em;
+        margin: 0 5px -4px;
     }
 
-    form.contact label.country-codes input{
-        margin: 0;
+    form.contact div.phone-numbers p{
+        margin-left: 10px;
     }
-
+    
     form.contact input[list="country-codes"]{
         width: 50px;
         height: 25px;
     }
 
+    form.contact div.phone-numbers label.country-codes input[type="text"]{
+        margin: 0;
+    }
+
+    form.contact input[name="email"], form.contact textarea{
+        width: 480px;
+    }
+
+    form.contact textarea{
+        resize: none;    
+    }
+
+    form.contact label.message{
+        font-size: 0.5em;
+        margin: 5px 0;
+    }
+    
     .contact input[type="reset"]{
         margin: 0;
     }
@@ -429,8 +652,20 @@ form.contact div.phone-numbers input[name="number"]{
 
 
 
-/* ------------------------------------------------------------------- */
-/* ---------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
 
 
 
@@ -485,6 +720,12 @@ form.contact div.phone-numbers input[name="number"]{
     border-left-color: #72001e;
 }
 
+
+/* -------------------------------------------------------------------------------------- */
+
+
+
+/* MEDIA QUERY */
 
 /* ------------------- laptop */
 
@@ -544,7 +785,19 @@ form.contact div.phone-numbers input[name="number"]{
 }
 
 
-/* --------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------ */
+
+
+
+
+
 
 /* DECO FRAMES */
 
@@ -592,6 +845,8 @@ form.contact div.phone-numbers input[name="number"]{
     height: 10px;
 }
 
+
+
 /* -------------------------------------------------- */
 
 
@@ -610,12 +865,19 @@ form.contact div.phone-numbers input[name="number"]{
 
 .deco-container{
     position: relative;
-    width: 100vw;
     top: 0;
+    width: 100vw;
 }
 
 .deco-frame-img{
     position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.deco-frame-rel{
+    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -630,6 +892,41 @@ form.contact div.phone-numbers input[name="number"]{
     bottom: 0;
     right: 0;
 }
+
+.deco-img-3{
+    position: absolute;
+    top: 0;
+    background-image: url(../img/deco-3.png);
+}
+
+.deco-img-3-2{
+    background-image: url(../img/deco-3.2.png);
+}
+
+.deco-img-4{
+    background-image: url(../img/deco-4.png);
+}
+
+.deco-img-5{
+    background-image: url(../img/deco-5.png);
+}
+
+.deco-img-6 .line{
+    width: 70vw;
+    color: #42E5BE;
+}
+
+.deco-img-6 .deco-frame-img{
+    right: 0;
+    background-image: url(../img/deco-6.png);
+}
+
+
+
+/* -------------------------------------------------------------------- */
+
+
+/* MEDIA QUERY */
 
 /* ---------------------------- laptop */
 
@@ -681,60 +978,70 @@ form.contact div.phone-numbers input[name="number"]{
         margin: 0;
     }
     .deco-img-2 .deco-frame-img{
-        margin-right: 175px;
         width: calc(568px * 0.25);
         height: calc(1231px * 0.25);
     }
 
-}
+    
+    /* -------------------------------- deco 3 */
 
-/* -------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------- */
-
-
-
-/* CONTENT SECTIONS */
-
-.content-section{
-    display: flex;
-    flex-direction: column;
-}
-
-.content{
-    position: relative;
-    display: inline-block;
-}
-
-
-/* ----------------------- laptop */
-
-@media screen and (min-width: 1024px){
-    .content{
-        margin: 80px 0;
-        left: 18vw;
-        width: 65vw;
+    .deco-img-3.deco-frame-img{
+        left: 170px;
+        margin-top: -60px;
+        width: calc(80px * 0.7);
+        height: calc(275px * 0.7);
     }
-}
 
 
-/* ----------------------- Monitor */
+    /* --------------------------------- deco 4 */
 
-@media screen and (min-width: 1580px){
-    .content{
-        margin: 100px 0;
-        left: 20vw;
-        width: 65vw;
+    .deco-img-3-2{
+        width: calc(75px * 0.5);
+        height: calc(85px * 0.5);
     }
+
+    .deco-img-4{
+        width: calc(97px * 0.7);
+        height: calc(283px * 0.7);
+    }
+
+    .deco-img-5{
+        width: calc(64px * 0.7);
+        height: calc(275px * 0.7);
+    }
+
+
+    /* ------------------------------------ deco 5 */
+
+    .deco-img-6 .deco-frame-img{
+        bottom: -100px;
+        margin-right: 300px;
+        width: calc(234px * 1);
+        height: calc(253px * 1);
+    }
+
 }
 
-/* ---------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------- */
+
+
+
+
 
 
 
 /* TEMPLATES */
 
 /* PREVIEW GRID TEMPLATE */
-
+/* 
 .grid-preview{
     display: grid;
 }
@@ -760,11 +1067,11 @@ form.contact div.phone-numbers input[name="number"]{
     opacity: 0;
     text-wrap:wrap;
 
-}
+} */
 
 
 /* ------------------- hover */
-
+/* 
 .grid-preview div a:hover{
     background-color: black;
 }
@@ -775,18 +1082,7 @@ form.contact div.phone-numbers input[name="number"]{
 
 .grid-preview div a:hover p{
     opacity: 100%;
-}
-
-/* --------------------------------------------------------------- */
-
-
-/* FLEX */
-
-.display-flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
+} */
 
 
 /* ----------------------- laptop */
@@ -795,13 +1091,13 @@ form.contact div.phone-numbers input[name="number"]{
 
     /* PREVIEW GRID TEMPLATE */
 
-    .grid-preview img{
+    /* .grid-preview img{
         height: 350px;
     }
 
     .grid-preview  div a p{
         top: 100px;
-    }
+    } */
 }
 
 /* ----------------------- Monitor */
@@ -810,41 +1106,132 @@ form.contact div.phone-numbers input[name="number"]{
 
     /* PREVIEW GRID TEMPLATE */
 
-    .grid-preview img, .ux-ui img{
+    /* .grid-preview img, .ux-ui img{
         height: 400px;
     }
 
     .grid-preview  div a p{
         top: 150px;
-    }
+    } */
 }
 
 
-/* ---------------------------------------------------------------------- */
-/* -------------------------------------------------------------------- */
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+
+
 
 
 /* ARROW */
 
-div.to-start{
+div.i-position{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    outline: 2px solid #4F2C2C;
 }
 
-div.to-start i.fa-arrow-up{
-    /* position: fixed;
-    top: 0;
-    left: 100px; */
+div.i-container{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* outline: 2px solid red; */
+}
+
+div.i-container a{
+    text-decoration: none;
+}
+
+div.i-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9B800;
+    margin: 5px 0;
+}
+
+div.i-button i{
     color: #4F2C2C;
 }
 
 
-div.to-start:hover i.fa-arrow-up{
+div.i-button:hover i{
     color: #EF3581;
-    outline-color: #EF3581;
+}
+
+div.i-button.to-start:hover{
+    animation-name: arrow-up;
+    animation-duration: 1.5s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+    -webkit-animation: arrow-up 1.5s 1 ease;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+
+/* MEDIA QUERY */
+
+/* ------------------------------ laptop */
+
+@media screen and (min-width: 1024px){
+
+    div.i-container{
+        left: 35px;
+        bottom: 80px;
+        height: 80px;
+    }
+
+    div.i-button{
+        width: 30px;
+        height: 30px;
+    }
+
+    @keyframes arrow-up{
+        0%, 100%{
+            margin-bottom: 5px;
+        }
+    
+        30%{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+/* ----------------------- Monitor */
+
+@media screen and (min-width: 1580px){
+
+    div.i-container{
+        left: 45px;
+        bottom: 100px;
+        height: 100px;
+    }
+
+    div.i-button{
+        width: 30px;
+        height: 30px;
+    }
+
+    @keyframes arrow-up{
+        0%, 100%{
+            margin-bottom: 5px;
+        }
+    
+        30%{
+            margin-bottom: 25px;
+        }
+    }
 }

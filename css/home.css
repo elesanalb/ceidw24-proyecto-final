@@ -50,13 +50,10 @@ body{
     position: relative;
     flex-shrink: 0;
     animation-name: slider;
-    -webkit-animation-name: slider;
     animation-duration: 20s;
-    -webkit-animation-duration: 20s;
     animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
     animation-timing-function: ease;
-    -webkit-animation-timing-function: ease;
+    -webkit-animation: slider 20s infinite ease;
     scroll-behavior: smooth;
 }
 
@@ -331,6 +328,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 70%;
 }
 
 .content.contact .line{
@@ -454,16 +452,11 @@ body{
     }
 
     .content.contact .full-bg section{
-        padding: 40px 70px;
-        width: 70%;
-    }
-
-    .content.contact h1{
-        font-size: 8em;
+        padding: 40px 20px;
     }
 
     .content.contact form{
-        margin-top: 35px;
+        margin-top: 25px;
     }
 }
 
@@ -565,11 +558,6 @@ body{
 
     .content.contact .full-bg section{
         padding: 50px ;
-        width: 70%;
-    }
-
-    .content.contact h1{
-        font-size: 9em;
     }
 
     .content.contact form{

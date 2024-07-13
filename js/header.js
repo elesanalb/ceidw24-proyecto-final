@@ -24,13 +24,13 @@ const headerStructure = `
 `
 
 const menuStructure = `
-    <li class="${header.classList.contains("home") ? "select" : ""}"><a href="index.html">home</a></li>
+    <li class="${header.classList.contains("home") ? "select" : ""}"><a href="index.html#">home</a></li>
     <li class="${header.classList.contains("about") ? "select" : ""}"><a href="index.html#about">about</a></li>
     <li class="${header.classList.contains("contact") ? "select" : ""}"><a href="index.html#contact">contact</a></li>
     <li class="${header.classList.contains("projects") ? "select" : ""} dropdown"><a href="projects.html">projects</a>
         <div class="dropdown-menu">
-            <a href="design.html">design & UX/UI</a>
-            <a href="web.html">web</a>
+            <a href="projects.html#design">design</a>
+            <a href="projects.html#web">UX/UI & web</a>
             <a href="art.html">art</a>
             <a href="other.html">other</a>
             
@@ -85,3 +85,15 @@ header.innerHTML = headerStructure;
 menu.innerHTML = menuStructure;
 footer.innerHTML = footerStructure;
 
+
+
+
+const buttonDarkMode = document.querySelector('.i-button.dark-mode');
+let bodyHTML = document.querySelector("body");
+
+buttonDarkMode.addEventListener("mouseover", () => {
+    bodyHTML.style.backgroundColor = "#3D3D3D";
+});
+buttonDarkMode.addEventListener("mouseout", () => {
+    bodyHTML.style.backgroundColor = "white";
+});

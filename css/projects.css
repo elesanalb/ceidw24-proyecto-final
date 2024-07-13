@@ -6,7 +6,7 @@
 .design h1, .design h2{
     color: #72001e;
 }
-.web-design h1{
+.web-design h1, .web-design .line{
     color: #42E5BE;
 }
 .other-projects h1{
@@ -16,31 +16,195 @@
     color: #464468;
 }
 
-.design.full-bg{
-    background-color: #ADC983;
-}
 
-/* ----------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------------- */
+
 
 
 /* SECTIONS */
 
-.art .grid-preview{
-    grid-template-columns: repeat(3, auto);
+/* DESIGN  */
+
+section.design{
+    position: relative;
+    height: fit-content;
 }
 
-.design .grid-preview, .web-design .grid-preview{
-    grid-template-columns: repeat(2, auto);
+.design section.content{
+    position: relative;
+    left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
 }
 
-.ux-ui .display-flex{
-    justify-content: space-around;
-    align-items: flex-start;
+.design .body-section{
+    position: relative;
+    flex-grow: 1;
 }
 
-.ux-ui img{
-    height: 350px;
+.design section.content .poster{
+    width: fit-content;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
 }
+
+.design .poster .poster-hover{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.design .poster .poster-hover p{
+    color: #3D3D3D;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.design .poster .poster-hover p span{
+    display: block;
+}
+
+.design .poster img{
+    height: 100vh;
+    flex-grow: 1;
+    opacity: 0%;
+    transition: 0.3s;
+}
+.design .poster:hover img{
+    opacity: 100%;
+}
+.design .poster:hover .poster-hover{
+    display: none;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------- */
+
+
+
+/* WEB */
+
+section.web-design{
+    padding: 100px 0 50px;
+    position: relative;
+}
+
+.web-design .web-title{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.web-design .web-title .line{
+    position: absolute;
+}
+
+.web-design .web-title .line{
+    width: 600px;
+    left: 800px;
+}
+
+.web-design p.web-descript{
+    padding-right: 150px;
+}
+
+
+.web-design section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.web-design section{
+    margin-top: 50px;
+}
+
+
+
+/* --------------------------------- web */
+
+.web-design .web-section{
+    width: 55%;
+}
+
+.web-design .web-section h3.postres span{
+    color: #ffc2cf;
+}
+
+.web-design .web-section div.postres, .web-design .web-section embed{
+    width: 100%;
+}
+
+.web-design .web-section div.postres, .web-design .web-section embed{
+    height: 400px;
+    margin: 10px;
+}
+
+.web-design .web-section div.postres{
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.web-design .web-section div.postres{
+    margin-bottom: 50px;
+}
+
+.web-design .web-section img{
+    width: 90%;
+    height: min-content;
+    object-fit: cover;
+}
+
+
+/* --------------------------------------- ux */
+
+.web-design .ux-ui{
+    width: 35%;
+}
+
+.web-design .ux-ui img{
+    width: 48%;
+}
+
+.web-design .ux-ui div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.web-design .ux-ui div{
+    margin: 10px 0 30px;
+}
+
+.web-design .ux-ui span{
+    color: #F79D3B;
+    font-style: italic;
+}
+
+.ux-ui a.see-more{
+    color: #3D3D3D;
+}
+
+.ux-ui a.see-more:hover{
+    color: #F79D3B;
+}
+
+
+
+
+
 
 /* ART -------------------------- */
 
@@ -49,26 +213,46 @@
     text-align: end;
 }
 
-.art .body-section div{
-    padding: 50px;
-}
+
 .art .body-section a{
     color: #EF3581;
 }
 
 
-/* DESIGN ------------------------- */
 
-section.design{
-    position: relative;
-    height: fit-content;
+
+
+
+
+/* OTHER PROJECTS ------------------------- */
+
+
+
+
+/* -------------------------- motion */
+
+.other-projects .motion-graphs{
+    display: flex;
+    justify-content: space-between;
 }
 
-.design .grid-preview div a{
-    border: 3px solid white;
-    margin: 0 10px;
+.other-projects .motion-graphs .motion-gifs{
+    width: 30%;
 }
 
+.other-projects .motion-graphs .motion-p5js{
+    width: 60%;
+}
+
+.other-projects .motion-graphs .motion-p5js iframe, .other-projects .motion-graphs .motion-gifs img{
+    width: 100%;
+}
+
+.other-projects .motion-graphs .motion-p5js iframe{
+    height: 100%;
+}
+
+/* ------------------------------- 3d */
 
 
 /* -------------------------------------------------------------- */
@@ -87,11 +271,23 @@ section.design{
         height: 350px;
     }
 
+    .art .body-section div{
+        padding: 50px;
+    }
+
     .other-projects h1{
-        font-size: 8em;
+        font-size: 6em;
     }
     .other-projects h2{
-        font-size: 2.6em;
+        font-size: 2.1em;
+    }
+
+    .content.other-projects section{
+        margin: 30px 0 70px;
+    }
+
+    .content.other-projects .modeling-3d img:first-child{
+        width: 90%;
     }
 }
 
@@ -101,15 +297,57 @@ section.design{
 
     /* SECTIONS */
 
+    /* ----------------------------- DESIGN */
+
+    section.design{
+        margin-bottom: 100px;
+    }
+
+    .design .body-section{
+        margin-top: 500px;
+        padding-left: 200px;
+    }
+    
+    .design .body-section p{
+        padding-right: 20px;
+    }
+
+    .design .poster-hover{
+        height: 90%;
+    }
+    
+    .design .poster-hover p{
+        font-size: 2.5em;
+        margin: 50px 0;
+    }
+
+    
+
+    /* ------------------------------------------------------ */
+
+
+
     .web-design embed{
         width: 650px;
         height: 400px;
     }
 
+    .art .body-section div{
+        padding: 50px;
+    }
+
     .other-projects h1{
-        font-size: 9em;
+        font-size: 8em;
     }
     .other-projects h2{
-        font-size: 3em;
+        font-size: 2.5em;
+    }
+
+    .content.other-projects section{
+        margin: 30px 0 90px;
+    }
+
+    .content.other-projects .modeling-3d img:first-child{
+        width: 90%;
     }
 }
