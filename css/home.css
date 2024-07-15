@@ -182,7 +182,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 
@@ -235,8 +235,7 @@ body{
     display: block;
 }
 
-.content.about p span{
-    font-weight: 600;
+.about span.highlight{
     color: #fff8da;
 }
 
@@ -520,12 +519,11 @@ body{
     }
 
     .content.about div .ab-descript{
-        margin-top: 20px;
-        padding: 0 70px;
+        padding: 0 40px;
     }
 
     .content.about h4 span{
-        font-size: 2em;
+        font-size: 55px;
     }
 
     /* --------------------------- gradient */
