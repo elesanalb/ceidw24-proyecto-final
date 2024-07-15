@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELQI</title>
+    <title>LENA QIAO</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
@@ -15,9 +16,9 @@
     <link rel="stylesheet" href="css/z-index.css">
     <link rel="stylesheet" href="css/home.css">
     <script defer src="js/header.js"></script>
+    <script defer src="js/form.js"></script>
 </head>
 <body>
-    <!-- <section class="side-bg home"></section> -->
 
     <header class="home"></header>
 
@@ -36,7 +37,7 @@
         
         <section class="content-section">
 
-            <section class="content home full-bg" id="#home">
+            <section class="content home full-bg" id="home">
                 <div class="side-bg"></div>
                 <h1>my collections</h1>
                 <div class="slider">
@@ -156,11 +157,15 @@
                     <section>
                         <h1>contact me!</h1>
 
-                        <div class="line"></div>
+                        <div class="line-1"></div>
 
                         <form class="contact">
                             <div class="input-flex text-input form-section">
-                                <label>Name<input type="text" name="name" placeholder="Write your name"></label>
+                                <label>
+                                    <p>Name <span>*</span></p> 
+                                    <input type="text" name="name" placeholder="Write your name">
+                                    <p class="name-required warning"></p>
+                                </label>
                                 <div class="phone-numbers">
                                     <p>Phone number</p>
                                     <div>
@@ -182,16 +187,27 @@
                                 
                             </div>
                             
-                            <div class="form-section input-flex email"><label>Your email<input type="email" name="email" placeholder="Write your email"></label></div>
+                            <div class="form-section input-flex email">
+                                <label>
+                                    <p>Email <span>*</span></p> 
+                                    <input type="email" name="email" placeholder="Write your email">
+                                    <p class="email-required warning"></p>
+                                </label>
+                            </div>
                             
                             <div class="form-section">
                                 <h5>Leave your message here!</h5>
                                 <div class="input-flex choice-input">
-                                    <p>Subject</p>
+                                    <p>Subject <span>*</span></p>
                                     <label class="label-flex"><input type="radio" name="radio" value="1">Work</label>
                                     <label class="label-flex"><input type="radio" name="radio" value="2">Services</label>
+                                    <p class="subject-required warning"></p>
                                 </div>
-                                <label class="message"><textarea name="text" rows="5" wrap="soft" maxlength="500" placeholder="Write your message here..."></textarea>Max. 500</label>
+
+                                <label class="message">
+                                    <textarea name="text" rows="5" wrap="soft" maxlength="500" placeholder="Write your message here..."></textarea>
+                                    <p> <span class="chr-count">0</span> / Max. 500 <span class="word-limit warning"></span></p>
+                                </label>
                             </div>
 
                             <div class="input-flex button-input form-section">

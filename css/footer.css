@@ -26,6 +26,9 @@ footer.home .footer-bg{
 footer.projects .footer-bg{
     background-image: url(../img/footer-projects.png);
 }
+footer.gallery .footer-bg{
+    background-image: url(../img/footer-gallery.png);
+}
 
 /* ------------------------------------------------------------------- */
 

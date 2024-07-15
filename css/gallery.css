@@ -1,0 +1,225 @@
+.content-section.gallery{
+    width: 100vw;
+}
+
+.gallery .gallery-section{
+    position: relative;
+    width: 100%;
+}
+
+.gallery .full-bg{
+    background-clip: content-box;
+    background-attachment: fixed;
+}
+
+.gallery .black-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 60%;
+}
+
+.gallery h3{
+    font-size: 3.5em;
+    color: white;
+    font-family: "Doppelganger";
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+
+
+/* ----------------------------------------------------------------------- */
+
+
+
+
+/* PHOTO COLLECTIONS */
+
+.photo-section .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* .gallery .anim-bg.yellow-bg{
+    background-image: url(../img/gallery-yellow-0.png);
+    background-position: 0 -1500px;
+    opacity: 40%;
+} */
+
+.gallery .full-bg.photo-section{
+    background-image: url(../img/flower-section.png);
+    background-position: center;
+}
+
+.photo-section .content{
+    padding-bottom: 500px;
+}
+
+.photo-section .photo-collection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.photo-collection.flower{
+    align-self: flex-start;
+    margin-top: -100px;
+}
+
+.photo-collection .poster-hover{
+    display: none;
+    height: 100%;
+    align-items: flex-end;
+    writing-mode: vertical-lr;
+}
+
+.photo-collection img{
+    width: 100%;
+    opacity: 100%;
+    outline: 2px solid white;
+    outline-offset: 4px;
+}
+
+.photo-collection .poster:hover img{
+    opacity: 0%;
+}
+
+.photo-collection .poster:hover .poster-hover{
+    display: flex;
+}
+
+.photo-collection .line-2{
+    bottom: -300px;
+    height: 250px;
+    border-left-color: white;
+    position: absolute;
+}
+
+
+/* ------------------------------------------------------------------------- */
+
+
+
+/* ART GALLERY */
+
+.gallery .full-bg.art-section{
+    background-image: url(../img/art-section-bg.png);
+}
+
+.art-section section{
+    backdrop-filter: blur(2px);
+    height: 100%;
+    width: 100%;
+}
+
+.art-section .content{
+    padding-top: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    writing-mode: vertical-rl;
+    margin-left: -100px;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.art-section img{
+    width: 50%;
+}
+
+.art-section h1{
+    color: #F9B800;
+    font-size: 8em;
+    align-self: flex-start;
+    line-height: 0.7;
+    padding-top: 100px;
+    transition: 0.3s;
+}
+
+.art-section h1 span{
+    display: block; 
+}
+
+.art-section .content:hover h1{
+    color: white ;
+}
+
+
+
+/* -------------------------------------------------------------------- */
+
+
+
+/* FASHION & SKETCH */
+
+.gallery-section:last-child{
+    display: flex;
+}
+
+.half-section{
+    width: 50vw;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.fashion-section{
+    background-image: url(../img/fashion-section-bg.png);
+    background-size: 1000px;
+    background-position: top left;
+}
+
+.sketch-section{
+    background-image: url(../img/sketch-section-bg.jpg);
+    background-size: 1000px;
+    background-position: center right;
+}
+
+.half-section h3{
+    margin: 0;
+    font-size: 5em;
+    padding: 40px 0;
+}
+
+.sketch-section .black-bg{
+    opacity: 55%;
+    transition: 0.3s;
+}
+
+.gallery-cont{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    writing-mode: vertical-lr;
+    height: 100vh;
+    padding-bottom: 100px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.gallery-cont .line-2{
+    height: 200px;
+    border-left-color: white;
+}
+
+
+.half-section:hover .gallery-cont{
+    backdrop-filter: blur(5px);
+}
+.fashion-section:hover .black-bg{
+    opacity: 75%;
+}
+.sketch-section:hover .black-bg{
+    opacity: 70%;
+}

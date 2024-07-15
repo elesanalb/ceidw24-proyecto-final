@@ -227,6 +227,57 @@ p span.highlight-2{
 
 
 
+/* poster template */
+
+.poster{
+    width: fit-content;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.poster .poster-hover{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster .poster-hover p{
+    color: #3D3D3D;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.poster .poster-hover p span{
+    display: block;
+}
+
+.poster img{
+    object-fit: cover;
+    opacity: 0%;
+    transition: 0.3s;
+}
+
+.poster:hover img{
+    opacity: 100%;
+}
+
+.poster:hover .poster-hover{
+    display: none;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------- */
+
+
+
+
 /* BUTTONS */
 
 a.see-more{
@@ -350,7 +401,13 @@ input:focus-visible{
 }
 
 label{
+    position: relative;
     width: fit-content;
+}
+
+form p span{
+    color: #EF3581;
+    display: inline;
 }
 
 input[type="text"], input[type="email"]{
@@ -393,11 +450,12 @@ form div.input-flex{
 }
 form div.input-flex.text-input{
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 form div.input-flex.choice-input{
     justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 form div.input-flex.button-input{
     justify-content: flex-end;
@@ -416,6 +474,14 @@ form label.label-flex{
 
 form i{
     cursor: pointer;
+}
+
+form p.warning{
+    font-size: 12px;
+    position: absolute;
+    bottom: -10px;
+    color: #EF3581;
+    width: 100%;
 }
 
 
@@ -456,6 +522,12 @@ form.contact label.message{
     color: #3D3D3D;
 }
 
+form.contact label.message p{
+    font-size: 12px;
+    position: absolute;
+    bottom: -10px;
+}
+
 form.contact textarea{
     resize: none;
     appearance: none;
@@ -464,6 +536,7 @@ form.contact textarea{
     padding: 5px;
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
+    margin: 5px 0;
 }
 
 .contact input[type="submit"]{
@@ -558,11 +631,6 @@ form.contact textarea{
     form.contact textarea{
         resize: none;    
     }
-
-    form.contact label.message{
-        font-size: 0.5em;
-        margin: 5px 0;
-    }
     
     .contact input[type="reset"]{
         margin: 0;
@@ -585,7 +653,7 @@ form.contact textarea{
     }
 
     form p, form label, form{
-        font-size: 1.12em;
+        font-size: 20px;
     }
 
     form div.form-section{
@@ -619,8 +687,8 @@ form.contact textarea{
 
 
     form.contact label.country-codes{
-        font-size: 2em;
-        margin: 0 5px -4px;
+        font-size: 30px;
+        margin:0 5px;
     }
 
     form.contact div.phone-numbers p{
@@ -861,9 +929,14 @@ form.contact textarea{
 
 /* line */
 
-.line{
+.line-1{
     border-top-width: 2px;
     border-top-style: solid;
+}
+
+.line-2{
+    border-left-width: 2px;
+    border-left-style: solid;
 }
 
 
@@ -920,7 +993,7 @@ form.contact textarea{
     background-image: url(../img/deco-5.png);
 }
 
-.deco-img-6 .line{
+.deco-img-6 .line-1{
     width: 70vw;
     color: #42E5BE;
 }
@@ -1075,102 +1148,10 @@ form.contact textarea{
 
 
 
-/* ----------------------------------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------------- */
-
-
-
-
-
-
-
-/* TEMPLATES */
-
-/* PREVIEW GRID TEMPLATE */
-/* 
-.grid-preview{
-    display: grid;
-}
-
-.grid-preview div{
-    position: relative;
-}
-
-.grid-preview div a{
-    text-decoration: none;
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    transition: 0.3s;
-}
-
-.grid-preview div a p{
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    color: white;
-    opacity: 0;
-    text-wrap:wrap;
-
-} */
-
-
-/* ------------------- hover */
-/* 
-.grid-preview div a:hover{
-    background-color: black;
-}
-
-.grid-preview div a:hover img{
-    opacity: 50%;
-}
-
-.grid-preview div a:hover p{
-    opacity: 100%;
-} */
-
-
-/* ----------------------- laptop */
-
-@media screen and (min-width: 1024px){
-
-    /* PREVIEW GRID TEMPLATE */
-
-    /* .grid-preview img{
-        height: 350px;
-    }
-
-    .grid-preview  div a p{
-        top: 100px;
-    } */
-}
-
-/* ----------------------- Monitor */
-
-@media screen and (min-width: 1580px){
-
-    /* PREVIEW GRID TEMPLATE */
-
-    /* .grid-preview img, .ux-ui img{
-        height: 400px;
-    }
-
-    .grid-preview  div a p{
-        top: 150px;
-    } */
-}
-
-
-
-
-
-
-
 /* ------------------------------------------------------------------------------------------ */
 /* ----------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------- */
+
 
 
 

@@ -1,32 +1,14 @@
 /* COLORS */
 
-.design h1, .design h2{
-    color: #72001e;
-}
-.design p span.highlight{
-    color: #EF3581;
-}
-.web-design h1, .web-design .line, .web-design p span.highlight{
-    color: #42E5BE;
-}
-.web-design h2{
-    color:#464468;
-}
-.art h1{
-    color: #F9B800;
-}
-.art p span.highlight{
-    color: #FFF2BB;
-}
-.other-projects h1{
-    color: #7345A0;
-}
-.other-projects p span.highlight{
-    color: #ca39fb;
-}
-.other-projects h2{
-    color: #464468;
-}
+.design h1, .design h2{ color: #72001e; }
+.design p span.highlight{ color: #EF3581; }
+.web-design h1, .web-design .line-1, .web-design p span.highlight{ color: #42E5BE; }
+.web-design h2{ color:#464468; }
+.art h1{ color: #F9B800; }
+.art p span.highlight{ color: #FFF2BB; }
+.other-projects h1{ color: #7345A0; }
+.other-projects p span.highlight{ color: #ca39fb; }
+.other-projects h2{ color: #464468; }
 
 
 /* --------------------------------------------------------------------------------------- */
@@ -57,54 +39,15 @@ section.design{
     flex-grow: 1;
 }
 
-.poster{
-    width: fit-content;
-    position: relative;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.poster .poster-hover{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 .design .poster .poster-hover{
     bottom: 0;
-}
-
-.poster .poster-hover p{
-    color: #3D3D3D;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.poster .poster-hover p span{
-    display: block;
-}
-
-.poster img{
-    flex-grow: 1;
-    opacity: 0%;
-    transition: 0.3s;
 }
 
 .design .poster img{
     height: 100vh;
 }
 
-.poster:hover img{
-    opacity: 100%;
-}
 
-.poster:hover .poster-hover{
-    display: none;
-}
 
 
 
@@ -126,7 +69,7 @@ section.web-design{
     align-items: center;
 }
 
-.web-design .web-title .line{
+.web-design .web-title .line-1{
     position: absolute;
 }
 
@@ -282,7 +225,7 @@ section.web-design{
     justify-content: space-between;
 }
 
-.other-projects .line{
+.other-projects .line-1{
     position: absolute;
     border-right: 2px solid #7345A0;
     border-top-color: #7345A0;
@@ -369,7 +312,7 @@ section.web-design{
         padding: 100px 0 50px;
     }
 
-    .web-design .web-title .line{
+    .web-design .web-title .line-1{
         width: 600px;
         left: 800px;
     }
@@ -469,7 +412,7 @@ section.web-design{
         width: 25%;
     }
     
-    .other-projects .line{
+    .other-projects .line-1{
         top: 200px;
         right: -100px;
         width: 700px;

@@ -35,8 +35,9 @@ nav nav{
 
 /* --------------------- select menu */
 
-.menu .select a{
+.menu .select a:not(.dropdown-menu a){
     box-shadow: 1px 5px 10px  rgba(170, 170, 170, 0.25);
+    text-align: end;
 }
 
 nav.home .menu .select a{
@@ -47,7 +48,11 @@ nav.home .menu .select a{
 
 nav.projects .menu .select a:first-child:not(.dropdown-menu a){
     background-color: #F9B800;
-    text-align: end;
+}
+
+nav.gallery .menu .select a{
+    background-color: #7345A0;
+    color: white;
 }
 
 

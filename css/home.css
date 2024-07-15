@@ -309,6 +309,7 @@ body{
     background-image: url(../img/contact-bg-img.png);
     width: 100vw;
     height: inherit;
+    background-attachment: fixed;
 }
 
 .content.contact h1{
@@ -317,7 +318,7 @@ body{
 
 .content.contact .full-bg section{
     position: relative;
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: #ffffff73;
     backdrop-filter: blur(20px);
     outline: 2px solid white;
     outline-offset: 4px;
@@ -328,7 +329,7 @@ body{
     width: 70%;
 }
 
-.content.contact .line{
+.content.contact .line-1{
     border-top-color: white;
     width: 50%;
     align-self: center;

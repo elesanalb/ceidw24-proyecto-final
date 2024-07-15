@@ -11,9 +11,11 @@ header{
 header.home{
     background-image: url(../img/header-home.png);
 }
-
 header.projects{
     background-image: url(../img/header-projects.png);
+}
+header.gallery{
+    background-image: url(../img/header-gallery.png);
 }
 
 /* -------------------------------------------------------------------- */

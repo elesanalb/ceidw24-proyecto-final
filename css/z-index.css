@@ -10,7 +10,6 @@
 .frame-1{z-index: 0;}
 .content.about .rad-grad{z-index: 0;}
 .content.contact .full-bg section {z-index: 0;}
-/* .design .content .poster .poster-hover{z-index:-1;} */
 
 header .header-title{z-index: 1;}
 .content.about .portrait{z-index: 1;}
@@ -22,7 +21,6 @@ header .header-title{z-index: 1;}
 .content.about h1, .content.about h1 span{z-index: 2;}
 .content.about .ab-descript{z-index: 2;}
 .content.about .deco-frame-bullet-box{z-index: 2;}
-/* .design .content .poster img{z-index: 3;} */
 .deco-frame-img{z-index: 2;}
 
 .frame-2{z-index:3;}
