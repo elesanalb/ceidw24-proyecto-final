@@ -314,6 +314,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 3;
 }
 
 .content.contact .line-1{
@@ -364,11 +365,11 @@ form.contact label.country-codes{
     }
 
     .content.home .slider{
-        width: 1095px;
+        width: 700px;
     }
 
     .content.home .slider img{
-        width: 1095px;
+        width: 700px;
     }
 
     .content.home .slider .slide-caption{
@@ -462,7 +463,7 @@ form.contact label.country-codes{
     }
 
     .content.contact .full-bg section{
-        width:70%;
+        width: 600px;
         padding: 40px 20px;
     }
 
@@ -471,7 +472,7 @@ form.contact label.country-codes{
     }
 
     .content.contact form{
-        width:70%;
+        width: 100%;
         margin-top: 25px;
     }
 
@@ -602,11 +603,11 @@ form.contact label.country-codes{
     /* CONTACT */
 
     .content.contact .full-bg{
-        padding: 100px 300px;
+        padding: 100px 280px;
     }
 
     .content.contact .full-bg section{
-        width:70%;
+        width: 680px;
         padding: 40px 20px;
     }
 
@@ -615,7 +616,8 @@ form.contact label.country-codes{
     }
 
     .content.contact form{
-        width:70%;
+        width: 100%;
+        padding: 0 80px;
         margin-top: 25px;
     }
 
@@ -748,13 +750,14 @@ form.contact label.country-codes{
     }
 
     .content.contact .full-bg section{
-        padding: 50px ;
-        width: 70%;
+        padding: 50px;
+        width: 720px;
     }
 
     .content.contact form{
+        padding: 0 50px;
+        width: 100%;
         margin-top: 40px;
-        width: 70%;
     }
 
     form.contact label.country-codes{

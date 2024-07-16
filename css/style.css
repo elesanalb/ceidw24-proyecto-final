@@ -440,6 +440,12 @@ a.see-more i{
 
 /* FORMS */
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 form p{
     margin: 0;
 }
@@ -673,10 +679,10 @@ form label.label-flex{
     }
 
     form.contact input[name="name"]{
-        width: 190px;
+        width: 200px;
     }
     form.contact input[name="number"]{
-        width: 150px;
+        width: 160px;
     }
 
     form input[list="country-codes"]{
@@ -689,7 +695,7 @@ form label.label-flex{
         font-size: 0.9rem; 
     }
     form.contact input[name="email"], form.contact textarea{
-        width: 430px;
+        width: 480px;
     }
 
     input[type="submit"], input[type="reset"]{
@@ -747,8 +753,9 @@ form label.label-flex{
         resize: none;
         font-size: 1rem; 
     }
+
     form.contact input[name="email"], form.contact textarea{
-        width: 480px;
+        width: 520px;
     }
 
     input[type="submit"], input[type="reset"]{
