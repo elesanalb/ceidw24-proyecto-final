@@ -16,5 +16,4 @@ experienceList.forEach((experienceList) => {
     li.classList.add("skill-element");
     ul.appendChild(li);
     li.innerText = experienceList;
-    // console.log(experienceList);
 });

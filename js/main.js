@@ -8,44 +8,62 @@ const dropdowSelect = document.querySelectorAll('.dropdown-menu a');
 
 
 menuList.forEach((menuList, index) => {
+    
     if(header.classList.contains(menuList)){
         menuSelect[index].classList.add("select");
         headerTitle.innerText = titleList[index];          
     }
 
+    menuSelect[1].addEventListener("click", () => {
+        menuSelect[index].classList.remove("select");
+        menuSelect[1].classList.add("select");
+    });
+    menuSelect[2].addEventListener("click", () => {
+        menuSelect[index].classList.remove("select");
+        menuSelect[2].classList.add("select");    
+    });
+
+    menuSelect[0].addEventListener("click", () => {
+        menuSelect[1].classList.remove("select");
+        menuSelect[2].classList.remove("select");
+        menuSelect[0].classList.add("select");
+    });
 
 });
 
+
+
+
+
+
 /*
-let sel = true;
-menuSelect[1].addEventListener("click", () => {
-    let aboutSelect = `${sel ? "" : "select"}`;
-    menuSelect[1].classList.add(aboutSelect);
-    sel = !sel;
-}); 
 
 
+// --------------------------------------- menu scroll
 
-const about = document.getElementById("about");
-const contact = document.getElementById("contact");
-let visibility = null;
+// const home = document.querySelector("#home");
+const about = document.querySelector("#about");
+// const contact = document.querySelector("#contact");
+const options = { threshold: 0.25 };
 
-const obsProp = { threshold: 0.25 };
+const callback = (entry) => {
+    if(entry.isIntersecting){
+        console.log("elemento visible");
+    }
+}
 
-const observer = new IntersectionObserver((entry) => {
-    visibility = entry.isIntersecting;
-}, obsProp);
+const observer = new IntersectionObserver(callback, options);
 
 observer.observe(about);
 
 
+console.log(about);
 
 
 
-
-console.log(menuSelect[1]);
 
 */
+
 
 
 

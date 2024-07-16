@@ -38,6 +38,12 @@ header .header-title div{
     align-items: baseline;
 }
 
+.header-title h2{
+    font-family: "Doppelganger", "Inspiration", serif;
+    font-weight: 300;
+    text-transform: none;
+}
+
 
 /* ------------------ logo */
 
@@ -95,6 +101,15 @@ header.home .header-title h1{
         margin-left: 70px;
     }
 
+    header .header-title h1{
+        margin-right: 100px;
+        font-size: 10.5em;
+    }
+
+    header .header-title h2{
+        font-size: 4rem;
+    }
+
 }
 
 
@@ -116,4 +131,12 @@ header.home .header-title h1{
     header .header-title div{
         margin-left: 80px;
     }
+
+    header .header-title h1{
+        margin-right: 150px;    
+        font-size: 15em;
+    }
+    
+    header .header-title h2{ font-size: 5em; }
+
 }

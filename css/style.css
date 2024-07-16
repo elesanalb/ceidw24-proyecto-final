@@ -45,12 +45,7 @@ h1{
     text-transform: capitalize;
 }
 
-.header-title h2{
-    font-family: "Doppelganger", "Inspiration", serif;
-    font-weight: 300;
-}
-
-.content h2{
+h2{
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: 300;
@@ -65,6 +60,11 @@ h5{
     font-weight: 500;
 }
 
+p{
+    text-align: justify;
+    text-justify: distribute;
+}
+
 p span.highlight{
     font-weight: 600;
 }
@@ -73,98 +73,80 @@ p span.highlight-2{
     font-weight: 500;
 }
 
+
+
 /* ------------------------------------------------------------------------------ */
+
 
 /* MEDIA QUERY */
 
 /* ------------------------- laptop */
 
 @media screen and (min-width: 1024px){
-    header .header-title h1{
-        margin-right: 100px;    
-        font-size: 10.5em;
+    
+    h1{
+        font-size: 9rem;
     }
-    .content h1{ font-size: 8em; }
-    .content.contact h1{ font-size: 8em; }
 
-
-    header .header-title h2{ font-size: 3em; }
-    .content h2{
-        font-size: 3em;
+    h2{
+        font-size: 2.8rem;
         margin: 10px 0;
     }
 
+    h3{
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
 
     h4{
-        font-size: 2em;
+        font-size: 2rem;
         margin-bottom: 20px;
     }
-    footer h4{font-size: 1.2em;}
-
-
 
     h5{
-        font-size: 1.1em;
+        font-size: 1.32rem;
     }
 
     
     p{
-        margin-bottom: 20px;
-        font-size: 1em;
+        margin-bottom: 12px;
+        font-size: 1rem;
     }
-
-    
 }
 
 
 /* -------------------------- monitor */
 
 @media screen and (min-width: 1580px){
-    
-    header .header-title h1{
-        margin-right: 150px;    
-        font-size: 15em;
-    }
-    .content h1{
-        font-size: 11em;
+        
+    h1{
+        font-size: 11rem;
         margin-bottom: 35px;
     }
-    .content.contact h1{ font-size: 9em; }
-    
 
-    header .header-title h2{ font-size: 5em; }
-    .content h2{
-        font-size: 3em;
+    h2{
+        font-size: 3rem;
         margin: 10px 0;
     }
-    
 
     h3{
-        font-size: 1.5em;
+        font-size: 1.5rem;
         margin: 15px 0;
     }
     
     h4{
-        font-size: 2.3em;
+        font-size: 2.3rem;
         margin-bottom: 20px;
     }
-    footer h4{
-        font-size: 1.2em;
-        padding: 5px 0;
-        margin-bottom: 8px;
-    }
-
 
     h5{
-        font-size: 1.3em;
+        font-size: 1.5rem;
         margin: 25px 0 5px;
     }
 
-
     p{
+        font-size: 1.2rem;
         margin-bottom: 20px;
-        font-size: 1.1em;
-        text-align: justify;
     }
 }
 
@@ -310,7 +292,7 @@ a.see-more i{
 @media screen and (min-width: 1024px){
 
     .side-bg{
-        width: 90vw;
+        width: 57vw;
     }
 
 
@@ -319,7 +301,7 @@ a.see-more i{
     .content{
         margin: 80px 0;
         left: 18vw;
-        width: 65vw;
+        width: 67vw;
     }
 
     
@@ -329,6 +311,13 @@ a.see-more i{
         height: 70px;
         margin: 0 20px;
     }
+
+
+    /* ------------------------------------------ buttons */
+
+    a.see-more{
+        font-size: 1.1rem;
+    }
 }
 
 
@@ -337,7 +326,7 @@ a.see-more i{
 @media screen and (min-width: 1580px){
 
     .side-bg{
-        width:93vw;
+        width:60vw;
     }
 
 
@@ -416,6 +405,7 @@ input[type="text"], input[type="email"]{
 
 input[type="radio"]{
     -webkit-appearance: radio;
+    appearance: radio;
     width: fit-content;
     display: flex;
     flex-direction: row;
@@ -477,9 +467,7 @@ form i{
 }
 
 form p.warning{
-    font-size: 12px;
     position: absolute;
-    bottom: -10px;
     color: #EF3581;
     width: 100%;
 }
@@ -529,6 +517,7 @@ form.contact label.message p{
 }
 
 form.contact textarea{
+    font-family: "Montserrat", sans-serif;
     resize: none;
     appearance: none;
     -webkit-appearance: none;
@@ -565,11 +554,11 @@ form.contact textarea{
 
 /* -------------------------- laptop */
 
-@media screen and (min-width: 1024px){
+/* @media screen and (min-width: 1024px){
 
     /* FORM */
 
-    form p, form label, form{
+  /*  form p, form label, form{
         font-size: 1em;
     }
 
@@ -589,15 +578,15 @@ form.contact textarea{
 
     ::placeholder{
         font-size: 1em;
-    }
+    } */
 
 
 /* ----------------------------------------------------- */
 
 
 
-    /* CONTAC */
-
+    /* CONTACT */
+/* 
     form.contact input[name="name"]{
         width: 175px;
     }
@@ -639,7 +628,7 @@ form.contact textarea{
     .contact label.reset{
         margin: 10px;
     }
-}
+} */
 
 
 /* ----------------------- Monitor */
@@ -653,7 +642,7 @@ form.contact textarea{
     }
 
     form p, form label, form{
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
     form div.form-section{
@@ -661,19 +650,23 @@ form.contact textarea{
     }
 
     input[type="submit"], input[type="reset"]{
-        font-size: 0.8em;
+        font-size: 1.2rem;
         margin: 10px;
     }
 
     div.choice-input label{
-        font-size: 1em;
+        font-size: 1.1rem;
         margin: 5px 15px;
     }
 
     ::placeholder{
-        font-size: 1.1em;
+        font-size: 1rem;
     }
 
+    form p.warning{
+        font-size: 12px;
+        bottom: -10px;
+    }
 
     /* --------------------------------------------------------------------------- */
 
@@ -709,11 +702,11 @@ form.contact textarea{
     }
 
     form.contact textarea{
-        resize: none;    
+        resize: none;
+        font-size: 1rem; 
     }
 
     form.contact label.message{
-        font-size: 0.5em;
         margin: 5px 0;
     }
     

@@ -1,18 +1,3 @@
-*{
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-}
-
-body{
-    display: flex;
-    flex-direction: column;
-}
-
-/* ------------------------------------------------------------ */
-
-
 /* SLIDER */
 
 .content.home{
@@ -25,7 +10,6 @@ body{
 }
 
 .content.home .side-bg{
-    width: 60%;
     background-color:#FFF2BB;
 }
 
@@ -185,6 +169,14 @@ body{
     align-items: center;
 }
 
+.about ul{
+    padding: 0 25px;
+}
+
+.about .skill-element{
+    font-size: 1.15rem;
+}
+
 
 /* ---------------------------------------------------- */
 
@@ -201,7 +193,6 @@ body{
     justify-content: space-between;
     align-items: flex-start;
     color: #FFF2BB;
-    /* opacity: 75%; */
 }
 .content.about h1 span{
     font-family: "Doppelganger", "Inspiration", serif;
@@ -232,7 +223,6 @@ body{
 .content.about h4 span{
     font-family: "Doppelganger","Inspiration", serif;
     color: #FFF2BB;
-    display: block;
 }
 
 .about span.highlight{
@@ -452,6 +442,10 @@ body{
         padding: 40px 20px;
     }
 
+    .contact h1{
+        font-size: 8em;
+    }
+
     .content.contact form{
         margin-top: 25px;
     }
@@ -478,7 +472,6 @@ body{
         width: 1300px;
         height: fit-content;
         display: flex;
-        /* margin:0; */
     }
 
     .content.home .slider img{
@@ -564,6 +557,11 @@ body{
     .content.contact .full-bg{
         padding: 100px 400px ;
     }
+
+    .contact h1{ 
+        font-size: 9em; 
+    }
+
 
     .content.contact .full-bg section{
         padding: 50px ;
