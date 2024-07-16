@@ -20,6 +20,7 @@
 
 .slider{
     position: relative;
+    height: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -173,9 +174,7 @@
     padding: 0 25px;
 }
 
-.about .skill-element{
-    font-size: 1.15rem;
-}
+
 
 
 /* ---------------------------------------------------- */
@@ -315,7 +314,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
 }
 
 .content.contact .line-1{
@@ -324,8 +322,13 @@
     align-self: center;
 }
 
-.content.contact form{
-    width: 70%;
+form.contact div.phone-numbers div{
+    display: flex;
+    align-items: flex-end;
+}
+
+form.contact label.country-codes{
+    align-self: flex-end;
 }
 
 .content.contact div.phone-numbers{
@@ -355,14 +358,12 @@
     }
 
     .content.home h1{
-        top: 35px;
-        left: 250px;
+        top: 30px;
+        left: 15vw;
     }
 
     .content.home .slider{
         width: 1095px;
-        height: fit-content;
-        display: flex;
     }
 
     .content.home .slider img{
@@ -370,7 +371,11 @@
     }
 
     .content.home .slider .slide-caption{
-        padding: 80px;
+        padding: 60px 80px;
+    }
+
+    .content.home .slider .slide-caption i{
+        margin: 10px;
     }
 
     .content.home .slider .slider-control{
@@ -388,11 +393,11 @@
     }
     
     .content.about h1{
-        padding: 65px 10px;
+        padding: 60px 10px;
     }
 
     .content.about section{
-        padding: 80px;
+        padding: 60px;
     }
 
     .content.about .portrait{
@@ -403,13 +408,16 @@
     }
 
     .content.about div .ab-descript{
-        margin-top: 5px;
         padding: 0 50px;
+    }
+
+    .about .skill-element{
+        font-size: 0.95rem;
     }
 
     
     .content.about h4 span{
-        font-size: 1.6em;
+        font-size: 3rem;
     }
 
     /* --------------------------- gradient */
@@ -422,9 +430,23 @@
     /* ----------------------------- bullet frame */
 
     .about .deco-frame-bullet-box{
-        width: 120px;
-        height: 120px;
-        padding: 5px 5px 15px 15px;
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+    }
+
+    .about .deco-frame-bullet .deco-frame-bullet-corner{
+        margin: 10px 10px 0 0;
+    }
+
+    .about .deco-frame-bullet-top{
+        margin-top: -10px;
+        margin-right: -10px;
+    }
+
+    .about .deco-frame-bullet-right{
+        margin-right: -10px;
+        margin-top: -10px;
     }
 
 
@@ -439,15 +461,30 @@
     }
 
     .content.contact .full-bg section{
+        width:70%;
         padding: 40px 20px;
     }
 
     .contact h1{
-        font-size: 8em;
+        font-size: 8rem;
     }
 
     .content.contact form{
+        width:70%;
         margin-top: 25px;
+    }
+
+    form.contact label.country-codes{
+        font-size: 1.5rem;
+        margin: 0 5px 5px;
+    }
+
+    form.contact div.phone-numbers p{
+        margin-left: 10px;
+    }
+
+    form.contact div.phone-numbers label.country-codes input[type="text"]{
+        margin: 0;
     }
 }
 
@@ -464,14 +501,12 @@
     }
 
     .content.home h1{
-        top: 40px;
-        left: 300px;
+        top: 35px;
+        left: 17vw;
     }
     
     .content.home .slider{
         width: 1300px;
-        height: fit-content;
-        display: flex;
     }
 
     .content.home .slider img{
@@ -515,8 +550,13 @@
         padding: 0 40px;
     }
 
+    .about .skill-element{
+        font-size: 1.15rem;
+    }
+    
+
     .content.about h4 span{
-        font-size: 55px;
+        font-size: 4.2rem;
     }
 
     /* --------------------------- gradient */
@@ -559,15 +599,29 @@
     }
 
     .contact h1{ 
-        font-size: 9em; 
+        font-size: 9rem; 
     }
-
 
     .content.contact .full-bg section{
         padding: 50px ;
+        width: 70%;
     }
 
     .content.contact form{
         margin-top: 40px;
+        width: 70%;
+    }
+
+    form.contact label.country-codes{
+        font-size: 1.8rem;
+        margin: 0 5px 2px;
+    }
+
+    form.contact div.phone-numbers p{
+        margin-left: 10px;
+    }
+
+    form.contact div.phone-numbers label.country-codes input[type="text"]{
+        margin: 0;
     }
 }

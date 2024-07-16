@@ -99,7 +99,7 @@ p span.highlight-2{
     }
 
     h4{
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 20px;
     }
 
@@ -350,7 +350,7 @@ a.see-more i{
     /* ------------------------------------------ buttons */
 
     a.see-more{
-        font-size: 1.2em;
+        font-size: 1.3rem;
     }
 }
 
@@ -375,32 +375,54 @@ a.see-more i{
 form p{
     margin: 0;
 }
-
-input{
-    -webkit-appearance: none;
-    -webkit-font-smoothing: antialiased;
-    appearance: none;
-    font-family: "Montserrat", sans-serif;
-    border: none;
-}
-
-input:focus-visible{
-    outline-width: 2px;
-    outline-style: solid;
-}
-
-label{
-    position: relative;
-    width: fit-content;
-}
-
 form p span{
     color: #EF3581;
     display: inline;
 }
 
+form i{
+    cursor: pointer;
+}
+form.contact i{
+    color: #72001e;
+}
+form.contact label:hover i{
+    color: #4F2C2C;
+}
+
+form p.warning{
+    position: absolute;
+    color: #EF3581;
+    width: 100%;
+}
+form.contact label.message p{
+    position: absolute;
+    margin: 5px 0;
+}
+
+
+form label{
+    position: relative;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+form input{
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    appearance: none;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    margin: 5px 0 7px;
+}
+
 input[type="text"], input[type="email"]{
     padding: 5px;
+}
+.contact input[type="text"], input[type="email"]{
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
 }
 
 input[type="radio"]{
@@ -413,20 +435,58 @@ input[type="radio"]{
     cursor: pointer;
 }
 
+form textarea{
+    font-family: "Montserrat", sans-serif;
+    resize: none;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    margin: 10px 0 15px;
+    border-radius: 0;
+}
+form.contact label.message{
+    color: #3D3D3D;
+}
+
 input[type="submit"], input[type="reset"]{
     display: block;
     text-align: center;
     cursor: pointer;
     padding: 5px;
 }
+.contact input[type="submit"]{
+    background-color: #72001e;
+    color: white;
+}
+input[type="reset"]{
+    text-decoration: underline;
+    background: none;
+}
+.contact input[type="reset"]{
+    color: #72001e;
+}
+
 
 input[type="submit"]:hover{
     text-decoration: underline;
 }
+.contact input[type="submit"]:hover{
+    background-color:#EF3581;
+}
 
-input[type="reset"]{
-    text-decoration: underline;
-    background: none;
+.contact input[type="reset"]:hover{
+    color: #4F2C2C;
+}
+
+
+input:focus-visible, textarea:focus-visible{
+    border-radius: 0;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: #EF3581;
 }
 
 ::placeholder{
@@ -452,98 +512,12 @@ form div.input-flex.button-input{
     align-items: center;
 }
 
-form label{
-    display: flex;
-    flex-direction: column;
-}
-
 form label.label-flex{
     display: flex;
     flex-direction: row;
 }
 
-form i{
-    cursor: pointer;
-}
 
-form p.warning{
-    position: absolute;
-    color: #EF3581;
-    width: 100%;
-}
-
-
-
-/* -------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------------- */
-
-
-
-/* CONTACT */
-
-form.contact i{
-    color: #72001e;
-}
-form.contact label:hover i{
-    color: #4F2C2C;
-}
-
-.contact input[type="text"], input[type="email"]{
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(5px);
-}
-
-.contact input:focus-visible{
-    outline-color: #EF3581;
-}
-
-form.contact div.phone-numbers div{
-    display: flex;
-    align-items: flex-end;
-}
-
-form.contact label.country-codes{
-    align-self: flex-end;
-}
-
-form.contact label.message{
-    color: #3D3D3D;
-}
-
-form.contact label.message p{
-    font-size: 12px;
-    position: absolute;
-    bottom: -10px;
-}
-
-form.contact textarea{
-    font-family: "Montserrat", sans-serif;
-    resize: none;
-    appearance: none;
-    -webkit-appearance: none;
-    border: none;
-    padding: 5px;
-    background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    margin: 5px 0;
-}
-
-.contact input[type="submit"]{
-    background-color: #72001e;
-    color: white;
-}
-
-.contact input[type="reset"]{
-    color: #72001e;
-}
-
-.contact input[type="submit"]:hover{
-    background-color:#EF3581;
-}
-
-.contact input[type="reset"]:hover{
-    color: #4F2C2C;
-}
 
 
 /* -------------------------------------------------------------------------- */
@@ -554,81 +528,61 @@ form.contact textarea{
 
 /* -------------------------- laptop */
 
-/* @media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px){
 
     /* FORM */
 
-  /*  form p, form label, form{
-        font-size: 1em;
+    form p, form label, form{
+        font-size: 1.1rem;
+    }
+    form p.warning, form.contact label.message p{
+        font-size: 0.7rem;
+        bottom: -10px;
     }
 
     form div.form-section{
         margin: 15px 0;
     }
 
-    input[type="submit"], input[type="reset"]{
-        font-size: 1em;
-        margin: 8px;
-    }
-
-    div.choice-input label{
-        font-size: 0.95em;
-        margin: 5px 15px;
-    }
-
-    ::placeholder{
-        font-size: 1em;
-    } */
-
-
-/* ----------------------------------------------------- */
-
-
-
-    /* CONTACT */
-/* 
     form.contact input[name="name"]{
-        width: 175px;
+        width: 190px;
     }
-
     form.contact input[name="number"]{
         width: 150px;
     }
 
-    form.contact label.country-codes{
-        font-size: 1.5em;
-        margin: 10px 5px -2px;
-    }
-
-    form.contact div.phone-numbers p{
-        margin-left: 10px;
-    }
-    
-    form.contact input[list="country-codes"]{
-        width: 50px;
+    form input[list="country-codes"]{
+        width: 45px;
         height: 25px;
     }
 
-    form.contact div.phone-numbers label.country-codes input[type="text"]{
-        margin: 0;
+    form textarea{
+        resize: none;
+        font-size: 0.9rem; 
     }
-
     form.contact input[name="email"], form.contact textarea{
         width: 430px;
     }
 
-    form.contact textarea{
-        resize: none;    
+    input[type="submit"], input[type="reset"]{
+        font-size: 1.1rem;
     }
-    
-    .contact input[type="reset"]{
+    input[type="submit"], form label.reset{
+        margin: 10px;
+    }
+    input[type="reset"]{
         margin: 0;
     }
 
-    .contact label.reset{
-        margin: 10px;
+    ::placeholder{
+        font-size: 0.9rem;
+    } 
+
+    div.choice-input label{
+        font-size: 0.9rem;
+        margin: 5px 15px;
     }
-} */
+}
 
 
 /* ----------------------- Monitor */
@@ -637,85 +591,55 @@ form.contact textarea{
 
     /* FORM */
 
-    input{
-        margin: 5px 0;
-    }
-
     form p, form label, form{
         font-size: 1.2rem;
+    }
+    form p.warning, form.contact label.message p{
+        font-size: 0.8rem;
+        bottom: -10px;
     }
 
     form div.form-section{
         margin: 15px 0;
     }
 
-    input[type="submit"], input[type="reset"]{
-        font-size: 1.2rem;
-        margin: 10px;
+    form.contact input[name="name"]{
+        width: 220px;
+    }
+    form.contact input[name="number"]{
+        width: 170px;
     }
 
-    div.choice-input label{
-        font-size: 1.1rem;
-        margin: 5px 15px;
+    form input[list="country-codes"]{
+        width: 50px;
+        height: 25px;
+    }
+
+    form textarea{
+        resize: none;
+        font-size: 1rem; 
+    }
+    form.contact input[name="email"], form.contact textarea{
+        width: 480px;
+    }
+
+    input[type="submit"], input[type="reset"]{
+        font-size: 1.2rem;
+    }
+    input[type="submit"], form label.reset{
+        margin: 10px;
+    }
+    input[type="reset"]{
+        margin: 0;
     }
 
     ::placeholder{
         font-size: 1rem;
     }
 
-    form p.warning{
-        font-size: 12px;
-        bottom: -10px;
-    }
-
-    /* --------------------------------------------------------------------------- */
-
-
-
-    /* CONTACT */
-
-    form.contact input[name="name"]{
-        width: 220px;
-    }
-
-
-    form.contact label.country-codes{
-        font-size: 30px;
-        margin:0 5px;
-    }
-
-    form.contact div.phone-numbers p{
-        margin-left: 10px;
-    }
-    
-    form.contact input[list="country-codes"]{
-        width: 50px;
-        height: 25px;
-    }
-
-    form.contact div.phone-numbers label.country-codes input[type="text"]{
-        margin: 0;
-    }
-
-    form.contact input[name="email"], form.contact textarea{
-        width: 480px;
-    }
-
-    form.contact textarea{
-        resize: none;
-        font-size: 1rem; 
-    }
-
-    form.contact label.message{
-        margin: 5px 0;
-    }
-    
-    .contact input[type="reset"]{
-        margin: 0;
-    }
-
-    .contact label.reset{
-        margin: 10px;
+    div.choice-input label{
+        font-size: 1.1rem;
+        margin: 5px 15px;
     }
 }
 
@@ -786,7 +710,7 @@ form.contact textarea{
 }
 
 .contact .frame-3{
-    border-left-color: #72001e;
+    border-left-color:#4F2C2C;
 }
 
 
@@ -823,6 +747,7 @@ form.contact textarea{
         border-bottom-width: 18px;
     }
 }
+
 
 
 /* ------------------------- monitor */
@@ -901,7 +826,6 @@ form.contact textarea{
 }
 
 .deco-frame-bullet .deco-frame-bullet-bullet, .deco-frame-bullet .deco-frame-bullet-corner{
-    /* border-radius: 50%; */
     background-image: url(../img/deco-frame-bullet-star.svg);
 }
 
@@ -1018,6 +942,18 @@ form.contact textarea{
 
 @media screen and (min-width: 1024px){
 
+    /* --------------------- bullet frame */
+
+    .deco-frame-bullet .deco-frame-bullet-bullet{
+        width: 10px;
+        height: 10px;
+    }
+
+    .deco-frame-bullet .deco-frame-bullet-corner{
+        width: 20px;
+        height: 20px;
+    }
+
     /* ---------------------- deco 1 */
 
     .deco-container.deco-img-1{
@@ -1036,9 +972,65 @@ form.contact textarea{
         margin: 0;
     }
     .deco-img-2 .deco-frame-img{
-        margin-right: 170px;
+        margin-right: 140px;
         width: calc(568px * 0.2);
         height: calc(1231px * 0.2);
+    }
+
+
+    /* -------------------------------- deco 3 */
+
+    .deco-img-3.deco-frame-img{
+        left: 150px;
+        margin-top: -80px;
+        width: calc(80px * 0.7);
+        height: calc(275px * 0.7);
+    }
+
+
+    /* --------------------------------- deco 4 */
+
+    .deco-img-3-2{
+        width: calc(75px * 0.5);
+        height: calc(85px * 0.5);
+    }
+
+    .deco-img-4{
+        width: calc(97px * 0.6);
+        height: calc(283px * 0.6);
+    }
+
+    .deco-img-5{
+        width: calc(64px * 0.6);
+        height: calc(275px * 0.6);
+    }
+
+
+    /* ------------------------------------ deco 5 */
+
+    .deco-img-6 .deco-frame-img{
+        bottom: -75px;
+        margin-right: 270px;
+        width: calc(234px * 0.8);
+        height: calc(253px * 0.8);
+    }
+
+
+    /* ------------------------------------ deco 6 */
+
+    .deco-img-7{
+        width: calc(138px * 0.7);
+        height: calc(318px * 0.7);
+    }
+
+    .deco-img-8{
+        width: calc(140px * 0.7);
+        height: calc(326px * 0.7);
+    }
+
+    .deco-img-9{
+        width: calc(183px * 0.7);
+        height: calc(307px * 0.7);
     }
 }
 
@@ -1047,14 +1039,16 @@ form.contact textarea{
 
 @media screen and (min-width: 1580px){
 
+    /* --------------------- bullet frame */
+
     .deco-frame-bullet .deco-frame-bullet-bullet{
-        width: 10px;
-        height: 10px;
+        width: 12px;
+        height: 12px;
     }
     
     .deco-frame-bullet .deco-frame-bullet-corner{
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
     }
 
     /* ---------------------- deco 1 */
@@ -1074,6 +1068,7 @@ form.contact textarea{
         margin: 0;
     }
     .deco-img-2 .deco-frame-img{
+        margin-right: 170px;
         width: calc(568px * 0.25);
         height: calc(1231px * 0.25);
     }
@@ -1164,7 +1159,6 @@ div.i-container{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    /* outline: 2px solid red; */
 }
 
 div.i-container a{
@@ -1210,13 +1204,13 @@ div.i-button.to-start:hover{
 
     div.i-container{
         left: 35px;
-        bottom: 80px;
-        height: 80px;
+        bottom: 50px;
+        height: 50px;
     }
 
     div.i-button{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
     @keyframes arrow-up{

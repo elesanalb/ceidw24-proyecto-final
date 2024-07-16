@@ -103,7 +103,7 @@ header.home .header-title h1{
 
     header .header-title h1{
         margin-right: 100px;
-        font-size: 10.5em;
+        font-size: 10.5rem;
     }
 
     header .header-title h2{
@@ -134,9 +134,11 @@ header.home .header-title h1{
 
     header .header-title h1{
         margin-right: 150px;    
-        font-size: 15em;
+        font-size: 15rem;
     }
     
-    header .header-title h2{ font-size: 5em; }
+    header .header-title h2{ 
+        font-size: 4.8rem; 
+    }
 
 }

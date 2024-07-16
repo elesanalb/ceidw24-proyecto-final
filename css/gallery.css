@@ -21,7 +21,6 @@
 }
 
 .gallery h3{
-    font-size: 3.5em;
     color: white;
     font-family: "Doppelganger";
     font-weight: 300;
@@ -54,22 +53,16 @@
     background-position: center;
 }
 
-.photo-section .content{
-    padding-bottom: 500px;
-}
-
 .photo-section .photo-collection{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
 }
 
 .photo-collection.flower{
     align-self: flex-start;
-    margin-top: -100px;
 }
 
 .photo-collection .poster-hover{
@@ -95,8 +88,6 @@
 }
 
 .photo-collection .line-2{
-    bottom: -300px;
-    height: 250px;
     border-left-color: white;
     position: absolute;
 }
@@ -119,13 +110,11 @@
 }
 
 .art-section .content{
-    padding-top: 400px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
     writing-mode: vertical-rl;
-    margin-left: -100px;
     margin: 0;
     cursor: pointer;
     text-decoration: none;
@@ -137,10 +126,7 @@
 
 .art-section h1{
     color: #F9B800;
-    font-size: 8em;
     align-self: flex-start;
-    line-height: 0.7;
-    padding-top: 100px;
     transition: 0.3s;
 }
 
@@ -165,7 +151,6 @@
 }
 
 .half-section{
-    width: 50vw;
     position: relative;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -173,20 +158,16 @@
 
 .fashion-section{
     background-image: url(../img/fashion-section-bg.png);
-    background-size: 1000px;
     background-position: top left;
 }
 
 .sketch-section{
     background-image: url(../img/sketch-section-bg.jpg);
-    background-size: 1000px;
-    background-position: center right;
+    background-position: top right;
 }
 
 .half-section h3{
     margin: 0;
-    font-size: 5em;
-    padding: 40px 0;
 }
 
 .sketch-section .black-bg{
@@ -203,13 +184,11 @@
     justify-content: flex-end;
     writing-mode: vertical-lr;
     height: 100vh;
-    padding-bottom: 100px;
     text-decoration: none;
     transition: 0.3s;
 }
 
 .gallery-cont .line-2{
-    height: 200px;
     border-left-color: white;
 }
 
@@ -222,4 +201,175 @@
 }
 .sketch-section:hover .black-bg{
     opacity: 70%;
+}
+
+
+
+
+
+/* ----------------------------------------------------------0 */
+
+
+
+/* MEDIA QUERY */
+
+/* ------------------- laptop */
+
+@media screen and (min-width: 1024px) {
+    
+    .gallery h3{
+        font-size: 3rem;
+    }
+
+
+    /* ------------------------------------------ */
+
+    /* PHOTO COLLECTIONS */
+
+    .photo-section .content{
+        padding-bottom: 500px;
+    }
+
+    .photo-section .photo-collection{
+        width: 300px;
+    }
+
+    .photo-collection.flower{
+        margin-top: -100px;
+    }
+
+    .photo-collection .line-2{
+        bottom: -280px;
+        height: 220px;
+    }
+
+
+
+    /* ---------------------------------------------------- */
+
+    /* ART GALLERY */
+
+    .art-section .content{
+        padding-top: 380px;
+        margin-left: -100px;
+    }
+
+    .art-section h1{
+        font-size: 7.5rem;
+        line-height:0.75;
+        padding-top: 120px;
+    }
+
+
+
+    /* -------------------------------------------------------------- */
+
+    /* FASHION & SKETCH */
+
+    .half-section{
+        width: 50vw;
+    }
+
+    .fashion-section{
+        background-size: 800px;
+    }
+
+    .sketch-section{
+        background-size: 1000px;
+    }
+
+    .half-section h3{
+        font-size: 4.2rem;
+        padding: 40px 0;
+    }
+
+    .gallery-cont{
+        padding-bottom: 40px;
+    }
+
+    .gallery-cont .line-2{
+        height: 150px;
+    }
+}
+
+
+
+
+/* ------------------- monitor */
+
+@media screen and (min-width: 1580px) {
+    
+    .gallery h3{
+        font-size: 3.5rem;
+    }
+
+
+    /* ------------------------------------------ */
+
+    /* PHOTO COLLECTIONS */
+
+    .photo-section .content{
+        padding-bottom: 500px;
+    }
+
+    .photo-section .photo-collection{
+        width: 400px;
+    }
+
+    .photo-collection.flower{
+        margin-top: -100px;
+    }
+
+    .photo-collection .line-2{
+        bottom: -300px;
+        height: 250px;
+    }
+
+
+
+    /* ---------------------------------------------------- */
+
+    /* ART GALLERY */
+
+    .art-section .content{
+        padding-top: 400px;
+        margin-left: -100px;
+    }
+
+    .art-section h1{
+        font-size: 8rem;
+        line-height: 0.7;
+        padding-top: 100px;
+    }
+
+
+
+    /* -------------------------------------------------------------- */
+
+    /* FASHION & SKETCH */
+
+    .half-section{
+        width: 50vw;
+    }
+
+    .fashion-section{
+        background-size: 1000px;
+    }
+
+    .sketch-section{
+        background-size: 1000px;
+    }
+
+    .half-section h3{
+        font-size: 5rem;
+        padding: 40px 0;
+    }
+
+    .gallery-cont{
+        padding-bottom: 100px;
+    }
+
+    .gallery-cont .line-2{
+        height: 200px;
+    }
 }
