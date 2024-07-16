@@ -69,13 +69,14 @@ console.log(about);
 
 // ------------------------------- dark mode
 
-const buttonDarkMode = document.querySelector('.i-button.dark-mode');
+const buttonDarkMode = document.querySelector('.i-button.dm-button');
 let bodyHTML = document.querySelector("body");
 
 let dark = false;
 
 buttonDarkMode.addEventListener("click", (event) => {
     event.preventDefault();
-    bodyHTML.style.backgroundColor = dark ? "white" : "#3D3D3D";
+    bodyHTML.classList.add(`${dark ? "" : "dark-mode"}`);
+    // bodyHTML.style.backgroundColor = dark ? "white" : "#3D3D3D";
     dark = !dark;
 });

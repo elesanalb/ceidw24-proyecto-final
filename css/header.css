@@ -82,6 +82,38 @@ header.home .header-title h1{
 
 /* MEDIA QUERY */
 
+/* ----------------------- tablet */
+
+@media screen and (min-width: 721px){
+
+    /* HEADER */
+
+    header{
+        height: 18vh;
+    }
+
+    /* --------------------------------- */
+
+    
+    /* HEADER TITLE */
+
+    header .header-title div{
+        margin-left: 70px;
+    }
+
+    header .header-title h1{
+        margin-right: 100px;
+        font-size: 10.5rem;
+    }
+
+    header .header-title h2{
+        font-size: 4rem;
+    }
+
+}
+
+
+
 /* ----------------------- Laptop */
 
 @media screen and (min-width: 1024px){

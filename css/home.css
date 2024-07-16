@@ -347,7 +347,152 @@ form.contact label.country-codes{
 
 /* MEDIA QUERY */
 
+/* ----------------------- tablet */
+
+@media screen and (min-width: 721px){
+
+    /* SLIDER */
+
+    .content.home.full-bg{
+        padding: 80px 0;
+        margin: 0;
+    }
+
+    .content.home h1{
+        top: 30px;
+        left: 15vw;
+    }
+
+    .content.home .slider{
+        width: 1095px;
+    }
+
+    .content.home .slider img{
+        width: 1095px;
+    }
+
+    .content.home .slider .slide-caption{
+        padding: 60px 80px;
+    }
+
+    .content.home .slider .slide-caption i{
+        margin: 10px;
+    }
+
+    .content.home .slider .slider-control{
+        margin: 10px auto;
+    }
+
+    /* --------------------------------------- */
+
+
+    /* ABOUT */
+
+
+    .content.about{
+        padding: 100px 0;
+    }
+    
+    .content.about h1{
+        padding: 60px 10px;
+    }
+
+    .content.about section{
+        padding: 60px;
+    }
+
+    .content.about .portrait{
+        width: 250px;
+        height: 313px;
+        padding: 4px;
+        margin: 10px 15px;
+    }
+
+    .content.about div .ab-descript{
+        padding: 0 50px;
+    }
+
+    .about .skill-element{
+        font-size: 0.95rem;
+    }
+
+    
+    .content.about h4 span{
+        font-size: 3rem;
+    }
+
+    /* --------------------------- gradient */
+
+    .content.about div.rad-grad{
+        background-size: 500px 500px;
+        background-position: -45px 45px;
+    }
+
+    /* ----------------------------- bullet frame */
+
+    .about .deco-frame-bullet-box{
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+    }
+
+    .about .deco-frame-bullet .deco-frame-bullet-corner{
+        margin: 10px 10px 0 0;
+    }
+
+    .about .deco-frame-bullet-top{
+        margin-top: -10px;
+        margin-right: -10px;
+    }
+
+    .about .deco-frame-bullet-right{
+        margin-right: -10px;
+        margin-top: -10px;
+    }
+
+
+    /* ---------------------------------------------------------------------- */
+    /* ---------------------------------------------------------------------------- */
+
+
+    /* CONTACT */
+
+    .content.contact .full-bg{
+        padding: 100px 300px;
+    }
+
+    .content.contact .full-bg section{
+        width:70%;
+        padding: 40px 20px;
+    }
+
+    .contact h1{
+        font-size: 8rem;
+    }
+
+    .content.contact form{
+        width:70%;
+        margin-top: 25px;
+    }
+
+    form.contact label.country-codes{
+        font-size: 1.5rem;
+        margin: 0 5px 5px;
+    }
+
+    form.contact div.phone-numbers p{
+        margin-left: 10px;
+    }
+
+    form.contact div.phone-numbers label.country-codes input[type="text"]{
+        margin: 0;
+    }
+}
+
+
+
 /* ----------------------- laptop */
+
 @media screen and (min-width: 1024px){
 
     /* SLIDER */

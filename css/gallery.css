@@ -213,6 +213,88 @@
 
 /* MEDIA QUERY */
 
+/* ------------------- tablet */
+
+@media screen and (min-width: 721px) {
+    
+    .gallery h3{
+        font-size: 3rem;
+    }
+
+
+    /* ------------------------------------------ */
+
+    /* PHOTO COLLECTIONS */
+
+    .photo-section .content{
+        padding-bottom: 500px;
+    }
+
+    .photo-section .photo-collection{
+        width: 300px;
+    }
+
+    .photo-collection.flower{
+        margin-top: -100px;
+    }
+
+    .photo-collection .line-2{
+        bottom: -280px;
+        height: 220px;
+    }
+
+
+
+    /* ---------------------------------------------------- */
+
+    /* ART GALLERY */
+
+    .art-section .content{
+        padding-top: 380px;
+        margin-left: -100px;
+    }
+
+    .art-section h1{
+        font-size: 7.5rem;
+        line-height:0.75;
+        padding-top: 120px;
+    }
+
+
+
+    /* -------------------------------------------------------------- */
+
+    /* FASHION & SKETCH */
+
+    .half-section{
+        width: 50vw;
+    }
+
+    .fashion-section{
+        background-size: 800px;
+    }
+
+    .sketch-section{
+        background-size: 1000px;
+    }
+
+    .half-section h3{
+        font-size: 4.2rem;
+        padding: 40px 0;
+    }
+
+    .gallery-cont{
+        padding-bottom: 40px;
+    }
+
+    .gallery-cont .line-2{
+        height: 150px;
+    }
+}
+
+
+
+
 /* ------------------- laptop */
 
 @media screen and (min-width: 1024px) {

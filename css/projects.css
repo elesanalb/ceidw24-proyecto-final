@@ -254,9 +254,9 @@ section.web-design{
 
 /* MEDIA QUERY */
 
-/* ----------------------------- laptop */
+/* ----------------------------- tablet */
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 721px){
 
     /* SECTIONS */
 
@@ -405,6 +405,141 @@ section.web-design{
     }
 }
 
+/* ----------------------------- laptop */
+
+@media screen and (min-width: 1024px){
+
+    /* SECTIONS */
+
+     /* DESIGN */
+
+     section.design{
+        margin-bottom: 100px;
+    }
+
+    .design .body-section{
+        margin-top: 410px;
+        padding-left: 180px;
+    }
+    
+    .design .body-section p{
+        padding-right: 20px;
+    }
+
+    .design .poster-hover{
+        height: 100%;
+    }
+    
+    .poster-hover p{
+        font-size: 2.1rem;
+        margin: 30px 0;
+    }
+
+
+    /* ------------------------------------------------------------------------ */
+
+    /* WEB */
+
+    section.web-design{
+        padding: 80px 0 50px;
+    }
+
+    .web-design .web-title .line-1{
+        width: 400px;
+        left: 700px;
+    }
+
+    .web-design p.web-descript{
+        padding-right: 170px;
+    }
+
+    .web-design section{
+        margin-top: 35px;
+    }
+
+    .web-design .web-section{
+        width: 55%;
+    }
+
+    .web-design .web-section div.postres, .web-design .web-section embed{
+        height: 350px;
+        margin: 10px;
+    }
+
+    .web-design .web-section div.postres{
+        margin-bottom: 50px;
+    }
+    .web-design embed{
+        height: 350px;
+    }
+
+    .web-design .ux-ui{
+        width: 35%;
+    }
+
+    .web-design .ux-ui img{
+        width: 45%;
+    }
+
+    .web-design .ux-ui div{
+        margin: 10px 0 30px;
+    }
+    
+    /* -------------------------------------------------------------------------- */
+
+
+    /* ART */
+
+    .content.art{
+        padding-top: 120px;
+        margin-top: 200px;
+    }
+
+    .art .poster .poster-hover{
+        top: 100px;
+    }
+
+    .art .body-section div{
+        padding: 50px;
+    }
+
+/* ------------------------------------------------------------------- */
+
+
+    /* OTHER PROJECTS */
+
+    .content.other-projects{
+        padding-top: 100px;
+    }
+
+    .other-projects h1{
+        font-size: 6rem;
+    }
+    .other-projects h2{
+        font-size: 2.1rem;
+    }
+
+    .other-projects section{
+        margin-top: 30px;
+    }
+
+    .other-projects .modeling-3d{
+        width: 70%;
+    }
+
+    .other-projects .motion{
+        width: 25%;
+    }
+    
+    .other-projects .line-1{
+        top: 170px;
+        right: -80px;
+        width: 620px;
+    }
+}
+
+
+
 /* ----------------------------- Monitor */
 
 @media screen and (min-width: 1580px){
@@ -435,11 +570,7 @@ section.web-design{
         margin: 50px 0;
     }
 
-
-
-
     /* ------------------------------------------------------ */
-
 
 
     /* WEB */
@@ -490,12 +621,7 @@ section.web-design{
         margin: 10px 0 30px;
     }
 
-
-
-
     /* -------------------------------------------------------------------------- */
-
-
 
 
     /* ART */
@@ -513,13 +639,7 @@ section.web-design{
         padding: 50px;
     }
 
-
-
-
     /* ------------------------------------------------------------------- */
-
-
-
 
 
     /* OTHER PROJECTS */

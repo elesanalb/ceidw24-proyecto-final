@@ -88,6 +88,65 @@ nav.gallery .menu .select a{
 
 /* MEDIA QUERY */
 
+/* -------------------------- tablet */
+
+@media screen and (min-width: 721px){
+
+    /* MENU */
+
+    nav nav{
+        margin-top: 45px;
+    }
+
+    .menu{
+        padding: 0 20px;
+        width: 170px;
+    }
+
+    .menu li{
+        margin: 10px 0;
+    }
+
+    .menu li a{
+        width: 130px;
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+
+    /* -------------- menu select */
+
+    .menu .select a{
+        width: 150px;
+    }
+
+
+    /* ---------------- hover */
+
+    .menu li a:hover:not(.dropdown-menu a){
+        width: 150px;
+    }
+
+
+    /* --------------- dropdown menu */
+
+    .menu .dropdown .dropdown-menu{
+        margin: 5px 25px;
+    }
+
+    .menu .dropdown .dropdown-menu a{
+        margin: 5px 0;
+        width: 100px;
+    }
+
+    .menu .dropdown .dropdown-menu a:hover{
+        width: 115px;
+    }
+}
+
+
+
+
 /* -------------------------- Laptop */
 
 @media screen and (min-width: 1024px){
