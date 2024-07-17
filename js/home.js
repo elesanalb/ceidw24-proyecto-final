@@ -1,40 +1,4 @@
 // ---------------------------- about
-// cambiar estructura html para dos tamaños distintos
-
-const sectionAbout = document.querySelector('div.section');
-
-if(viewport > 1241){
-    sectionAbout.innerHTML = `
-        <div class="portrait"></div>
-        <div class="ab-descript">
-            <h4>elena sánchez aka <span>lena qiao</span></h4>
-            <p>I'm a <span class="highlight">digital and UX/UI designer</span>, finishing my Master's degree on <span class="highlight">Web Design and Development</span>, who's also passionate about illustration. <span class="highlight-2">Perseverant</span> throughout my studies, so that I could downpour what I've learnt at work, and make the most out of the experiences, acquiring and absorbing knowledge as much as I made it was possible.</p>
-            <p><span class="highlight">Creativity</span> is where I really shine. I've honed my artistic skills through <span class="highlight-2">self-teaching</span> and expressing myself through drawing. Besides <span class="highlight-2">Spanish</span>, I'm fluent in <span class="highlight-2">English</span> and even studied <span class="highlight-2">Portuguese</span> and <span class="highlight-2">Korean</span> along the way.</p>
-            
-            <ul class="skill-list">
-            </ul>
-        </div>
-    `    
-}
-
-
-if(viewport < 1241){
-   sectionAbout.innerHTML = `
-        <div class="ab-descript">
-            <h4>elena sánchez aka <span>lena qiao</span></h4>
-            <p>
-            <img class="portrait" src="img/about-portrait.png">
-            I'm a <span class="highlight">digital and UX/UI designer</span>, finishing my Master's degree on <span class="highlight">Web Design and Development</span>, who's also passionate about illustration. <span class="highlight-2">Perseverant</span> throughout my studies, so that I could downpour what I've learnt at work, and make the most out of the experiences, acquiring and absorbing knowledge as much as I made it was possible.</p>
-            <p><span class="highlight">Creativity</span> is where I really shine. I've honed my artistic skills through <span class="highlight-2">self-teaching</span> and expressing myself through drawing. Besides <span class="highlight-2">Spanish</span>, I'm fluent in <span class="highlight-2">English</span> and even studied <span class="highlight-2">Portuguese</span> and <span class="highlight-2">Korean</span> along the way.</p>
-            
-            <ul class="skill-list">
-            </ul>
-        </div>
-   `
-}
-
-
-
 // Intentando pensar en uso de este porfolio a futuro, quería tener una lista de puntos importantes que un futuro pudiera cambiar, por eso lo hice así.
 const ul = document.querySelector(".skill-list");
 // console.log(ul);

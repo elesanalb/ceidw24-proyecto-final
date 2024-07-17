@@ -165,9 +165,8 @@
 
 .content.about section .section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
 }
 
 .about ul{
@@ -219,6 +218,11 @@
     flex-direction: column;
 }
 
+.content.about h4 {
+    right: 0;
+    margin-bottom: 0;
+}
+
 .content.about h4 span{
     font-family: "Doppelganger","Inspiration", serif;
     color: #FFF2BB;
@@ -226,6 +230,10 @@
 
 .about span.highlight{
     color: #fff8da;
+}
+
+.about .skill-list{
+    width: fit-content;
 }
 
 /* ---------------------------------------- */
@@ -544,24 +552,23 @@ form.contact label.country-codes{
     }
 
     .content.about section{
-        padding: 60px;
+        padding: 80px 60px;
     }
 
     .content.about .portrait{
-        outline: 2px solid white;
-        outline-offset: 4px;
-        background-image: url(../img/about-portrait.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         width: calc(1000px * 0.25);
         height: calc(1250px * 0.25);
         padding: 4px;
-        margin: 10px 15px;
+        margin: 10px 25px 20px 0;
     }
 
     .content.about div .ab-descript{
         padding: 0 50px;
+    }
+
+    .about .skill-list{
+        float: left;
+        margin-left: 30px;
     }
 
     .about .skill-element{
@@ -697,18 +704,20 @@ form.contact label.country-codes{
         width: calc(1000px * 0.3);
         height: calc(1250px * 0.3);
         padding: 4px;
-        margin: 0 20px;
+        margin: 10px 30px 0 0;
     }
 
     .content.about div .ab-descript{
         padding: 0 40px;
     }
 
+    .about .skill-list{
+        margin-left: 40px;
+    }
     .about .skill-element{
         font-size: 1.15rem;
     }
     
-
     .content.about h4 span{
         font-size: 4.2rem;
     }
