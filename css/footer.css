@@ -96,6 +96,10 @@ footer .sum-menu div:first-child h4{
     text-transform: uppercase;
 }
 
+footer h4.name{
+    color: #FFF2BB;
+}
+
 footer .logo{
     cursor: pointer;
 }
@@ -123,23 +127,23 @@ footer i:hover{
 @media screen and (min-width: 721px){
 
     footer{
-        padding: 80px 350px 60px 300px;
+        padding: 30px 100px 60px 150px;
     }
 
     footer .sum-menu div{
-        margin: 0 50px;
+        margin: 0 20px;
     }
 
     footer h4{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     footer .social-media{
-        padding: 10px 15px;
+        padding: 0px;
     }
 
     footer .social-media div{
-        margin: 20px 0;
+        margin: 10px 0;
     }
 }
 

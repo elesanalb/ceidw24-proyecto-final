@@ -84,7 +84,7 @@ p span.highlight-2{
 @media screen and (min-width: 721px){
     
     h1{
-        font-size: 9rem;
+        font-size: 6.8rem;
     }
 
     h2{
@@ -98,8 +98,8 @@ p span.highlight-2{
     }
 
     h4{
-        font-size: 1.8rem;
-        margin-bottom: 20px;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
     }
 
     h5{
@@ -108,8 +108,8 @@ p span.highlight-2{
 
     
     p{
-        margin-bottom: 12px;
-        font-size: 1rem;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
     }
 }
 
@@ -176,7 +176,7 @@ p span.highlight-2{
 
     h5{
         font-size: 1.5rem;
-        margin: 25px 0 5px;
+        margin: 5px 0;
     }
 
     p{
@@ -336,15 +336,15 @@ a.see-more i{
     .content{
         margin: 80px 0;
         left: 18vw;
-        width: 67vw;
+        width: 70vw;
     }
 
     
     /* ----------------------------- logo */ 
 
     .logo{
-        height: 70px;
-        margin: 0 20px;
+        height: 50px;
+        margin: 5px 20px;
     }
 
 
@@ -377,7 +377,7 @@ a.see-more i{
 
     .logo{
         height: 70px;
-        margin: 0 20px;
+        margin: 2px 20px;
     }
 
 
@@ -606,23 +606,33 @@ form label.label-flex{
 
     /* FORM */
 
-    form p, form label, form{
+    form p, form label, form, input[type="submit"], input[type="reset"]{
         font-size: 1.1rem;
     }
+
+    form textarea, ::placeholder, div.choice-input label{
+        font-size: 0.9rem; 
+    }
+
     form p.warning, form.contact label.message p{
         font-size: 0.7rem;
-        bottom: -10px;
+    }
+    form.contact label.message p{
+        bottom: -5px;
+    }
+    form p.warning{
+        bottom: -7px;
     }
 
     form div.form-section{
-        margin: 15px 0;
+        margin: 10px 0;
     }
 
     form.contact input[name="name"]{
-        width: 190px;
+        width: 250px;
     }
     form.contact input[name="number"]{
-        width: 150px;
+        width: 180px;
     }
 
     form input[list="country-codes"]{
@@ -632,15 +642,12 @@ form label.label-flex{
 
     form textarea{
         resize: none;
-        font-size: 0.9rem; 
-    }
-    form.contact input[name="email"], form.contact textarea{
-        width: 430px;
     }
 
-    input[type="submit"], input[type="reset"]{
-        font-size: 1.1rem;
+    form.contact input[name="email"], form.contact textarea{
+        width: 330px;
     }
+
     input[type="submit"], form label.reset{
         margin: 10px;
     }
@@ -648,12 +655,9 @@ form label.label-flex{
         margin: 0;
     }
 
-    ::placeholder{
-        font-size: 0.9rem;
-    } 
+    
 
     div.choice-input label{
-        font-size: 0.9rem;
         margin: 5px 15px;
     }
 }
@@ -734,7 +738,7 @@ form label.label-flex{
     }
 
     form div.form-section{
-        margin: 15px 0;
+        margin-bottom: 10px;
     }
 
     form.contact input[name="name"]{
@@ -800,7 +804,7 @@ form label.label-flex{
 /* FRAMES */
 
 .frame-1{
-    position: relative;
+    position: absolute;
     border-top-style: solid;
     border-top-color: white;
 }
@@ -860,26 +864,26 @@ form label.label-flex{
 @media screen and (min-width: 721px){
 
     .frame-1{
-        top:30px;
-        border-top-width: 18px;
+        top:25px;
+        border-top-width: 15px;
     }
 
     .frame-1, .frame-2, .frame-3, .frame-4{
-        left: 40px;
-        border-left-width: 18px;
+        left: 25px;
+        border-left-width: 15px;
     }
 
     .frame-1, .frame-4{
-        width: 100%;
-        height: calc(100% - 30px);
+        width: calc(100% - 25px);
+        height: calc(100% - 25px);
     }
 
     .frame-2, .frame-3{
-        border-left-width: 18px;
+        border-left-width: 15px;
     }
 
     .frame-4{
-        border-bottom-width: 18px;
+        border-bottom-width: 15px;
     }
 }
 
@@ -900,7 +904,7 @@ form label.label-flex{
     }
 
     .frame-1, .frame-4{
-        width: 100%;
+        width: calc(100% - 40px);
         height: calc(100% - 30px);
     }
 
@@ -930,7 +934,7 @@ form label.label-flex{
     }
 
     .frame-1, .frame-4{
-        width: 100%;
+        width: calc(100% - 50px);
         height: calc(100% - 50px);
     }
 
@@ -1123,11 +1127,11 @@ form label.label-flex{
 
     .deco-container.deco-img-1{
         margin: 80px 40px 0;
-        padding: 18px 0;
+        padding: 30px 0;
     }
     .deco-img-1 .deco-frame-img {
-        width: calc(1049px * 0.3);
-        height: calc(453px * 0.3);
+        width: calc(1049px * 0.25);
+        height: calc(453px * 0.25);
     }
 
 
@@ -1137,9 +1141,9 @@ form label.label-flex{
         margin: 0;
     }
     .deco-img-2 .deco-frame-img{
-        margin-right: 140px;
-        width: calc(568px * 0.2);
-        height: calc(1231px * 0.2);
+        margin-right: 50px;
+        width: calc(568px * 0.15);
+        height: calc(1231px * 0.15);
     }
 
 
@@ -1435,7 +1439,6 @@ div.i-button{
     justify-content: center;
     align-items: center;
     background-color: #F9B800;
-    margin: 5px 0;
 }
 
 div.i-button i{
@@ -1467,14 +1470,16 @@ div.i-button.to-start:hover{
 @media screen and (min-width: 721px){
 
     div.i-container{
-        left: 35px;
-        bottom: 50px;
+        left: 20px;
+        top: 50px;
         height: 50px;
     }
 
     div.i-button{
         width: 25px;
         height: 25px;
+        margin: 2px 0;
+
     }
 
     @keyframes arrow-up{
@@ -1493,7 +1498,8 @@ div.i-button.to-start:hover{
 @media screen and (min-width: 1024px){
 
     div.i-container{
-        left: 35px;
+        top: initial;
+        left: 37.2px;
         bottom: 50px;
         height: 50px;
     }
@@ -1501,6 +1507,7 @@ div.i-button.to-start:hover{
     div.i-button{
         width: 25px;
         height: 25px;
+        margin: 5px 0;
     }
 
     @keyframes arrow-up{
@@ -1528,6 +1535,7 @@ div.i-button.to-start:hover{
     div.i-button{
         width: 30px;
         height: 30px;
+        margin: 5px 0;
     }
 
     @keyframes arrow-up{
@@ -1545,8 +1553,39 @@ div.i-button.to-start:hover{
 
 
 
+/* ------------------------------------------------------------------------------------- */
 
-/* ---------------------------------- */
+
+
+
+
+::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+@media screen and (min-width:721px){ ::-webkit-scrollbar{ width: 3px; } }
+@media screen and (min-width:1241px){ ::-webkit-scrollbar{ width: 7px; } }
+
+::-webkit-scrollbar-track{
+    -webkit-appearance: none;
+    background-color:  #3D3D3D;
+}
+
+::-webkit-scrollbar-thumb{
+    -webkit-appearance: none;
+    background-color: #F9B800;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    -webkit-appearance: none;
+    background-color: #FFF2BB;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------- */
 
 
 .dark-mode{

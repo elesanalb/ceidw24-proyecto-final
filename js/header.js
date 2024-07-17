@@ -1,4 +1,5 @@
-//crear un header común para todas las páginas con un js
+//crear header, menu y footer común para todas las páginas utitlizando unicamente una etiqueta en el html
+
 const header = document.querySelector("header");
 const menu = document.querySelector(".menu");
 const footer = document.querySelector("footer");
