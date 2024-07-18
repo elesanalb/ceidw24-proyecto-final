@@ -84,35 +84,86 @@ console.log(about);
 
 
 // ----------------------------------------- icon size
-// los iconos, al ser de font-awesome, no pueden ser editados manualmente en el css, si no que los tamaños los determinan clases dadas por font-awesome
 
-const buttonToStart = document.querySelector('.i-button.to-start');
-const buttonDarkMode = document.querySelector('.i-button.dm-button');
-const buttonArrowRight = document.querySelectorAll("fa-arrow-right");
+const buttonToStart = document.querySelector('.fa-arrow-up');
+const buttonDarkMode = document.querySelector('.fa-circle-half-stroke');
+const buttonArrowRight = document.querySelectorAll(".fa-arrow-right");
+const buttonMenu = document.querySelector('.menu-button');
+const menuIcon = document.querySelector('.menu-button i');
+const buttonMenuText = document.querySelector('.menu-button p');
+const menuBlock = document.querySelectorAll('.menu-select a');
 const viewport = window.innerWidth;
 
 
-// 1580 | arrow up fa-xl | dark mode fa-lg
 
-// console.log(viewport);
+//crear botton para menú en pantallas pequeñas
+let menuSwitch = true;
+
+menuIcon.classList.add("fa-bars");
+console.log(menuIcon);
+
+buttonMenu.addEventListener("click", (event) => {
+    event.preventDefault();
+
+
+    if(menuSwitch == true){
+        menu.style.padding = "0 15px";
+        menu.style.width = "120px";
+        menuBlock.forEach((opt, index) => {
+            menuBlock[index].style.display = "block";
+        });
+        menuIcon.classList.remove("fa-bars");
+        menuIcon.classList.add("fa-xmark");
+        buttonMenuText.innerText = "close";
+
+    }else if(menuSwitch == false){
+        menu.style.padding = "0";
+        menu.style.width = "0";
+        menuBlock.forEach((opt, index) => {
+            menuBlock[index].style.display = "none";
+        });
+        menuIcon.classList.remove("fa-xmark");
+        menuIcon.classList.add("fa-bars");
+        buttonMenuText.innerText = "menu";
+    }
+
+    menuSwitch = !menuSwitch;
+
+
+
+
+// los iconos, al ser de font-awesome, no pueden ser editados manualmente en el css, si no que los tamaños los determinan clases dadas por font-awesome
 
 if(viewport > 1580){
     buttonToStart.classList.add("fa-xl");
     buttonDarkMode.classList.add("fa-lg");
-    buttonArrowRight.classList.add("fa-xl");
+    buttonArrowRight.forEach((button, index) => {
+        buttonArrowRight[index].classList.add("fa-xl");
+    });
 }
 
 if(1241 < viewport < 1580){
     buttonToStart.classList.add("fa-lg");
     buttonDarkMode.classList.add("fa-ml");
-    buttonArrowRight.classList.add("fa-xl");
+    buttonArrowRight.forEach((button, index) => {
+        buttonArrowRight[index].classList.add("fa-lg");
+    });
 }
+
 if(721 < viewport < 1241){
     buttonToStart.classList.add("fa-ml");
     buttonDarkMode.classList.add("fa-sm");
-    buttonArrowRight.classList.add("fa-lg");
+    buttonArrowRight.forEach((button, index) => {
+        buttonArrowRight[index].classList.add("fa-lg");
+    });
 }
 
+
+
+});
+
+
+// console.log(menu);
 
 
 // ------------------------------- dark mode
@@ -123,12 +174,7 @@ let dark = false;
 
 buttonDarkMode.addEventListener("click", (event) => {
     event.preventDefault();
-    bodyHTML.classList.add(`${dark ? "" : "dark-mode"}`);
-    // bodyHTML.style.backgroundColor = dark ? "white" : "#3D3D3D";
+    // bodyHTML.classList.add(dark ? "" : "dark-mode");
+    bodyHTML.style.backgroundColor = dark ? "white" : "#3D3D3D";
     dark = !dark;
 });
-
-
-
-
-

@@ -24,7 +24,8 @@ nav nav{
 }
 
 .menu li a{
-    display: block;
+    display: none;
+    /* display: block; */
     background-color: #FFF2BB;
     text-decoration: none;
     color: black;
@@ -95,13 +96,13 @@ nav.gallery .menu .select a{
     /* MENU */
 
     nav nav{
-        margin-top: 10px;
+        margin-top: 0;
     }
 
-    .menu{
+    /* .menu{
         padding: 0 15px;
         width: 120px;
-    }
+    } */
 
     .menu li{
         margin: 5px 0;
@@ -167,6 +168,7 @@ nav.gallery .menu .select a{
     }
 
     .menu li a{
+        display: block;
         width: 130px;
         font-size: 1rem;
         padding: 5px 10px;

@@ -24,6 +24,8 @@ header .header-title{z-index: 1;}
 .content.about h4, .content.about h4 span{z-index: 2;}
 .content.about .ab-descript{z-index: 2;}
 .deco-img-2{z-index: 3;}
+.poster .poster-hover{z-index: 0;}
+.poster img{z-index: 3;}
 
 .frame-2{z-index:2;}
 .content.contact{z-index: 3;}
