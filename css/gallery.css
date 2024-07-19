@@ -441,14 +441,17 @@
 
     .half-section{
         width: 50vw;
+        max-height: calc(100vw * (2 / 3));
     }
 
     .fashion-section{
-        background-size: 500px;
+        background-size: 700px;
+        background-position: center left;
     }
 
     .sketch-section{
-        background-size: 650px;
+        background-size: 750px;
+        background-position: center right;
     }
 
     .half-section h3{
@@ -457,6 +460,7 @@
     }
 
     .gallery-cont{
+        max-height: calc(100vw * (2 / 3));
         padding-bottom: 40px;
     }
 
