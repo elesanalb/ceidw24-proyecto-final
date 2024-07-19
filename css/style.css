@@ -380,9 +380,7 @@ a.see-more i{
     /* ----------------------------- content */
 
     .content{
-        margin: 80px 0;
-        left: 10vw;
-        width: 85vw;
+       width: 100vw;
     }
 
     
@@ -1337,9 +1335,9 @@ form label.label-flex{
     }
     .deco-img-2 .deco-frame-img{
         left: 0;
-        margin-left: 8vw;
-        width: calc(568px * 0.15);
-        height: calc(1231px * 0.15);
+        margin-left: -10px;
+        width: calc(568px * 0.13);
+        height: calc(1231px * 0.13);
     }
 
 
@@ -1817,6 +1815,7 @@ div.i-button.menu-button:hover p{
         width: 25px;
         height: 25px;
         margin: 2px 0;
+        box-shadow: 0 5px 10px  rgba(70, 70, 70, 0.5);
     }
 
     div.i-button.menu-button i{

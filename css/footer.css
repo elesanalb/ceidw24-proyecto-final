@@ -148,7 +148,7 @@ footer i:hover{
         width: 100%;
         padding: 0;
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     footer .social-media div{
@@ -158,13 +158,21 @@ footer i:hover{
     footer .social-media div a{
         margin: 0 10px;
     }
+
+    footer .sum-menu{
+        flex-wrap: wrap;
+    }
     
     footer .sum-menu div{
-        margin: 0 20px;
+        margin: 10px 30px;
     }
 
     footer h4{
-        font-size: 1rem;
+        font-size: 1.2rem;
+    }
+
+    footer a{
+        margin-bottom: 5px;
     }
 
     
