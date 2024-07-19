@@ -55,6 +55,7 @@
     flex-direction: column;
     align-items: flex-end;
     text-decoration: none;
+    text-align: right;
 }
 
 .slider i:hover{
@@ -365,6 +366,13 @@ form.contact label.country-codes{
     .content.home h1{
         top: 40px;
         right: 5vw;
+        flex-wrap: wrap;
+        text-wrap: wrap;
+        text-align: right;
+        line-height: 0.7;
+    }
+    .content.home h4{
+        line-height: 1;
     }
 
     .content.home .slider{
@@ -443,7 +451,7 @@ form.contact label.country-codes{
     
 
     .about .skill-element{
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
 
     
@@ -489,21 +497,21 @@ form.contact label.country-codes{
 
     .content.contact .full-bg{
         padding: 40px 0;
-        padding-left: 10vw;
     }
 
     .content.contact .full-bg section{
-        width: 400px;
-        padding: 40px 35px;
+        width: 90vw;
+        padding: 40px 30px;
+        margin: 0 auto;
     }
 
     .contact h1{
-        font-size: 5.2rem;
+        font-size: 4.5rem;
         margin-bottom: 10px;
     }
 
     .content.contact form{
-        width: 100%;
+        width: 75vw;
         margin-top: 20px;
     }
 

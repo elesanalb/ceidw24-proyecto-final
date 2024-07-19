@@ -127,9 +127,38 @@ footer i:hover{
 @media screen and (max-width: 721px){
 
     footer{
-        padding: 30px 100px 60px 150px;
+        padding: 50px 30px 80px; 
+    }
+    
+    footer .footer-menu{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .footer-menu .social-media{
+        order: 1;
+    }
+    footer .footer-menu .sum-menu{
+        order: 2;
     }
 
+    footer .social-media{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    footer .social-media div{
+        margin-left: -19px;
+    }
+
+    footer .social-media div a{
+        margin: 0 10px;
+    }
+    
     footer .sum-menu div{
         margin: 0 20px;
     }
@@ -138,13 +167,7 @@ footer i:hover{
         font-size: 1rem;
     }
 
-    footer .social-media{
-        padding: 0px;
-    }
-
-    footer .social-media div{
-        margin: 10px 0;
-    }
+    
 }
 
 
