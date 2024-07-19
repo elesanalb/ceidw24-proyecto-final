@@ -730,11 +730,11 @@ form label.label-flex{
         margin: 10px 0;
     }
 
-    form.contact input[name="name"]{
-        width: 250px;
+    form.contact input[name="name"], form.contact input[name="email"], form.contact textarea{
+        width: 300px;
     }
     form.contact input[name="number"]{
-        width: 180px;
+        width: 230px;
     }
 
     form input[list="country-codes"]{
@@ -744,10 +744,6 @@ form label.label-flex{
 
     form textarea{
         resize: none;
-    }
-
-    form.contact input[name="email"], form.contact textarea{
-        width: 330px;
     }
 
     input[type="submit"], form label.reset{
@@ -1033,18 +1029,18 @@ form label.label-flex{
 @media screen and (max-width: 721px){
 
     .frame-1{
-        top:10px;
+        top:5px;
         border-top-width: 5px;
     }
 
     .frame-1, .frame-2, .frame-3, .frame-4{
-        left: 10px;
+        left: 5px;
         border-left-width: 5px;
     }
 
     .frame-1, .frame-4{
-        width: calc(100% - 10px);
-        height: calc(100% - 10px);
+        width: calc(100% - 5px);
+        height: calc(100% - 5px);
     }
 
     .frame-4{
@@ -1336,7 +1332,8 @@ form label.label-flex{
         margin: 0;
     }
     .deco-img-2 .deco-frame-img{
-        margin-right: 50px;
+        left: 0;
+        margin-left: 8vw;
         width: calc(568px * 0.15);
         height: calc(1231px * 0.15);
     }
@@ -1807,7 +1804,7 @@ div.i-button.menu-button:hover p{
 @media screen and (max-width: 721px){
 
     div.i-container{
-        left: 20px;
+        left: 12px;
         top: 50px;
         height: 50px;
     }

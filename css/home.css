@@ -403,7 +403,7 @@ form.contact label.country-codes{
     }
     
     .content.about h1{
-        padding: 20px 10px;
+        padding: 30px 10px;
     }
 
     .content.about section{
@@ -488,21 +488,23 @@ form.contact label.country-codes{
     /* CONTACT */
 
     .content.contact .full-bg{
-        padding: 80px 200px;
+        padding: 40px 0;
+        padding-left: 10vw;
     }
 
     .content.contact .full-bg section{
-        width: 500px;
-        padding: 40px 80px;
+        width: 400px;
+        padding: 40px 35px;
     }
 
     .contact h1{
-        font-size: 5.5rem;
+        font-size: 5.2rem;
+        margin-bottom: 10px;
     }
 
     .content.contact form{
         width: 100%;
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     form.contact label.country-codes{
