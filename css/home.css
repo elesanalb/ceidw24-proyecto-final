@@ -366,6 +366,7 @@ form.contact label.country-codes{
     .content.home h1{
         top: 40px;
         right: 5vw;
+        margin-left: 30px;
         flex-wrap: wrap;
         text-wrap: wrap;
         text-align: right;
@@ -377,7 +378,7 @@ form.contact label.country-codes{
 
     .content.home .slider{
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
     }
 
     .content.home .slider img{
@@ -412,6 +413,7 @@ form.contact label.country-codes{
     
     .content.about h1{
         padding: 30px 10px;
+        height: calc(100% + 50px);
     }
 
     .content.about section{
@@ -496,17 +498,17 @@ form.contact label.country-codes{
     /* CONTACT */
 
     .content.contact .full-bg{
-        padding: 8px;
+        padding: 80px 8px;
     }
 
     .content.contact .full-bg section{  
         width: calc(100vw - 16px);
-        padding: 40px 30px 30px;
+        padding: 40px 0 30px 25px;
         margin: 0 auto;
     }
 
     .contact h1{
-        font-size: 4.5rem;
+        font-size: 4.2rem;
         margin-bottom: 10px;
     }
 
