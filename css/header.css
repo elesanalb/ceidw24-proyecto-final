@@ -123,6 +123,7 @@ header.home .header-title h1{
     /* TITLE */
 
     header.home .header-title h1{
+        margin-top: 50px;
         font-size: 15em;
         margin-right: 150px;
     }
@@ -172,6 +173,7 @@ header.home .header-title h1{
     /* TITLE */
 
     header.home .header-title h1{
+        margin-top: 30px;
         font-size: 10.5em;
         margin-right: 100px;
     }
