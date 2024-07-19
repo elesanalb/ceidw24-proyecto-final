@@ -390,7 +390,7 @@ a.see-more i{
 
     .logo{
         height: 50px;
-        margin: 0 5px;
+        margin: 10px 0;
     }
 
 
@@ -1033,26 +1033,22 @@ form label.label-flex{
 @media screen and (max-width: 721px){
 
     .frame-1{
-        top:25px;
-        border-top-width: 15px;
+        top:10px;
+        border-top-width: 5px;
     }
 
     .frame-1, .frame-2, .frame-3, .frame-4{
-        left: 25px;
-        border-left-width: 15px;
+        left: 10px;
+        border-left-width: 5px;
     }
 
     .frame-1, .frame-4{
-        width: calc(100% - 25px);
-        height: calc(100% - 25px);
-    }
-
-    .frame-2, .frame-3{
-        border-left-width: 15px;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
     }
 
     .frame-4{
-        border-bottom-width: 15px;
+        border-bottom-width: 5px;
     }
 }
 
@@ -1822,9 +1818,6 @@ div.i-button.menu-button:hover p{
         margin: 2px 0;
     }
 
-    div.i-button.menu-button{
-        /* margin-top: 60px; */
-    }
     div.i-button.menu-button i{
         margin-left: 5px;
     }
