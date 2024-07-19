@@ -107,19 +107,21 @@ header.home .header-title h1{
         font-size: 8.3em;
         margin-right: 10px;
     }
-    header.projects .header-title h1{
+    header.projects .header-title h1, header.gallery .header-title h1{
         display: flex;
         height: 110px;
         align-items: flex-end;
         text-align: right;
-        margin-right: 0;
+        margin-right: 5px;
         font-size: 4.8em;
         line-height: 0.7;
         margin-left: 20px;
     }
     header.gallery .header-title h1{
-        margin-top: 35px;
-        font-size: 5.5em;
+        font-size: 4.8em;
+    }
+    header.gallery .header-title h1{
+        font-size: 4em;
     }
 
     header .header-title div{
