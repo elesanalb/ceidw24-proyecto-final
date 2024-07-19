@@ -1447,7 +1447,7 @@ form label.label-flex{
 
     .deco-img-3.deco-frame-img{
         right: 70px;
-        top: 250px;
+        top: 0;
         margin-top: -70px;
         width: calc(80px * 0.65);
         height: calc(275px * 0.65);
@@ -1645,8 +1645,8 @@ form label.label-flex{
 
     .deco-img-3.deco-frame-img{
         left: initial;
-        right: 100px;
-        margin-top: 180px;
+        bottom: 300px;
+        right: 120px;
         width: calc(80px * 0.9);
         height: calc(275px * 0.9);
     }

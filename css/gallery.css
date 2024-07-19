@@ -25,6 +25,9 @@
     font-family: "Doppelganger";
     font-weight: 300;
     text-transform: capitalize;
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
 }
 
 
@@ -179,11 +182,6 @@
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    writing-mode: vertical-lr;
-    height: 100vh;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -213,15 +211,45 @@
 
 /* MEDIA QUERY */
 
+/* estructura movil */
+
+@media screen and (max-width:721px){
+
+    /* -------------------------------- fashion & sketch */
+
+    .gallery-section:last-child{
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .gallery .half-section{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .gallery .half-section h3{
+        writing-mode: horizontal-tb;
+        text-align: right;
+        display: flex;
+        right: 0;
+    }
+
+    .gallery-cont{
+        top: 0;
+        width: 100%;
+        height: 100%;
+        align-items: flex-end;
+    }
+}
+
+
 /* ------------------- movil */
 
 @media screen and (max-width: 721px) {
     
     .gallery h3{
         font-size: 2.3rem;
-        display: flex;
-        align-items: flex-end;
-        text-align: right;
         line-height: 0.7;
     }
 
@@ -232,11 +260,6 @@
 
     .photo-section .content{
         padding: 80px 10px 350px 20px;
-        flex-direction: column;
-    }
-
-    .photo-section .photo-collection{
-        width: 160px;
     }
 
     .photo-collection.flower{
@@ -265,7 +288,7 @@
 
     .art-section h1{
         font-size: 4.2rem;
-        line-height:0.75;
+        line-height: 0.75;
         margin-left: -20px;
         padding-top: 40px;
     }
@@ -276,31 +299,14 @@
 
     /* FASHION & SKETCH */
 
-    .gallery-section:last-child{
-        width: 100vw;
-        height: 100vh;
-        flex-direction: column;
-    }
-
-    .gallery .half-section{
-        width: 100%;
-        height: 50vh;
-    }
+    
 
     .gallery .half-section h3{
         font-size: 3rem;
-        writing-mode: horizontal-tb;
-        text-align: right;
-        display: flex;
         line-height: 0.7;
-        right: 0;
     }
 
     .gallery-cont{
-        top: 0;
-        width: 100%;
-        height: 100%;
-        align-items: flex-end;
         padding: 20px;
     }
 
@@ -320,6 +326,62 @@
     }
 }
 
+@media screen and (max-width:500px){
+    .photo-section .photo-collection{
+        width: 160px;
+    }
+}
+
+
+@media screen and (min-width:500px){
+
+    .photo-section .content{
+        padding-left: 40px;
+        padding-right: 30px;
+    }
+    .photo-section .photo-collection{
+        width: 200px;
+    }
+
+    .photo-collection.flower{
+        margin-top: -80px;
+    }
+}
+
+
+
+/* estructura pantalla grande */
+
+@media screen and (min-width:721px){
+
+    /* -------------------------------- fashion & sketch */
+
+    .gallery-section:last-child{
+        width: 100vw;
+        flex-direction: row;
+    }
+
+    .gallery .half-section{
+        width: 50vw;
+        height: 100%;
+    }
+
+    .gallery .half-section h3{
+        text-align: initial;
+        display: flex;
+        right: initial;
+    }
+
+    .gallery-cont{
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: row;
+        writing-mode: vertical-lr;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
 
 
 /* ------------------- tablet */
@@ -337,6 +399,8 @@
 
     .photo-section .content{
         padding-bottom: 350px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .photo-section .photo-collection{
@@ -400,6 +464,7 @@
         height: 100px;
     }
 }
+
 
 
 
@@ -484,7 +549,11 @@
     }
 }
 
-
+@media screen and (min-width:1290px){
+    .photo-section .photo-collection{
+        width: 350px;
+    }
+}
 
 
 /* ------------------- monitor */
