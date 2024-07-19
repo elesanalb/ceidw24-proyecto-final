@@ -95,12 +95,10 @@ const menuBlock = document.querySelectorAll('.menu-select a');
 const viewport = window.innerWidth;
 
 
-
 //crear botton para menú en pantallas pequeñas
 let menuSwitch = true;
 
 menuIcon.classList.add("fa-bars");
-console.log(menuIcon);
 
 buttonMenu.addEventListener("click", (event) => {
     event.preventDefault();
@@ -128,8 +126,7 @@ buttonMenu.addEventListener("click", (event) => {
     }
 
     menuSwitch = !menuSwitch;
-
-
+});
 
 
 // los iconos, al ser de font-awesome, no pueden ser editados manualmente en el css, si no que los tamaños los determinan clases dadas por font-awesome
@@ -159,8 +156,6 @@ if(721 < viewport < 1241){
 }
 
 
-
-});
 
 
 // console.log(menu);

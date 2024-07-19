@@ -28,38 +28,16 @@ section.design{
     position: relative;
     left: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: auto min-content min-content;
-    grid-template-rows: repeat(2, auto);
-    justify-content: flex-end;
     width: 100vw;
     height: 100%;
-    flex-wrap: nowrap;
-}
-.design .content .body-section{
-    grid-column: 1;
-}
-.design .content .des-descript{
-    grid-row: 2;
-    grid-column: 1 / 4;
 }
 
 .design .body-section{
-    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
-}
-
-.design .body-section{
-    writing-mode: vertical-rl;
-    align-self: flex-end;
-}
-
-.design .poster img{
-    width: (100vw / 3);
 }
 
 .design .poster .poster-hover{
@@ -186,10 +164,6 @@ section.web-design{
     transition-delay: 1s;
 }
 
-.design .poster .poster-hover p{
-    color: #3D3D3D;
-}
-
 .art img{
     width: 100%;
 }
@@ -201,9 +175,9 @@ section.web-design{
 }
 
 .art .body-section p{
-    text-align: end;
+    text-align: justify;
+    text-justify: distribute;
 }
-
 
 .art .body-section a{
     color: #EF3581;
@@ -275,21 +249,32 @@ section.web-design{
 
 /* MEDIA QUERY */
 
-/* ----------------------------- movil */
+/* estructura movil */
+/* seccion design - grid 1 x 4
+    |  img  |
+    |-------|
+    |  img  |
+    |-------|
+    | title |
+    |-------|
+    | text  |
+*/
 
 @media screen and (max-width: 721px){
 
-    /* SECTIONS */
-
-    /* DESIGN */
+    /* ---------------------- design */
 
     .design section.content{
+        display: grid;
         grid-template-columns: 1;
-        grid-template-rows: repeat(4, auto);
+        grid-template-rows: repeat(4, length);
         flex-wrap: wrap;
         align-items: center;
+        height: 100%;
+        grid-row-gap: 0;
     }
-    .design .content .body-section, .design .content .poster, .design .content .des-descript{
+
+    .design .body-section, .design .content .poster, .design .content .des-descript{
         grid-column: 1;
     }
     .design .content .poster:first-child{
@@ -299,24 +284,57 @@ section.web-design{
         grid-row: 2;
     }
     .design .content .body-section{
-        grid-row: 3;
-    }
-    .design .content .des-descript{
         grid-row: 4;
     }
+    .design .content .des-descript{
+        grid-row: 5;
+    }
+
+    .design .body-section{
+        height: fit-content;
+        writing-mode: horizontal-tb;
+    }
+
+    .design .body-section, .design .poster{
+        width: 100vw;
+    }
+
+    .design .poster img, .design .poster .poster-hover{
+        object-fit: contain;
+        width: 100%;
+        padding: 0;
+    }
+
+    .poster-hover{
+        top: 0;
+        margin: 0;
+        height: 90%;
+    }
+
+
+
+    /* ---------------------------- web design & other */
+
+    .web-design section, .other-projects section{
+        flex-direction: column;
+    }
+
+}
+
+
+/* ----------------------------- movil */
+
+@media screen and (max-width: 721px){
+
+    /* SECTIONS */
+
+    /* DESIGN */
 
     .design .poster{
-        width: 100vw;
-        height: 100%;
         margin: 0;
     }
-    .design .poster img{
-        width: 100%;
-        height: 100%;
-    }
+
     .design .poster .poster-hover{
-        width: 100%;
-        height: 100%;
         margin: 0;
         padding-bottom: 0;
     }
@@ -331,8 +349,6 @@ section.web-design{
     }
 
     .design .body-section{
-        height: fit-content;
-        writing-mode: horizontal-tb;
         padding: 80px 30px 15px;
     }
     
@@ -369,7 +385,6 @@ section.web-design{
 
     .web-design section{
         margin-top: 35px;
-        flex-direction: column;
     }
 
     .web-design .web-section, .web-design .ux-ui{
@@ -434,10 +449,7 @@ section.web-design{
         padding: 20px 50px 50px;
     }
 
-    .art .body-section div p{
-        text-align: justify;
-        text-justify: distribute;
-    }
+    
 
 
 
@@ -465,7 +477,6 @@ section.web-design{
     }
 
     .other-projects section{
-        flex-direction: column;
         margin-top: 30px;
     }
 
@@ -478,6 +489,65 @@ section.web-design{
         right: 8px;
         width: 90px;
     }
+}
+
+
+
+
+/* estructura pantallas grandes */
+/* seccion design - grid 2 x3 
+    | title ||       ||       |
+    |-------||  img  ||  img  |
+    | text  ||       ||       |
+*/
+
+@media screen and (min-width:721px){
+
+    .design section.content{
+        display: grid;
+        grid-template-columns: auto min-content min-content;
+        grid-template-rows: repeat(2);
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        height: 100%;
+    }
+
+    .design .content .body-section{
+        grid-column: 1;
+    }
+    .design .content .des-descript{
+        grid-row: 2;
+        grid-column: 1 / 4;
+    }
+
+    .design .body-section .design .poster, .design .poster img, .design .poster .poster-hover{
+        max-width: calc(100vw / 3);
+        height: 100%;
+        margin: 0;
+    }
+
+    .design .body-section{
+        max-height: fit-content;
+    }
+
+    .design .poster img{
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .design .body-section{
+        writing-mode: vertical-rl;
+        align-self: flex-end;
+    }
+
+
+    /* -------------------------------- web design & other */
+
+    .web-design section, .other-projects section{
+        flex-direction: row;
+    }
+
+
 }
 
 
@@ -510,11 +580,6 @@ section.web-design{
         font-size: 1.5rem;
         margin: 15px 0;
     }
-
-    .design .poster img{
-        height: 100vh;
-    }
-
 
 
 
@@ -661,10 +726,6 @@ section.web-design{
         padding: 20px 200px 0 280px;
     }
     
-    .design .poster-hover{
-        height: 100%;
-    }
-    
     .poster-hover p{
         font-size: 2.1rem;
         margin: 30px 0;
@@ -793,10 +854,6 @@ section.web-design{
 
     .design .des-descript{
         padding: 50px 500px 0 300px;
-    }
-
-    .design .poster-hover{
-        height: 90%;
     }
     
     .poster-hover p{

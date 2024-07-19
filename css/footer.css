@@ -78,6 +78,7 @@ footer a{
     text-decoration: none;
     color: black;
     text-transform: capitalize;
+    margin-bottom: 10px;
 }
 
 footer h4{
@@ -169,13 +170,7 @@ footer i:hover{
 
     footer h4{
         font-size: 1.2rem;
-    }
-
-    footer a{
-        margin-bottom: 5px;
-    }
-
-    
+    }    
 }
 
 
