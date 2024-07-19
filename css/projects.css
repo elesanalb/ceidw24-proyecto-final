@@ -45,9 +45,12 @@ section.design{
 }
 
 .design .body-section{
+    height: 100vh;
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .design .body-section{
@@ -272,6 +275,163 @@ section.web-design{
 
 /* MEDIA QUERY */
 
+/* ----------------------------- movil */
+
+@media screen and (max-width: 721px){
+
+    /* SECTIONS */
+
+     /* DESIGN */
+
+     section.design{
+        margin-bottom: 80px;
+    }
+
+    .design .body-section{
+        padding-left: 50px;
+        padding-top: px;
+    }
+    
+    .design .des-descript{
+        padding: 20px 20vw 0;
+    }
+
+    .design .poster-hover{
+        height: 100%;
+    }
+    
+    .poster-hover p{
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
+
+    .design .poster img{
+        height: 100vh;
+    }
+
+
+
+
+
+    /* ------------------------------------------------------------------------ */
+
+
+
+    /* WEB */
+
+    section.web-design{
+        padding: 80px 0 50px;
+    }
+
+    .web-design .web-title .line-1{
+        width: 200px;
+        left: 500px;
+    }
+
+    .web-design p.web-descript{
+        padding-right: 100px;
+    }
+
+    .web-design section{
+        margin-top: 35px;
+    }
+
+    .web-design .web-section{
+        width: 55%;
+    }
+
+    .web-design .web-section div.postres, .web-design .web-section embed{
+        height: 350px;
+        margin: 10px;
+    }
+
+    .web-design .web-section div.postres{
+        margin-bottom: 50px;
+    }
+    .web-design embed{
+        height: 350px;
+    }
+
+    .web-design .ux-ui{
+        width: 35%;
+    }
+
+    .web-design .ux-ui img{
+        width: 45%;
+    }
+
+    .web-design .ux-ui div{
+        margin: 10px 0 30px;
+    }
+
+
+
+
+    
+    /* -------------------------------------------------------------------------- */
+
+
+
+
+    /* ART */
+
+    .content.art{
+        padding-top: 120px;
+        margin-top: 200px;
+    }
+
+    .art .poster .poster-hover{
+        top: 100px;
+    }
+
+    .art .body-section div{
+        padding: 20px 50px 50px;
+    }
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+
+
+
+
+
+    /* OTHER PROJECTS */
+
+    .content.other-projects{
+        padding-top: 100px;
+    }
+
+    .other-projects h1{
+        font-size: 6rem;
+    }
+    .other-projects h2{
+        font-size: 2.1rem;
+    }
+
+    .other-projects section{
+        margin-top: 30px;
+    }
+
+    .other-projects .modeling-3d{
+        width: 70%;
+    }
+
+    .other-projects .motion{
+        width: 25%;
+    }
+    
+    .other-projects .line-1{
+        top: 170px;
+        right: -80px;
+        width: 280px;
+    }
+}
+
+
+
 /* ----------------------------- tablet */
 
 @media screen and (min-width: 721px){
@@ -286,7 +446,7 @@ section.web-design{
 
     .design .body-section{
         padding-left: 50px;
-        padding-top: 250px;
+        padding-top: px;
     }
     
     .design .des-descript{

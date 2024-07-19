@@ -27,6 +27,8 @@ header .header-title{z-index: 1;}
 .poster .poster-hover{z-index: 0;}
 .poster img{z-index: 3;}
 
+.content.home{z-index: 1;}
+
 .frame-2{z-index:2;}
 .content.contact{z-index: 3;}
 

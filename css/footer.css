@@ -122,6 +122,32 @@ footer i:hover{
 
 /* MEDIA QUERY */
 
+/* --------------------------- movil */
+
+@media screen and (max-width: 721px){
+
+    footer{
+        padding: 30px 100px 60px 150px;
+    }
+
+    footer .sum-menu div{
+        margin: 0 20px;
+    }
+
+    footer h4{
+        font-size: 1rem;
+    }
+
+    footer .social-media{
+        padding: 0px;
+    }
+
+    footer .social-media div{
+        margin: 10px 0;
+    }
+}
+
+
 /* --------------------------- tablet */
 
 @media screen and (min-width: 721px){
@@ -155,7 +181,7 @@ footer i:hover{
 @media screen and (min-width: 1024px){
 
     footer{
-        padding: 80px 350px 60px 300px;
+        padding: 80px 15vw 60px;
     }
 
     footer .sum-menu div{

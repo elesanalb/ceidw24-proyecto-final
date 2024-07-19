@@ -79,6 +79,44 @@ p span.highlight-2{
 
 /* MEDIA QUERY */
 
+/* ------------------------- movil */
+
+@media screen and (max-width: 721px){
+    
+    h1{
+        font-size: 5rem;
+    }
+
+    h2{
+        font-size: 2.8rem;
+        margin: 10px 0;
+    }
+
+    h3{
+        font-size: 1.5rem;
+        margin: 15px 0;
+    }
+
+    h4{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    h5{
+        font-size: 1.32rem;
+    }
+
+    
+    p{
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
 /* ------------------------- tablet */
 
 @media screen and (min-width: 721px){
@@ -327,6 +365,44 @@ a.see-more i{
 .poster:hover .poster-hover{
     opacity: 100%;
 }
+
+
+
+/* -------------------------- movil */
+
+@media screen and (max-width: 721px){
+
+    .side-bg{
+        width: 57vw;
+    }
+
+
+    /* ----------------------------- content */
+
+    .content{
+        margin: 80px 0;
+        left: 10vw;
+        width: 85vw;
+    }
+
+    
+    /* ----------------------------- logo */ 
+
+    .logo{
+        height: 50px;
+        margin: 0 5px;
+    }
+
+
+    /* ------------------------------------------ buttons */
+
+    a.see-more{
+        font-size: 1.1rem;
+    }
+}
+
+
+
 
 
 /* -------------------------- tablet */
@@ -626,6 +702,73 @@ form label.label-flex{
 
 /* MEDIA QUERY */
 
+/* -------------------------- movil */
+
+@media screen and (max-width: 721px){
+
+    /* FORM */
+
+    form p, form label, form, input[type="submit"], input[type="reset"]{
+        font-size: 1.1rem;
+    }
+
+    form textarea, ::placeholder, div.choice-input label{
+        font-size: 0.9rem; 
+    }
+
+    form p.warning, form.contact label.message p{
+        font-size: 0.7rem;
+    }
+    form.contact label.message p{
+        bottom: -5px;
+    }
+    form p.warning{
+        bottom: -7px;
+    }
+
+    form div.form-section{
+        margin: 10px 0;
+    }
+
+    form.contact input[name="name"]{
+        width: 250px;
+    }
+    form.contact input[name="number"]{
+        width: 180px;
+    }
+
+    form input[list="country-codes"]{
+        width: 45px;
+        height: 25px;
+    }
+
+    form textarea{
+        resize: none;
+    }
+
+    form.contact input[name="email"], form.contact textarea{
+        width: 330px;
+    }
+
+    input[type="submit"], form label.reset{
+        margin: 10px;
+    }
+    input[type="reset"]{
+        margin: 0;
+    }
+
+    
+
+    div.choice-input label{
+        margin: 5px 15px;
+    }
+}
+
+
+
+
+
+
 /* -------------------------- tablet */
 
 @media screen and (min-width: 721px){
@@ -885,6 +1028,37 @@ form label.label-flex{
 
 /* MEDIA QUERY */
 
+/* ------------------- movil */
+
+@media screen and (max-width: 721px){
+
+    .frame-1{
+        top:25px;
+        border-top-width: 15px;
+    }
+
+    .frame-1, .frame-2, .frame-3, .frame-4{
+        left: 25px;
+        border-left-width: 15px;
+    }
+
+    .frame-1, .frame-4{
+        width: calc(100% - 25px);
+        height: calc(100% - 25px);
+    }
+
+    .frame-2, .frame-3{
+        border-left-width: 15px;
+    }
+
+    .frame-4{
+        border-bottom-width: 15px;
+    }
+}
+
+
+
+
 /* ------------------- tablet */
 
 @media screen and (min-width: 721px){
@@ -1132,6 +1306,106 @@ form label.label-flex{
 
 /* MEDIA QUERY */
 
+/* ---------------------------- movil */
+
+@media screen and (max-width: 721px){
+
+    /* --------------------- bullet frame */
+
+    .deco-frame-bullet .deco-frame-bullet-bullet{
+        width: 10px;
+        height: 10px;
+    }
+
+    .deco-frame-bullet .deco-frame-bullet-corner{
+        width: 20px;
+        height: 20px;
+    }
+
+    /* ---------------------- deco 1 */
+
+    .deco-container.deco-img-1{
+        margin: 80px 40px 0;
+        padding: 30px 0;
+    }
+    .deco-img-1 .deco-frame-img {
+        width: calc(1049px * 0.25);
+        height: calc(453px * 0.25);
+    }
+
+
+    /* -------------------------- deco 2 */
+
+    .deco-container.deco-img-2{
+        margin: 0;
+    }
+    .deco-img-2 .deco-frame-img{
+        margin-right: 50px;
+        width: calc(568px * 0.15);
+        height: calc(1231px * 0.15);
+    }
+
+
+    /* -------------------------------- deco 3 */
+
+    .deco-img-3.deco-frame-img{
+        right: 70px;
+        top: 250px;
+        margin-top: -70px;
+        width: calc(80px * 0.65);
+        height: calc(275px * 0.65);
+    }
+
+
+    /* --------------------------------- deco 4 */
+
+    .deco-img-3-2{
+        width: calc(75px * 0.4);
+        height: calc(85px * 0.4);
+    }
+
+    .deco-img-4{
+        width: calc(97px * 0.5);
+        height: calc(283px * 0.5);
+    }
+
+    .deco-img-5{
+        width: calc(64px * 0.5);
+        height: calc(275px * 0.5);
+    }
+
+
+    /* ------------------------------------ deco 5 */
+
+    .deco-img-6 .deco-frame-img{
+        bottom: -65px;
+        margin-right: 130px;
+        width: calc(234px * 0.7);
+        height: calc(253px * 0.7);
+    }
+
+
+    /* ------------------------------------ deco 6 */
+
+    .deco-img-7{
+        width: calc(138px * 0.7);
+        height: calc(318px * 0.7);
+    }
+
+    .deco-img-8{
+        width: calc(140px * 0.7);
+        height: calc(326px * 0.7);
+    }
+
+    .deco-img-9{
+        width: calc(183px * 0.7);
+        height: calc(307px * 0.7);
+    }
+}
+
+
+
+
 /* ---------------------------- tablet */
 
 @media screen and (min-width: 721px){
@@ -1175,11 +1449,11 @@ form label.label-flex{
     /* -------------------------------- deco 3 */
 
     .deco-img-3.deco-frame-img{
-        left: 45px;
-        bottom: 120px;
+        right: 70px;
+        top: 250px;
         margin-top: -70px;
-        width: calc(80px * 0.6);
-        height: calc(275px * 0.6);
+        width: calc(80px * 0.65);
+        height: calc(275px * 0.65);
     }
 
 
@@ -1532,6 +1806,45 @@ div.i-button.menu-button:hover p{
 
 /* MEDIA QUERY */
 
+/* ------------------------------ movil */
+
+@media screen and (max-width: 721px){
+
+    div.i-container{
+        left: 20px;
+        top: 50px;
+        height: 50px;
+    }
+
+    div.i-button{
+        width: 25px;
+        height: 25px;
+        margin: 2px 0;
+    }
+
+    div.i-button.menu-button{
+        /* margin-top: 60px; */
+    }
+    div.i-button.menu-button i{
+        margin-left: 5px;
+    }
+    div.i-button.menu-button p{
+        padding: 5px;
+        margin-bottom: 0px;
+    }
+
+    @keyframes arrow-up{
+        0%, 100%{
+            margin-bottom: 5px;
+        }
+    
+        30%{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
 /* ------------------------------ tablet */
 
 @media screen and (min-width: 721px){
@@ -1643,6 +1956,7 @@ div.i-button.menu-button:hover p{
 ::-webkit-scrollbar{
     -webkit-appearance: none;
 }
+@media screen and (max-width:721px){ ::-webkit-scrollbar{ width: 3px; } }
 @media screen and (min-width:721px){ ::-webkit-scrollbar{ width: 3px; } }
 @media screen and (min-width:1241px){ ::-webkit-scrollbar{ width: 7px; } }
 
