@@ -23,6 +23,7 @@ header .header-title{z-index: 1;}
 .content.about h1, .content.about h1 span{z-index: 2;}
 .content.about h4, .content.about h4 span{z-index: 2;}
 .content.about .ab-descript{z-index: 2;}
+.content.art{z-index: 1;}
 .deco-img-2{z-index: 3;}
 .poster .poster-hover{z-index: 0;}
 .poster img{z-index: 3;}

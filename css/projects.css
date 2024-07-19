@@ -33,7 +33,7 @@ section.design{
     grid-template-rows: repeat(2, auto);
     justify-content: flex-end;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     flex-wrap: nowrap;
 }
 .design .content .body-section{
@@ -281,32 +281,63 @@ section.web-design{
 
     /* SECTIONS */
 
-     /* DESIGN */
+    /* DESIGN */
 
-     section.design{
-        margin-bottom: 80px;
+    .design section.content{
+        grid-template-columns: 1;
+        grid-template-rows: repeat(4, auto);
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .design .content .body-section, .design .content .poster, .design .content .des-descript{
+        grid-column: 1;
+    }
+    .design .content .poster:first-child{
+        grid-row: 1;
+    }
+    .design .content .poster:last-child{
+        grid-row: 2;
+    }
+    .design .content .body-section{
+        grid-row: 3;
+    }
+    .design .content .des-descript{
+        grid-row: 4;
     }
 
-    .design .body-section{
-        padding-left: 50px;
-        padding-top: px;
+    .design .poster{
+        width: 100vw;
+        height: 100%;
+        margin: 0;
     }
-    
-    .design .des-descript{
-        padding: 20px 20vw 0;
-    }
-
-    .design .poster-hover{
+    .design .poster img{
+        width: 100%;
         height: 100%;
     }
-    
+    .design .poster .poster-hover{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding-bottom: 0;
+    }
+
     .poster-hover p{
         font-size: 1.5rem;
         margin: 15px 0;
     }
 
-    .design .poster img{
-        height: 100vh;
+    section.design{
+        margin-bottom: 80px;
+    }
+
+    .design .body-section{
+        height: fit-content;
+        writing-mode: horizontal-tb;
+        padding: 80px 30px 15px;
+    }
+    
+    .design .des-descript{
+        padding: 0 30px 0 45px;
     }
 
 
@@ -320,40 +351,47 @@ section.web-design{
     /* WEB */
 
     section.web-design{
-        padding: 80px 0 50px;
+        padding: 80px 30px 120px 45px;
+        width: 100vw;
+        left: 0;
     }
 
     .web-design .web-title .line-1{
-        width: 200px;
-        left: 500px;
+        width: 90px;
+        right: 0;
+        top: 30px;
     }
 
-    .web-design p.web-descript{
-        padding-right: 100px;
+    .web-design h1{
+        line-height: 0.8;
+        margin-bottom: 30px;
     }
 
     .web-design section{
         margin-top: 35px;
+        flex-direction: column;
+    }
+
+    .web-design .web-section, .web-design .ux-ui{
+        width: 100%;
     }
 
     .web-design .web-section{
-        width: 55%;
-    }
-
-    .web-design .web-section div.postres, .web-design .web-section embed{
-        height: 350px;
-        margin: 10px;
+        margin-bottom: 40px;
     }
 
     .web-design .web-section div.postres{
+        width: 100%;
+        height: 200px;
         margin-bottom: 50px;
     }
-    .web-design embed{
-        height: 350px;
+    .web-design .web-section div.postres img{
+        width: 100%;
     }
 
-    .web-design .ux-ui{
-        width: 35%;
+    .web-design .web-section embed{
+        width: 100%;
+        height: 350px;
     }
 
     .web-design .ux-ui img{
@@ -376,16 +414,29 @@ section.web-design{
     /* ART */
 
     .content.art{
-        padding-top: 120px;
-        margin-top: 200px;
+        padding-top: 50px;
+        margin-top: 100px;
+    }
+
+    .content.art h1{
+        padding: 0 30px 0 45px;
     }
 
     .art .poster .poster-hover{
-        top: 100px;
+        top: 0;
+    }
+
+    .art .poster, .art .poster .poster-hover, .art .poster img{
+        height: 100%;
     }
 
     .art .body-section div{
         padding: 20px 50px 50px;
+    }
+
+    .art .body-section div p{
+        text-align: justify;
+        text-justify: distribute;
     }
 
 
@@ -401,32 +452,31 @@ section.web-design{
     /* OTHER PROJECTS */
 
     .content.other-projects{
-        padding-top: 100px;
+        width: 100vw;
+        padding: 50px 30px 100px 45px;
     }
 
     .other-projects h1{
-        font-size: 6rem;
+        font-size: 3.8rem;
+        line-height: 0.8;
     }
     .other-projects h2{
-        font-size: 2.1rem;
+        font-size: 1.8rem;
     }
 
     .other-projects section{
+        flex-direction: column;
         margin-top: 30px;
     }
 
-    .other-projects .modeling-3d{
-        width: 70%;
-    }
-
-    .other-projects .motion{
-        width: 25%;
+    .other-projects .modeling-3d, .other-projects .motion{
+        width: 100%;
     }
     
     .other-projects .line-1{
-        top: 170px;
-        right: -80px;
-        width: 280px;
+        top: 85px;
+        right: 8px;
+        width: 90px;
     }
 }
 
@@ -446,7 +496,6 @@ section.web-design{
 
     .design .body-section{
         padding-left: 50px;
-        padding-top: px;
     }
     
     .design .des-descript{

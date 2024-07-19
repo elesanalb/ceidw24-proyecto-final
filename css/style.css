@@ -88,7 +88,7 @@ p span.highlight-2{
     }
 
     h2{
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         margin: 10px 0;
     }
 
@@ -387,8 +387,8 @@ a.see-more i{
     /* ----------------------------- logo */ 
 
     .logo{
-        height: 50px;
-        margin: 10px 0;
+        height: 45px;
+        margin: 20px 0;
     }
 
 
@@ -1344,11 +1344,11 @@ form label.label-flex{
     /* -------------------------------- deco 3 */
 
     .deco-img-3.deco-frame-img{
-        right: 70px;
-        top: 250px;
+        right: 205px;
+        top: 110px;
         margin-top: -70px;
-        width: calc(80px * 0.65);
-        height: calc(275px * 0.65);
+        width: calc(80px * 0.4);
+        height: calc(275px * 0.4);
     }
 
 
@@ -1373,28 +1373,28 @@ form label.label-flex{
     /* ------------------------------------ deco 5 */
 
     .deco-img-6 .deco-frame-img{
-        bottom: -65px;
-        margin-right: 130px;
-        width: calc(234px * 0.7);
-        height: calc(253px * 0.7);
+        bottom: -50px;
+        margin-right: 0px;
+        width: calc(234px * 0.5);
+        height: calc(253px * 0.5);
     }
 
 
     /* ------------------------------------ deco 6 */
 
     .deco-img-7{
-        width: calc(138px * 0.7);
-        height: calc(318px * 0.7);
+        width: calc(138px * 0.5);
+        height: calc(318px * 0.5);
     }
 
     .deco-img-8{
-        width: calc(140px * 0.7);
-        height: calc(326px * 0.7);
+        width: calc(140px * 0.5);
+        height: calc(326px * 0.5);
     }
 
     .deco-img-9{
-        width: calc(183px * 0.7);
-        height: calc(307px * 0.7);
+        width: calc(183px * 0.5);
+        height: calc(307px * 0.5);
     }
 }
 
@@ -1546,7 +1546,8 @@ form label.label-flex{
     .deco-img-3.deco-frame-img{
         left: initial;
         right: 90px;
-        top: 200px;
+        top: initial;
+        bottom: 220px;
         width: calc(80px * 0.7);
         height: calc(275px * 0.7);
     }
