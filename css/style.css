@@ -15,6 +15,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 
@@ -1319,7 +1320,7 @@ form label.label-flex{
     /* ---------------------- deco 1 */
 
     .deco-container.deco-img-1{
-        margin: 80px 40px 0;
+        margin: 80px 5px 0;
         padding: 30px 0;
     }
     .deco-img-1 .deco-frame-img {

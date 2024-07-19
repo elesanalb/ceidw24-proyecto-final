@@ -437,6 +437,7 @@
     /* ART GALLERY */
 
     .art-section .content{
+        min-height: 100vh;
         padding-top: 380px;
         margin-left: -100px;
     }
